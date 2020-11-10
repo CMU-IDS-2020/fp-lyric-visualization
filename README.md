@@ -2,11 +2,9 @@
 
 * **Online URL**: TODO
 * **Team members**:
-  * Contact person: TODO@andrew.cmu.edu
-  * TODO@andrew.cmu.edu
-  * TODO@andrew.cmu.edu
-  * TODO@andrew.cmu.edu
-* **Track**: TODO (one of Narrative, Model, or Interactive Visualization/Application)
+  * Contact person: Peter Schaldenbrand - pschalde@andrew.cmu.edu
+  * Paulina Davison - pldaviso@andrew.cmu.edu
+* **Track**: start with Narrative, may become Interactive Visualization/Application
 
 ## Work distribution
 
