@@ -117,7 +117,7 @@ for line in file:
 						word_no_punctuation = word_no_punctuation[1:]
 					# Make most of the words lower-case except for words like "I" which are upper-case in English
 					word_can_search = word_no_punctuation
-					if (word_can_search != "I") and (word_can_search != "I'm") and (word_can_search != "I'd"):
+					if (word_can_search != "I") and (word_can_search != "I'm") and (word_can_search != "I'd") and (word_can_search != "I'll"):
 						word_can_search = word_can_search.lower()
 					# Words that are changed so that they can be looked up:
 					# gettin -> getting
