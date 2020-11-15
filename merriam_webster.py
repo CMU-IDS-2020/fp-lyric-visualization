@@ -19,13 +19,13 @@ thes_key = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 # from https://www.powercms.in/article/how-get-json-data-remote-url-python-script
 # and https://stackoverflow.com/questions/3969726/attributeerror-module-object-has-no-attribute-urlopen
-dict_file = open("test_m_w_dictionary.txt", "w")
+dict_file = open("test_m_w_dictionary.json", "w")
 json_dict_url = ur.urlopen(dict_url + word + "?key=" + dict_key)
 dict_data = json.loads(json_dict_url.read())
 dict_file.write(json.dumps(dict_data))
 dict_file.close()
 
-thes_file = open("test_m_w_thesaurus.txt", "w")
+thes_file = open("test_m_w_thesaurus.json", "w")
 json_thes_url = ur.urlopen(thes_url + word + "?key=" + thes_key)
 thes_data = json.loads(json_thes_url.read())
 thes_file.write(json.dumps(thes_data))
