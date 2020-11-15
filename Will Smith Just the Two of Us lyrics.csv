@@ -1,0 +1,658 @@
+,word_original,word_no_punctuation,word_can_search,word_index_in_song,line_index_in_song,stanza_index_in_song,stanza_description,line_index_in_stanza,word_index_in_line
+0,Now,Now,now,1,1,1,Intro: Trey Smith,1,1
+1,Dad,Dad,dad,2,1,1,Intro: Trey Smith,1,2
+2,this,this,this,3,1,1,Intro: Trey Smith,1,3
+3,is,is,is,4,1,1,Intro: Trey Smith,1,4
+4,a,a,a,5,1,1,Intro: Trey Smith,1,5
+5,very,very,very,6,1,1,Intro: Trey Smith,1,6
+6,sensitive,sensitive,sensitive,7,1,1,Intro: Trey Smith,1,7
+7,subject,subject,subject,8,1,1,Intro: Trey Smith,1,8
+8,Just,Just,just,9,2,2,Chorus,1,1
+9,the,the,the,10,2,2,Chorus,1,2
+10,two,two,two,11,2,2,Chorus,1,3
+11,of,of,of,12,2,2,Chorus,1,4
+12,us,us,us,13,2,2,Chorus,1,5
+13,Just,Just,just,14,3,2,Chorus,2,6
+14,the,the,the,15,3,2,Chorus,2,7
+15,two,two,two,16,3,2,Chorus,2,8
+16,of,of,of,17,3,2,Chorus,2,9
+17,us,us,us,18,3,2,Chorus,2,10
+18,(just,just,just,19,3,2,Chorus,2,11
+19,the,the,the,20,3,2,Chorus,2,12
+20,two,two,two,21,3,2,Chorus,2,13
+21,of,of,of,22,3,2,Chorus,2,14
+22,us),us,us,23,3,2,Chorus,2,15
+23,Just,Just,just,24,4,2,Chorus,3,16
+24,the,the,the,25,4,2,Chorus,3,17
+25,two,two,two,26,4,2,Chorus,3,18
+26,of,of,of,27,4,2,Chorus,3,19
+27,us,us,us,28,4,2,Chorus,3,20
+28,(just,just,just,29,4,2,Chorus,3,21
+29,the,the,the,30,4,2,Chorus,3,22
+30,two,two,two,31,4,2,Chorus,3,23
+31,of,of,of,32,4,2,Chorus,3,24
+32,us),us,us,33,4,2,Chorus,3,25
+33,From,From,from,34,5,3,Verse 1: Will Smith,1,1
+34,the,the,the,35,5,3,Verse 1: Will Smith,1,2
+35,first,first,first,36,5,3,Verse 1: Will Smith,1,3
+36,time,time,time,37,5,3,Verse 1: Will Smith,1,4
+37,the,the,the,38,5,3,Verse 1: Will Smith,1,5
+38,doctor,doctor,doctor,39,5,3,Verse 1: Will Smith,1,6
+39,placed,placed,placed,40,5,3,Verse 1: Will Smith,1,7
+40,you,you,you,41,5,3,Verse 1: Will Smith,1,8
+41,in,in,in,42,5,3,Verse 1: Will Smith,1,9
+42,my,my,my,43,5,3,Verse 1: Will Smith,1,10
+43,arms,arms,arms,44,5,3,Verse 1: Will Smith,1,11
+44,I,I,I,45,6,3,Verse 1: Will Smith,2,12
+45,knew,knew,knew,46,6,3,Verse 1: Will Smith,2,13
+46,I'd,I'd,I'd,47,6,3,Verse 1: Will Smith,2,14
+47,meet,meet,meet,48,6,3,Verse 1: Will Smith,2,15
+48,death,death,death,49,6,3,Verse 1: Will Smith,2,16
+49,before,before,before,50,6,3,Verse 1: Will Smith,2,17
+50,I'd,I'd,I'd,51,6,3,Verse 1: Will Smith,2,18
+51,let,let,let,52,6,3,Verse 1: Will Smith,2,19
+52,you,you,you,53,6,3,Verse 1: Will Smith,2,20
+53,meet,meet,meet,54,6,3,Verse 1: Will Smith,2,21
+54,harm,harm,harm,55,6,3,Verse 1: Will Smith,2,22
+55,Although,Although,although,56,7,3,Verse 1: Will Smith,3,23
+56,questions,questions,questions,57,7,3,Verse 1: Will Smith,3,24
+57,arose,arose,arose,58,7,3,Verse 1: Will Smith,3,25
+58,in,in,in,59,7,3,Verse 1: Will Smith,3,26
+59,my,my,my,60,7,3,Verse 1: Will Smith,3,27
+60,"mind,",mind,mind,61,7,3,Verse 1: Will Smith,3,28
+61,would,would,would,62,7,3,Verse 1: Will Smith,3,29
+62,I,I,I,63,7,3,Verse 1: Will Smith,3,30
+63,be,be,be,64,7,3,Verse 1: Will Smith,3,31
+64,man,man,man,65,7,3,Verse 1: Will Smith,3,32
+65,enough,enough,enough,66,7,3,Verse 1: Will Smith,3,33
+66,Against,Against,against,67,8,3,Verse 1: Will Smith,4,34
+67,"wrong,",wrong,wrong,68,8,3,Verse 1: Will Smith,4,35
+68,choose,choose,choose,69,8,3,Verse 1: Will Smith,4,36
+69,right,right,right,70,8,3,Verse 1: Will Smith,4,37
+70,and,and,and,71,8,3,Verse 1: Will Smith,4,38
+71,be,be,be,72,8,3,Verse 1: Will Smith,4,39
+72,standing,standing,standing,73,8,3,Verse 1: Will Smith,4,40
+73,up?,up,up,74,8,3,Verse 1: Will Smith,4,41
+74,From,From,from,75,9,3,Verse 1: Will Smith,5,42
+75,the,the,the,76,9,3,Verse 1: Will Smith,5,43
+76,hospital,hospital,hospital,77,9,3,Verse 1: Will Smith,5,44
+77,that,that,that,78,9,3,Verse 1: Will Smith,5,45
+78,first,first,first,79,9,3,Verse 1: Will Smith,5,46
+79,night,night,night,80,9,3,Verse 1: Will Smith,5,47
+80,Took,Took,took,81,10,3,Verse 1: Will Smith,6,48
+81,a,a,a,82,10,3,Verse 1: Will Smith,6,49
+82,hour,hour,hour,83,10,3,Verse 1: Will Smith,6,50
+83,just,just,just,84,10,3,Verse 1: Will Smith,6,51
+84,ta,ta,to,85,10,3,Verse 1: Will Smith,6,52
+85,get,get,get,86,10,3,Verse 1: Will Smith,6,53
+86,the,the,the,87,10,3,Verse 1: Will Smith,6,54
+87,car,car,car,88,10,3,Verse 1: Will Smith,6,55
+88,seat,seat,seat,89,10,3,Verse 1: Will Smith,6,56
+89,in,in,in,90,10,3,Verse 1: Will Smith,6,57
+90,right,right,right,91,10,3,Verse 1: Will Smith,6,58
+91,People,People,people,92,11,3,Verse 1: Will Smith,7,59
+92,driving,driving,driving,93,11,3,Verse 1: Will Smith,7,60
+93,all,all,all,94,11,3,Verse 1: Will Smith,7,61
+94,"fast,",fast,fast,95,11,3,Verse 1: Will Smith,7,62
+95,got,got,got,96,11,3,Verse 1: Will Smith,7,63
+96,me,me,me,97,11,3,Verse 1: Will Smith,7,64
+97,kinda,kinda,kinda,98,11,3,Verse 1: Will Smith,7,65
+98,upset,upset,upset,99,11,3,Verse 1: Will Smith,7,66
+99,Got,Got,got,100,12,3,Verse 1: Will Smith,8,67
+100,you,you,you,101,12,3,Verse 1: Will Smith,8,68
+101,home,home,home,102,12,3,Verse 1: Will Smith,8,69
+102,"safe,",safe,safe,103,12,3,Verse 1: Will Smith,8,70
+103,placed,placed,placed,104,12,3,Verse 1: Will Smith,8,71
+104,you,you,you,105,12,3,Verse 1: Will Smith,8,72
+105,in,in,in,106,12,3,Verse 1: Will Smith,8,73
+106,your,your,your,107,12,3,Verse 1: Will Smith,8,74
+107,bassinet,bassinet,bassinet,108,12,3,Verse 1: Will Smith,8,75
+108,That,That,that,109,13,3,Verse 1: Will Smith,9,76
+109,night,night,night,110,13,3,Verse 1: Will Smith,9,77
+110,I,I,I,111,13,3,Verse 1: Will Smith,9,78
+111,don't,don't,don't,112,13,3,Verse 1: Will Smith,9,79
+112,think,think,think,113,13,3,Verse 1: Will Smith,9,80
+113,one,one,one,114,13,3,Verse 1: Will Smith,9,81
+114,wink,wink,wink,115,13,3,Verse 1: Will Smith,9,82
+115,I,I,I,116,13,3,Verse 1: Will Smith,9,83
+116,slept,slept,slept,117,13,3,Verse 1: Will Smith,9,84
+117,As,As,as,118,14,3,Verse 1: Will Smith,10,85
+118,I,I,I,119,14,3,Verse 1: Will Smith,10,86
+119,slipped,slipped,slipped,120,14,3,Verse 1: Will Smith,10,87
+120,out,out,out,121,14,3,Verse 1: Will Smith,10,88
+121,my,my,my,122,14,3,Verse 1: Will Smith,10,89
+122,"bed,",bed,bed,123,14,3,Verse 1: Will Smith,10,90
+123,to,to,to,124,14,3,Verse 1: Will Smith,10,91
+124,your,your,your,125,14,3,Verse 1: Will Smith,10,92
+125,crib,crib,crib,126,14,3,Verse 1: Will Smith,10,93
+126,I,I,I,127,14,3,Verse 1: Will Smith,10,94
+127,crept,crept,crept,128,14,3,Verse 1: Will Smith,10,95
+128,Touched,Touched,touched,129,15,3,Verse 1: Will Smith,11,96
+129,your,your,your,130,15,3,Verse 1: Will Smith,11,97
+130,head,head,head,131,15,3,Verse 1: Will Smith,11,98
+131,"gently,",gently,gently,132,15,3,Verse 1: Will Smith,11,99
+132,felt,felt,felt,133,15,3,Verse 1: Will Smith,11,100
+133,my,my,my,134,15,3,Verse 1: Will Smith,11,101
+134,heart,heart,heart,135,15,3,Verse 1: Will Smith,11,102
+135,melt,melt,melt,136,15,3,Verse 1: Will Smith,11,103
+136,Cause,Cause,because,137,16,3,Verse 1: Will Smith,12,104
+137,I,I,I,138,16,3,Verse 1: Will Smith,12,105
+138,know,know,know,139,16,3,Verse 1: Will Smith,12,106
+139,I,I,I,140,16,3,Verse 1: Will Smith,12,107
+140,loved,loved,loved,141,16,3,Verse 1: Will Smith,12,108
+141,you,you,you,142,16,3,Verse 1: Will Smith,12,109
+142,more,more,more,143,16,3,Verse 1: Will Smith,12,110
+143,than,than,than,144,16,3,Verse 1: Will Smith,12,111
+144,life,life,life,145,16,3,Verse 1: Will Smith,12,112
+145,itself,itself,itself,146,16,3,Verse 1: Will Smith,12,113
+146,Then,Then,then,147,17,3,Verse 1: Will Smith,13,114
+147,to,to,to,148,17,3,Verse 1: Will Smith,13,115
+148,my,my,my,149,17,3,Verse 1: Will Smith,13,116
+149,"knees,",knees,knees,150,17,3,Verse 1: Will Smith,13,117
+150,and,and,and,151,17,3,Verse 1: Will Smith,13,118
+151,I,I,I,152,17,3,Verse 1: Will Smith,13,119
+152,begged,begged,begged,153,17,3,Verse 1: Will Smith,13,120
+153,the,the,the,154,17,3,Verse 1: Will Smith,13,121
+154,Lord,Lord,lord,155,17,3,Verse 1: Will Smith,13,122
+155,please,please,please,156,17,3,Verse 1: Will Smith,13,123
+156,Let,Let,let,157,18,3,Verse 1: Will Smith,14,124
+157,me,me,me,158,18,3,Verse 1: Will Smith,14,125
+158,be,be,be,159,18,3,Verse 1: Will Smith,14,126
+159,a,a,a,160,18,3,Verse 1: Will Smith,14,127
+160,good,good,good,161,18,3,Verse 1: Will Smith,14,128
+161,"daddy,",daddy,daddy,162,18,3,Verse 1: Will Smith,14,129
+162,all,all,all,163,18,3,Verse 1: Will Smith,14,130
+163,he,he,he,164,18,3,Verse 1: Will Smith,14,131
+164,needs,needs,needs,165,18,3,Verse 1: Will Smith,14,132
+165,"Love,",Love,love,166,19,3,Verse 1: Will Smith,15,133
+166,"knowledge,",knowledge,knowledge,167,19,3,Verse 1: Will Smith,15,134
+167,discipline,discipline,discipline,168,19,3,Verse 1: Will Smith,15,135
+168,too,too,too,169,19,3,Verse 1: Will Smith,15,136
+169,I,I,I,170,20,3,Verse 1: Will Smith,16,137
+170,pledge,pledge,pledge,171,20,3,Verse 1: Will Smith,16,138
+171,my,my,my,172,20,3,Verse 1: Will Smith,16,139
+172,life,life,life,173,20,3,Verse 1: Will Smith,16,140
+173,to,to,to,174,20,3,Verse 1: Will Smith,16,141
+174,you,you,you,175,20,3,Verse 1: Will Smith,16,142
+175,Just,Just,just,176,21,4,Chorus,1,1
+176,the,the,the,177,21,4,Chorus,1,2
+177,two,two,two,178,21,4,Chorus,1,3
+178,of,of,of,179,21,4,Chorus,1,4
+179,"us,",us,us,180,21,4,Chorus,1,5
+180,we,we,we,181,21,4,Chorus,1,6
+181,can,can,can,182,21,4,Chorus,1,7
+182,make,make,make,183,21,4,Chorus,1,8
+183,it,it,it,184,21,4,Chorus,1,9
+184,if,if,if,185,21,4,Chorus,1,10
+185,we,we,we,186,21,4,Chorus,1,11
+186,try,try,try,187,21,4,Chorus,1,12
+187,Just,Just,just,188,22,4,Chorus,2,13
+188,the,the,the,189,22,4,Chorus,2,14
+189,two,two,two,190,22,4,Chorus,2,15
+190,of,of,of,191,22,4,Chorus,2,16
+191,"us,",us,us,192,22,4,Chorus,2,17
+192,(Just,Just,just,193,22,4,Chorus,2,18
+193,the,the,the,194,22,4,Chorus,2,19
+194,two,two,two,195,22,4,Chorus,2,20
+195,of,of,of,196,22,4,Chorus,2,21
+196,us),us,us,197,22,4,Chorus,2,22
+197,Just,Just,just,198,23,4,Chorus,3,23
+198,the,the,the,199,23,4,Chorus,3,24
+199,two,two,two,200,23,4,Chorus,3,25
+200,of,of,of,201,23,4,Chorus,3,26
+201,"us,",us,us,202,23,4,Chorus,3,27
+202,building,building,building,203,23,4,Chorus,3,28
+203,castles,castles,castles,204,23,4,Chorus,3,29
+204,in,in,in,205,23,4,Chorus,3,30
+205,the,the,the,206,23,4,Chorus,3,31
+206,sky,sky,sky,207,23,4,Chorus,3,32
+207,Just,Just,just,208,24,4,Chorus,4,33
+208,the,the,the,209,24,4,Chorus,4,34
+209,two,two,two,210,24,4,Chorus,4,35
+210,of,of,of,211,24,4,Chorus,4,36
+211,"us,",us,us,212,24,4,Chorus,4,37
+212,you,you,you,213,24,4,Chorus,4,38
+213,and,and,and,214,24,4,Chorus,4,39
+214,I,I,I,215,24,4,Chorus,4,40
+215,Five,Five,five,216,25,5,Verse 2: Will Smith,1,1
+216,years,years,years,217,25,5,Verse 2: Will Smith,1,2
+217,"old,",old,old,218,25,5,Verse 2: Will Smith,1,3
+218,bringin,bringin,bringin,219,25,5,Verse 2: Will Smith,1,4
+219,comedy,comedy,comedy,220,25,5,Verse 2: Will Smith,1,5
+220,Everytime,Everytime,everytime,221,26,5,Verse 2: Will Smith,2,6
+221,I,I,I,222,26,5,Verse 2: Will Smith,2,7
+222,look,look,look,223,26,5,Verse 2: Will Smith,2,8
+223,at,at,at,224,26,5,Verse 2: Will Smith,2,9
+224,you,you,you,225,26,5,Verse 2: Will Smith,2,10
+225,I,I,I,226,26,5,Verse 2: Will Smith,2,11
+226,think,think,think,227,26,5,Verse 2: Will Smith,2,12
+227,"man,",man,man,228,26,5,Verse 2: Will Smith,2,13
+228,a,a,a,229,26,5,Verse 2: Will Smith,2,14
+229,little,little,little,230,26,5,Verse 2: Will Smith,2,15
+230,me,me,me,231,26,5,Verse 2: Will Smith,2,16
+231,Just,Just,just,232,27,5,Verse 2: Will Smith,3,17
+232,like,like,like,233,27,5,Verse 2: Will Smith,3,18
+233,"me,",me,me,234,27,5,Verse 2: Will Smith,3,19
+234,wait,wait,wait,235,27,5,Verse 2: Will Smith,3,20
+235,an',an',and,236,27,5,Verse 2: Will Smith,3,21
+236,"see,",see,see,237,27,5,Verse 2: Will Smith,3,22
+237,gonna,gonna,gonna,238,27,5,Verse 2: Will Smith,3,23
+238,be,be,be,239,27,5,Verse 2: Will Smith,3,24
+239,tall,tall,tall,240,27,5,Verse 2: Will Smith,3,25
+240,Makes,Makes,makes,241,28,5,Verse 2: Will Smith,4,26
+241,me,me,me,242,28,5,Verse 2: Will Smith,4,27
+242,laugh,laugh,laugh,243,28,5,Verse 2: Will Smith,4,28
+243,cause,cause,because,244,28,5,Verse 2: Will Smith,4,29
+244,you,you,you,245,28,5,Verse 2: Will Smith,4,30
+245,got,got,got,246,28,5,Verse 2: Will Smith,4,31
+246,your,your,your,247,28,5,Verse 2: Will Smith,4,32
+247,dads,dads,dads,248,28,5,Verse 2: Will Smith,4,33
+248,ears,ears,ears,249,28,5,Verse 2: Will Smith,4,34
+249,an,an,and,250,28,5,Verse 2: Will Smith,4,35
+250,all,all,all,251,28,5,Verse 2: Will Smith,4,36
+251,Sometimes,Sometimes,sometimes,252,29,5,Verse 2: Will Smith,5,37
+252,I,I,I,253,29,5,Verse 2: Will Smith,5,38
+253,"wonder,",wonder,wonder,254,29,5,Verse 2: Will Smith,5,39
+254,what,what,what,255,29,5,Verse 2: Will Smith,5,40
+255,you,you,you,256,29,5,Verse 2: Will Smith,5,41
+256,gonna,gonna,gonna,257,29,5,Verse 2: Will Smith,5,42
+257,be,be,be,258,29,5,Verse 2: Will Smith,5,43
+258,A,A,a,259,30,5,Verse 2: Will Smith,6,44
+259,"general,",general,general,260,30,5,Verse 2: Will Smith,6,45
+260,a,a,a,261,30,5,Verse 2: Will Smith,6,46
+261,"doctor,",doctor,doctor,262,30,5,Verse 2: Will Smith,6,47
+262,maybe,maybe,maybe,263,30,5,Verse 2: Will Smith,6,48
+263,a,a,a,264,30,5,Verse 2: Will Smith,6,49
+264,MC,MC,mc,265,30,5,Verse 2: Will Smith,6,50
+265,"Haha,",Haha,haha,266,31,5,Verse 2: Will Smith,7,51
+266,I,I,I,267,31,5,Verse 2: Will Smith,7,52
+267,wanna,wanna,wanna,268,31,5,Verse 2: Will Smith,7,53
+268,kiss,kiss,kiss,269,31,5,Verse 2: Will Smith,7,54
+269,you,you,you,270,31,5,Verse 2: Will Smith,7,55
+270,all,all,all,271,31,5,Verse 2: Will Smith,7,56
+271,the,the,the,272,31,5,Verse 2: Will Smith,7,57
+272,time,time,time,273,31,5,Verse 2: Will Smith,7,58
+273,But,But,but,274,32,5,Verse 2: Will Smith,8,59
+274,I,I,I,275,32,5,Verse 2: Will Smith,8,60
+275,will,will,will,276,32,5,Verse 2: Will Smith,8,61
+276,test,test,test,277,32,5,Verse 2: Will Smith,8,62
+277,that,that,that,278,32,5,Verse 2: Will Smith,8,63
+278,butt,butt,butt,279,32,5,Verse 2: Will Smith,8,64
+279,when,when,when,280,32,5,Verse 2: Will Smith,8,65
+280,you,you,you,281,32,5,Verse 2: Will Smith,8,66
+281,cut,cut,cut,282,32,5,Verse 2: Will Smith,8,67
+282,outta,outta,outta,283,32,5,Verse 2: Will Smith,8,68
+283,"line,",line,line,284,32,5,Verse 2: Will Smith,8,69
+284,true,true,true,285,32,5,Verse 2: Will Smith,8,70
+285,that,that,that,286,32,5,Verse 2: Will Smith,8,71
+286,Uh-uh-uh,Uh-uh-uh,uh-uh-uh,287,33,5,Verse 2: Will Smith,9,72
+287,why,why,why,288,33,5,Verse 2: Will Smith,9,73
+288,you,you,you,289,33,5,Verse 2: Will Smith,9,74
+289,do,do,do,290,33,5,Verse 2: Will Smith,9,75
+290,that?,that,that,291,33,5,Verse 2: Will Smith,9,76
+291,I,I,I,292,34,5,Verse 2: Will Smith,10,77
+292,try,try,try,293,34,5,Verse 2: Will Smith,10,78
+293,to,to,to,294,34,5,Verse 2: Will Smith,10,79
+294,be,be,be,295,34,5,Verse 2: Will Smith,10,80
+295,a,a,a,296,34,5,Verse 2: Will Smith,10,81
+296,tough,tough,tough,297,34,5,Verse 2: Will Smith,10,82
+297,"dad,",dad,dad,298,34,5,Verse 2: Will Smith,10,83
+298,but,but,but,299,34,5,Verse 2: Will Smith,10,84
+299,you,you,you,300,34,5,Verse 2: Will Smith,10,85
+300,be,be,be,301,34,5,Verse 2: Will Smith,10,86
+301,makin,makin,making,302,34,5,Verse 2: Will Smith,10,87
+302,me,me,me,303,34,5,Verse 2: Will Smith,10,88
+303,laugh,laugh,laugh,304,34,5,Verse 2: Will Smith,10,89
+304,Crazy,Crazy,crazy,305,35,5,Verse 2: Will Smith,11,90
+305,"joy,",joy,joy,306,35,5,Verse 2: Will Smith,11,91
+306,when,when,when,307,35,5,Verse 2: Will Smith,11,92
+307,I,I,I,308,35,5,Verse 2: Will Smith,11,93
+308,see,see,see,309,35,5,Verse 2: Will Smith,11,94
+309,the,the,the,310,35,5,Verse 2: Will Smith,11,95
+310,eyes,eyes,eyes,311,35,5,Verse 2: Will Smith,11,96
+311,of,of,of,312,35,5,Verse 2: Will Smith,11,97
+312,my,my,my,313,35,5,Verse 2: Will Smith,11,98
+313,baby,baby,baby,314,35,5,Verse 2: Will Smith,11,99
+314,boy,boy,boy,315,35,5,Verse 2: Will Smith,11,100
+315,I,I,I,316,36,5,Verse 2: Will Smith,12,101
+316,pledge,pledge,pledge,317,36,5,Verse 2: Will Smith,12,102
+317,to,to,to,318,36,5,Verse 2: Will Smith,12,103
+318,"you,",you,you,319,36,5,Verse 2: Will Smith,12,104
+319,I,I,I,320,36,5,Verse 2: Will Smith,12,105
+320,will,will,will,321,36,5,Verse 2: Will Smith,12,106
+321,always,always,always,322,36,5,Verse 2: Will Smith,12,107
+322,do,do,do,323,36,5,Verse 2: Will Smith,12,108
+323,Everything,Everything,everything,324,37,5,Verse 2: Will Smith,13,109
+324,I,I,I,325,37,5,Verse 2: Will Smith,13,110
+325,"can,",can,can,326,37,5,Verse 2: Will Smith,13,111
+326,show,show,show,327,37,5,Verse 2: Will Smith,13,112
+327,you,you,you,328,37,5,Verse 2: Will Smith,13,113
+328,how,how,how,329,37,5,Verse 2: Will Smith,13,114
+329,to,to,to,330,37,5,Verse 2: Will Smith,13,115
+330,be,be,be,331,37,5,Verse 2: Will Smith,13,116
+331,a,a,a,332,37,5,Verse 2: Will Smith,13,117
+332,man,man,man,333,37,5,Verse 2: Will Smith,13,118
+333,"Dignity,",Dignity,dignity,334,38,5,Verse 2: Will Smith,14,119
+334,"integrity,",integrity,integrity,335,38,5,Verse 2: Will Smith,14,120
+335,honor,honor,honor,336,38,5,Verse 2: Will Smith,14,121
+336,an',an',and,337,38,5,Verse 2: Will Smith,14,122
+337,I,I,I,338,39,5,Verse 2: Will Smith,15,123
+338,don't,don't,don't,339,39,5,Verse 2: Will Smith,15,124
+339,mind,mind,mind,340,39,5,Verse 2: Will Smith,15,125
+340,if,if,if,341,39,5,Verse 2: Will Smith,15,126
+341,you,you,you,342,39,5,Verse 2: Will Smith,15,127
+342,"lose,",lose,lose,343,39,5,Verse 2: Will Smith,15,128
+343,long,long,long,344,39,5,Verse 2: Will Smith,15,129
+344,as,as,as,345,39,5,Verse 2: Will Smith,15,130
+345,you,you,you,346,39,5,Verse 2: Will Smith,15,131
+346,came,came,came,347,39,5,Verse 2: Will Smith,15,132
+347,with,with,with,348,39,5,Verse 2: Will Smith,15,133
+348,it,it,it,349,39,5,Verse 2: Will Smith,15,134
+349,An,An,and,350,40,5,Verse 2: Will Smith,16,135
+350,you,you,you,351,40,5,Verse 2: Will Smith,16,136
+351,can,can,can,352,40,5,Verse 2: Will Smith,16,137
+352,"cry,",cry,cry,353,40,5,Verse 2: Will Smith,16,138
+353,ain't,ain't,ain't,354,40,5,Verse 2: Will Smith,16,139
+354,no,no,no,355,40,5,Verse 2: Will Smith,16,140
+355,shame,shame,shame,356,40,5,Verse 2: Will Smith,16,141
+356,in,in,in,357,40,5,Verse 2: Will Smith,16,142
+357,it,it,it,358,40,5,Verse 2: Will Smith,16,143
+358,It,It,it,359,41,5,Verse 2: Will Smith,17,144
+359,didn't,didn't,didn't,360,41,5,Verse 2: Will Smith,17,145
+360,work,work,work,361,41,5,Verse 2: Will Smith,17,146
+361,out,out,out,362,41,5,Verse 2: Will Smith,17,147
+362,with,with,with,363,41,5,Verse 2: Will Smith,17,148
+363,me,me,me,364,41,5,Verse 2: Will Smith,17,149
+364,an,an,and,365,41,5,Verse 2: Will Smith,17,150
+365,your,your,your,366,41,5,Verse 2: Will Smith,17,151
+366,mom,mom,mom,367,41,5,Verse 2: Will Smith,17,152
+367,But,But,but,368,42,5,Verse 2: Will Smith,18,153
+368,"yo,",yo,yo,369,42,5,Verse 2: Will Smith,18,154
+369,push,push,push,370,42,5,Verse 2: Will Smith,18,155
+370,come,come,come,371,42,5,Verse 2: Will Smith,18,156
+371,to,to,to,372,42,5,Verse 2: Will Smith,18,157
+372,"shove,",shove,shove,373,42,5,Verse 2: Will Smith,18,158
+373,you,you,you,374,42,5,Verse 2: Will Smith,18,159
+374,was,was,was,375,42,5,Verse 2: Will Smith,18,160
+375,conceived,conceived,conceived,376,42,5,Verse 2: Will Smith,18,161
+376,in,in,in,377,42,5,Verse 2: Will Smith,18,162
+377,love,love,love,378,42,5,Verse 2: Will Smith,18,163
+378,So,So,so,379,43,5,Verse 2: Will Smith,19,164
+379,if,if,if,380,43,5,Verse 2: Will Smith,19,165
+380,the,the,the,381,43,5,Verse 2: Will Smith,19,166
+381,world,world,world,382,43,5,Verse 2: Will Smith,19,167
+382,"attacks,",attacks,attacks,383,43,5,Verse 2: Will Smith,19,168
+383,and,and,and,384,43,5,Verse 2: Will Smith,19,169
+384,you,you,you,385,43,5,Verse 2: Will Smith,19,170
+385,slide,slide,slide,386,43,5,Verse 2: Will Smith,19,171
+386,off,off,off,387,43,5,Verse 2: Will Smith,19,172
+387,track,track,track,388,43,5,Verse 2: Will Smith,19,173
+388,Remember,Remember,remember,389,44,5,Verse 2: Will Smith,20,174
+389,one,one,one,390,44,5,Verse 2: Will Smith,20,175
+390,"fact,",fact,fact,391,44,5,Verse 2: Will Smith,20,176
+391,I,I,I,392,44,5,Verse 2: Will Smith,20,177
+392,got,got,got,393,44,5,Verse 2: Will Smith,20,178
+393,your,your,your,394,44,5,Verse 2: Will Smith,20,179
+394,back,back,back,395,44,5,Verse 2: Will Smith,20,180
+395,Just,Just,just,396,45,6,Chorus,1,1
+396,the,the,the,397,45,6,Chorus,1,2
+397,two,two,two,398,45,6,Chorus,1,3
+398,of,of,of,399,45,6,Chorus,1,4
+399,"us,",us,us,400,45,6,Chorus,1,5
+400,we,we,we,401,45,6,Chorus,1,6
+401,can,can,can,402,45,6,Chorus,1,7
+402,make,make,make,403,45,6,Chorus,1,8
+403,it,it,it,404,45,6,Chorus,1,9
+404,if,if,if,405,45,6,Chorus,1,10
+405,we,we,we,406,45,6,Chorus,1,11
+406,try,try,try,407,45,6,Chorus,1,12
+407,Just,Just,just,408,46,6,Chorus,2,13
+408,the,the,the,409,46,6,Chorus,2,14
+409,two,two,two,410,46,6,Chorus,2,15
+410,of,of,of,411,46,6,Chorus,2,16
+411,"us,",us,us,412,46,6,Chorus,2,17
+412,(Just,Just,just,413,46,6,Chorus,2,18
+413,the,the,the,414,46,6,Chorus,2,19
+414,two,two,two,415,46,6,Chorus,2,20
+415,of,of,of,416,46,6,Chorus,2,21
+416,us),us,us,417,46,6,Chorus,2,22
+417,Just,Just,just,418,47,6,Chorus,3,23
+418,the,the,the,419,47,6,Chorus,3,24
+419,two,two,two,420,47,6,Chorus,3,25
+420,of,of,of,421,47,6,Chorus,3,26
+421,"us,",us,us,422,47,6,Chorus,3,27
+422,building,building,building,423,47,6,Chorus,3,28
+423,castles,castles,castles,424,47,6,Chorus,3,29
+424,in,in,in,425,47,6,Chorus,3,30
+425,the,the,the,426,47,6,Chorus,3,31
+426,sky,sky,sky,427,47,6,Chorus,3,32
+427,Just,Just,just,428,48,6,Chorus,4,33
+428,the,the,the,429,48,6,Chorus,4,34
+429,two,two,two,430,48,6,Chorus,4,35
+430,of,of,of,431,48,6,Chorus,4,36
+431,"us,",us,us,432,48,6,Chorus,4,37
+432,you,you,you,433,48,6,Chorus,4,38
+433,and,and,and,434,48,6,Chorus,4,39
+434,I,I,I,435,48,6,Chorus,4,40
+435,It's,It's,it's,436,49,7,Verse 3,1,1
+436,a,a,a,437,49,7,Verse 3,1,2
+437,full-time,full-time,full-time,438,49,7,Verse 3,1,3
+438,job,job,job,439,49,7,Verse 3,1,4
+439,to,to,to,440,49,7,Verse 3,1,5
+440,be,be,be,441,49,7,Verse 3,1,6
+441,a,a,a,442,49,7,Verse 3,1,7
+442,good,good,good,443,49,7,Verse 3,1,8
+443,dad,dad,dad,444,49,7,Verse 3,1,9
+444,You,You,you,445,50,7,Verse 3,2,10
+445,got,got,got,446,50,7,Verse 3,2,11
+446,so,so,so,447,50,7,Verse 3,2,12
+447,much,much,much,448,50,7,Verse 3,2,13
+448,more,more,more,449,50,7,Verse 3,2,14
+449,stuff,stuff,stuff,450,50,7,Verse 3,2,15
+450,than,than,than,451,50,7,Verse 3,2,16
+451,I,I,I,452,50,7,Verse 3,2,17
+452,had,had,had,453,50,7,Verse 3,2,18
+453,I,I,I,454,51,7,Verse 3,3,19
+454,gotta,gotta,gotta,455,51,7,Verse 3,3,20
+455,study,study,study,456,51,7,Verse 3,3,21
+456,just,just,just,457,51,7,Verse 3,3,22
+457,to,to,to,458,51,7,Verse 3,3,23
+458,keep,keep,keep,459,51,7,Verse 3,3,24
+459,with,with,with,460,51,7,Verse 3,3,25
+460,the,the,the,461,51,7,Verse 3,3,26
+461,changin,changin,changing,462,51,7,Verse 3,3,27
+462,times,times,times,463,51,7,Verse 3,3,28
+463,101,101,101,464,52,7,Verse 3,4,29
+464,Dalmations,Dalmations,dalmations,465,52,7,Verse 3,4,30
+465,on,on,on,466,52,7,Verse 3,4,31
+466,your,your,your,467,52,7,Verse 3,4,32
+467,CD-ROM,CD-ROM,cd-rom,468,52,7,Verse 3,4,33
+468,See,See,see,469,53,7,Verse 3,5,34
+469,me-I'm,me,me,470,53,7,Verse 3,5,35
+470,,I'm,I'm,471,53,7,Verse 3,5,36
+471,tyin,tyin,trying,472,53,7,Verse 3,5,37
+472,to,to,to,473,53,7,Verse 3,5,38
+473,pretend,pretend,pretend,474,53,7,Verse 3,5,39
+474,I,I,I,475,53,7,Verse 3,5,40
+475,know,know,know,476,53,7,Verse 3,5,41
+476,On,On,on,477,54,7,Verse 3,6,42
+477,my,my,my,478,54,7,Verse 3,6,43
+478,PC,PC,pc,479,54,7,Verse 3,6,44
+479,where,where,where,480,54,7,Verse 3,6,45
+480,that,that,that,481,54,7,Verse 3,6,46
+481,CD,CD,cd,482,54,7,Verse 3,6,47
+482,go,go,go,483,54,7,Verse 3,6,48
+483,But,But,but,484,55,7,Verse 3,7,49
+484,"yo,",yo,yo,485,55,7,Verse 3,7,50
+485,ain't,ain't,ain't,486,55,7,Verse 3,7,51
+486,nothin,nothin,nothing,487,55,7,Verse 3,7,52
+487,"promised,",promised,promised,488,55,7,Verse 3,7,53
+488,one,one,one,489,55,7,Verse 3,7,54
+489,day,day,day,490,55,7,Verse 3,7,55
+490,I'll,I'll,i'll,491,55,7,Verse 3,7,56
+491,be,be,be,492,55,7,Verse 3,7,57
+492,gone,gone,gone,493,55,7,Verse 3,7,58
+493,Feel,Feel,feel,494,56,7,Verse 3,8,59
+494,the,the,the,495,56,7,Verse 3,8,60
+495,"strife,",strife,strife,496,56,7,Verse 3,8,61
+496,but,but,but,497,56,7,Verse 3,8,62
+497,trust,trust,trust,498,56,7,Verse 3,8,63
+498,life,life,life,499,56,7,Verse 3,8,64
+499,does,does,does,500,56,7,Verse 3,8,65
+500,go,go,go,501,56,7,Verse 3,8,66
+501,on,on,on,502,56,7,Verse 3,8,67
+502,But,But,but,503,57,7,Verse 3,9,68
+503,just,just,just,504,57,7,Verse 3,9,69
+504,in,in,in,505,57,7,Verse 3,9,70
+505,"case,",case,case,506,57,7,Verse 3,9,71
+506,it's,it's,it's,507,57,7,Verse 3,9,72
+507,my,my,my,508,57,7,Verse 3,9,73
+508,place,place,place,509,57,7,Verse 3,9,74
+509,to,to,to,510,57,7,Verse 3,9,75
+510,impart,impart,impart,511,57,7,Verse 3,9,76
+511,One,One,one,512,58,7,Verse 3,10,77
+512,day,day,day,513,58,7,Verse 3,10,78
+513,some,some,some,514,58,7,Verse 3,10,79
+514,girl's,girl's,girl's,515,58,7,Verse 3,10,80
+515,gonna,gonna,gonna,516,58,7,Verse 3,10,81
+516,break,break,break,517,58,7,Verse 3,10,82
+517,your,your,your,518,58,7,Verse 3,10,83
+518,heart,heart,heart,519,58,7,Verse 3,10,84
+519,And,And,and,520,59,7,Verse 3,11,85
+520,ooh,ooh,ooh,521,59,7,Verse 3,11,86
+521,ain't,ain't,ain't,522,59,7,Verse 3,11,87
+522,no,no,no,523,59,7,Verse 3,11,88
+523,pain,pain,pain,524,59,7,Verse 3,11,89
+524,like,like,like,525,59,7,Verse 3,11,90
+525,from,from,from,526,59,7,Verse 3,11,91
+526,the,the,the,527,59,7,Verse 3,11,92
+527,opposite,opposite,opposite,528,59,7,Verse 3,11,93
+528,sex,sex,sex,529,59,7,Verse 3,11,94
+529,Gonna,Gonna,gonna,530,60,7,Verse 3,12,95
+530,hurt,hurt,hurt,531,60,7,Verse 3,12,96
+531,"bad,",bad,bad,532,60,7,Verse 3,12,97
+532,but,but,but,533,60,7,Verse 3,12,98
+533,don't,don't,don't,534,60,7,Verse 3,12,99
+534,take,take,take,535,60,7,Verse 3,12,100
+535,it,it,it,536,60,7,Verse 3,12,101
+536,out,out,out,537,60,7,Verse 3,12,102
+537,on,on,on,538,60,7,Verse 3,12,103
+538,the,the,the,539,60,7,Verse 3,12,104
+539,"next,",next,next,540,60,7,Verse 3,12,105
+540,son,son,son,541,60,7,Verse 3,12,106
+541,Throughout,Throughout,throughout,542,61,7,Verse 3,13,107
+542,life,life,life,543,61,7,Verse 3,13,108
+543,people,people,people,544,61,7,Verse 3,13,109
+544,will,will,will,545,61,7,Verse 3,13,110
+545,make,make,make,546,61,7,Verse 3,13,111
+546,you,you,you,547,61,7,Verse 3,13,112
+547,mad,mad,mad,548,61,7,Verse 3,13,113
+548,Disrespect,Disrespect,disrespect,549,62,7,Verse 3,14,114
+549,you,you,you,550,62,7,Verse 3,14,115
+550,and,and,and,551,62,7,Verse 3,14,116
+551,treat,treat,treat,552,62,7,Verse 3,14,117
+552,you,you,you,553,62,7,Verse 3,14,118
+553,bad,bad,bad,554,62,7,Verse 3,14,119
+554,Let,Let,let,555,63,7,Verse 3,15,120
+555,God,God,god,556,63,7,Verse 3,15,121
+556,deal,deal,deal,557,63,7,Verse 3,15,122
+557,with,with,with,558,63,7,Verse 3,15,123
+558,the,the,the,559,63,7,Verse 3,15,124
+559,things,things,things,560,63,7,Verse 3,15,125
+560,they,they,they,561,63,7,Verse 3,15,126
+561,do,do,do,562,63,7,Verse 3,15,127
+562,Cause,Cause,because,563,64,7,Verse 3,16,128
+563,hate,hate,hate,564,64,7,Verse 3,16,129
+564,in,in,in,565,64,7,Verse 3,16,130
+565,your,your,your,566,64,7,Verse 3,16,131
+566,heart,heart,heart,567,64,7,Verse 3,16,132
+567,will,will,will,568,64,7,Verse 3,16,133
+568,consume,consume,consume,569,64,7,Verse 3,16,134
+569,you,you,you,570,64,7,Verse 3,16,135
+570,too,too,too,571,64,7,Verse 3,16,136
+571,Always,Always,always,572,65,7,Verse 3,17,137
+572,tell,tell,tell,573,65,7,Verse 3,17,138
+573,the,the,the,574,65,7,Verse 3,17,139
+574,"truth,",truth,truth,575,65,7,Verse 3,17,140
+575,say,say,say,576,65,7,Verse 3,17,141
+576,your,your,your,577,65,7,Verse 3,17,142
+577,prayers,prayers,prayers,578,65,7,Verse 3,17,143
+578,Hold,Hold,hold,579,66,7,Verse 3,18,144
+579,"doors,",doors,doors,580,66,7,Verse 3,18,145
+580,pull,pull,pull,581,66,7,Verse 3,18,146
+581,out,out,out,582,66,7,Verse 3,18,147
+582,"chairs,",chairs,chairs,583,66,7,Verse 3,18,148
+583,easy,easy,easy,584,66,7,Verse 3,18,149
+584,on,on,on,585,66,7,Verse 3,18,150
+585,the,the,the,586,66,7,Verse 3,18,151
+586,swears,swears,swears,587,66,7,Verse 3,18,152
+587,You're,You're,you're,588,67,7,Verse 3,19,153
+588,living,living,living,589,67,7,Verse 3,19,154
+589,proof,proof,proof,590,67,7,Verse 3,19,155
+590,that,that,that,591,67,7,Verse 3,19,156
+591,dreams,dreams,dreams,592,67,7,Verse 3,19,157
+592,do,do,do,593,67,7,Verse 3,19,158
+593,come,come,come,594,67,7,Verse 3,19,159
+594,true,true,true,595,67,7,Verse 3,19,160
+595,I,I,I,596,68,7,Verse 3,20,161
+596,love,love,love,597,68,7,Verse 3,20,162
+597,you,you,you,598,68,7,Verse 3,20,163
+598,and,and,and,599,68,7,Verse 3,20,164
+599,I'm,I'm,I'm,600,68,7,Verse 3,20,165
+600,here,here,here,601,68,7,Verse 3,20,166
+601,for,for,for,602,68,7,Verse 3,20,167
+602,you,you,you,603,68,7,Verse 3,20,168
+603,Just,Just,just,604,69,8,Chorus,1,1
+604,the,the,the,605,69,8,Chorus,1,2
+605,two,two,two,606,69,8,Chorus,1,3
+606,of,of,of,607,69,8,Chorus,1,4
+607,"us,",us,us,608,69,8,Chorus,1,5
+608,we,we,we,609,69,8,Chorus,1,6
+609,can,can,can,610,69,8,Chorus,1,7
+610,make,make,make,611,69,8,Chorus,1,8
+611,it,it,it,612,69,8,Chorus,1,9
+612,if,if,if,613,69,8,Chorus,1,10
+613,we,we,we,614,69,8,Chorus,1,11
+614,try,try,try,615,69,8,Chorus,1,12
+615,Just,Just,just,616,70,8,Chorus,2,13
+616,the,the,the,617,70,8,Chorus,2,14
+617,two,two,two,618,70,8,Chorus,2,15
+618,of,of,of,619,70,8,Chorus,2,16
+619,"us,",us,us,620,70,8,Chorus,2,17
+620,(Just,Just,just,621,70,8,Chorus,2,18
+621,the,the,the,622,70,8,Chorus,2,19
+622,two,two,two,623,70,8,Chorus,2,20
+623,of,of,of,624,70,8,Chorus,2,21
+624,us),us,us,625,70,8,Chorus,2,22
+625,Just,Just,just,626,71,8,Chorus,3,23
+626,the,the,the,627,71,8,Chorus,3,24
+627,two,two,two,628,71,8,Chorus,3,25
+628,of,of,of,629,71,8,Chorus,3,26
+629,"us,",us,us,630,71,8,Chorus,3,27
+630,building,building,building,631,71,8,Chorus,3,28
+631,castles,castles,castles,632,71,8,Chorus,3,29
+632,in,in,in,633,71,8,Chorus,3,30
+633,the,the,the,634,71,8,Chorus,3,31
+634,sky,sky,sky,635,71,8,Chorus,3,32
+635,Just,Just,just,636,72,8,Chorus,4,33
+636,the,the,the,637,72,8,Chorus,4,34
+637,two,two,two,638,72,8,Chorus,4,35
+638,of,of,of,639,72,8,Chorus,4,36
+639,"us,",us,us,640,72,8,Chorus,4,37
+640,you,you,you,641,72,8,Chorus,4,38
+641,and,and,and,642,72,8,Chorus,4,39
+642,I,I,I,643,72,8,Chorus,4,40
+643,(This,This,this,644,73,9,Outro: Trey Smith,1,1
+644,is,is,is,645,73,9,Outro: Trey Smith,1,2
+645,a,a,a,646,73,9,Outro: Trey Smith,1,3
+646,good,good,good,647,73,9,Outro: Trey Smith,1,4
+647,song,song,song,648,73,9,Outro: Trey Smith,1,5
+648,"Dad,",Dad,dad,649,73,9,Outro: Trey Smith,1,6
+649,how,how,how,650,73,9,Outro: Trey Smith,1,7
+650,much,much,much,651,73,9,Outro: Trey Smith,1,8
+651,am,am,am,652,73,9,Outro: Trey Smith,1,9
+652,I,I,I,653,73,9,Outro: Trey Smith,1,10
+653,gettin,gettin,getting,654,73,9,Outro: Trey Smith,1,11
+654,paid,paid,paid,655,73,9,Outro: Trey Smith,1,12
+655,for,for,for,656,73,9,Outro: Trey Smith,1,13
+656,this?),this,this,657,73,9,Outro: Trey Smith,1,14
