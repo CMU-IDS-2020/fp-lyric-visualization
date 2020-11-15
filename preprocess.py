@@ -91,16 +91,15 @@ for line in file:
 				# into two words
 				if (word == "me-I'm"):
 					# Save the first word as a new row to the dataframe
-					# difficulty with saving the original word here so do it where only the first one
-					# gets the word (CAUTION: if print using this dataframe, need to know this)
-					first_word_df = pd.DataFrame([[word, "me", "me", word_in_song, 
+					# (changed original punctuation so that the "original words" can be printed easily from this dataframe)
+					first_word_df = pd.DataFrame([["me-", "me", "me", word_in_song, 
 						line_in_song, stanza_in_song, stanza_description, line_in_stanza, word_in_line]], columns = lyrics_columns)
 					lyrics_df = lyrics_df.append(first_word_df, ignore_index = True)
 					# increment the word indexes
 					word_in_song = word_in_song + 1
 					word_in_line = word_in_line + 1
 					# save the second word as a new row to the dataframe
-					second_word_df = pd.DataFrame([["", "I'm", "I'm", word_in_song, 
+					second_word_df = pd.DataFrame([["I'm", "I'm", "I'm", word_in_song, 
 						line_in_song, stanza_in_song, stanza_description, line_in_stanza, word_in_line]], columns = lyrics_columns)
 					lyrics_df = lyrics_df.append(second_word_df, ignore_index = True)
 				else:
