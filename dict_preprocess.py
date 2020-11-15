@@ -102,6 +102,10 @@ for word in word_indexes.keys():
 dict_df.to_csv(artist_name + " " + song_name + " dictionary.csv")
 
 # IDEA FOR LATER:
+# If we expand this to a general-purpose interactive visualization (can enter many songs)
+# We could use this library for parsing, including removing punctuation and correcting the spelling of words so that they are searchable
+
+# IDEA FOR LATER:
 # Pass lines into textblob (getting the polarity and subjectivity) to see if there are clear differnces between lines
 
 # IDEA FOR LATER:
