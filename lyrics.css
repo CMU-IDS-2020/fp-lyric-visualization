@@ -1,0 +1,47 @@
+body {
+  font-family: "Nunito", "Segoe UI", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #393a42;
+  text-align: left;
+  background-color: #fff;
+}
+
+/******************************
+ ******** LYRICS STYLING ******
+ ******************************/
+
+.lyric {
+    cursor: pointer;
+}
+.same-word-highlight {
+    font-weight: bold;
+}
+.selected-in-scatter-plot {
+    color: #e69750;
+    font-weight: bold;
+}
+.selected-lyric {
+    color: blue;
+    font-weight: bold;
+}
+
+/******************************
+ ******** D3JS STYLING ********
+ ******************************/
+
+#scatter-plot {
+    position: fixed;
+}
+.selected-scatter-point {
+    fill: #e69750 !important;
+    opacity: 1 !important;
+    stroke: black !important;
+    stroke-width: 1px !important;
+}
+.selected-lyric-scatter-plot {
+    fill: blue !important;
+    opacity: 1 !important;
+    stroke: black !important;
+    stroke-width: 1px !important;
+}
