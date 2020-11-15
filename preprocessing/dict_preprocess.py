@@ -118,6 +118,9 @@ for word in word_indexes.keys():
 # Save this dataframe as a .csv file
 dict_df.to_csv(artist_name + " " + song_name + " dictionary.csv")
 
+merged_lyrics_dict_df =
+merged_lyrics_dict_df.to_csv(artist_name + " " + song_name + " merged.csv")
+
 # For each word in the word_indexes list, save the word's thesaurus and dictionary merriam-webster responses to a json file
 # COMMENTED OUT FOR NOW SO THAT IT IS NOT RUN ACCIDENTALLY
 '''
