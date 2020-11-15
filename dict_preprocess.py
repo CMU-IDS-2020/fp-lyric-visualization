@@ -101,8 +101,10 @@ for word in word_indexes.keys():
 	hugface_score = round(hugface_sentiment[0]["score"], 4)
 
 	# Use the Merriam-Webster Dictionary API for each word
+	# CAUTION (for when design app) from website: "All applications using Merriam-Webster APIs must feature the Merriam-Webster logo. 
+	# 				Please refer to our Brand Guidelines for directions on the use of our logo, brand name, and product names."
 
-	# add the new column to the dictionary dataframe
+	# Add the new column to the dictionary dataframe
 	word_df = pd.DataFrame([[word, all_chorus_count.get(word, 0), first_chorus_count.get(word, 0), no_chorus_count.get(word, 0), word_indexes.get(word), 
 								textblob_polarity, textblob_subjectivity, textblob_pos_tags, hugface_label, hugface_score]], columns = dict_columns)
 	dict_df = dict_df.append(word_df, ignore_index = True)
