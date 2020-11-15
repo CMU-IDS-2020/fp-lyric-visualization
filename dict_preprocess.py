@@ -11,6 +11,13 @@ import numpy as np
 import pandas as pd
 from enum import Enum
 from textblob import TextBlob
+from transformers import pipeline
+
+# Used for the HuggingFace Library (see https://huggingface.co/transformers/quicktour.html)
+# This sentiment-analysis classifier "uses the DistilBERT architecture and has been 
+# fine-tuned on a dataset called SST-2 for the sentiment analysis task."
+# model_name = "distilbert-base-uncased-finetuned-sst-2-english"
+hugface_classifier = pipeline('sentiment-analysis')
 
 class Lyrics_Columns(Enum):
  	WORD_ORIGINAL = 1
@@ -68,7 +75,8 @@ for index, row in lyrics_df.iterrows():
 
 # Make a dictionary Panda dataframe from the above dictionaries
 dict_columns = ["word_can_search", "count_with_all_chorus", "count_with_first_chorus", "count_with_no_chorus", "list_of_indexes", 
-					"textblob_polarity", "textblob_subjectivity", "textblob_pos_tags"]
+					"textblob_polarity", "textblob_subjectivity", "textblob_pos_tags",
+					"hugface_label", "hugface_score"]
 dict_df = pd.DataFrame(columns = dict_columns)
 for word in word_indexes.keys():
 	# Use the TextBlob Library for each word
@@ -88,14 +96,15 @@ for word in word_indexes.keys():
 	textblob_pos_tags = textblob.pos_tags
 	
 	# Use the Huggingface Library for each word
-
+	hugface_sentiment = hugface_classifier(word)
+	hugface_label = hugface_sentiment[0]["label"]
+	hugface_score = round(hugface_sentiment[0]["score"], 4)
 
 	# Use the Merriam-Webster Dictionary API for each word
 
-
 	# add the new column to the dictionary dataframe
 	word_df = pd.DataFrame([[word, all_chorus_count.get(word, 0), first_chorus_count.get(word, 0), no_chorus_count.get(word, 0), word_indexes.get(word), 
-								textblob_polarity, textblob_subjectivity, textblob_pos_tags]], columns = dict_columns)
+								textblob_polarity, textblob_subjectivity, textblob_pos_tags, hugface_label, hugface_score]], columns = dict_columns)
 	dict_df = dict_df.append(word_df, ignore_index = True)
 
 # Save this dataframe as a .csv file
@@ -106,7 +115,8 @@ dict_df.to_csv(artist_name + " " + song_name + " dictionary.csv")
 # We could use this library for parsing, including removing punctuation and correcting the spelling of words so that they are searchable
 
 # IDEA FOR LATER:
-# Pass lines into textblob (getting the polarity and subjectivity) to see if there are clear differnces between lines
+# Pass lines into textblob (getting the polarity and subjectivity) to see if there are clear differences between lines
+# Also do with the huggingface library [it's interesting that there are so many super postive and super negative labeled words]
 
 # IDEA FOR LATER:
 # Use TextBlob to get the similarity of every pair of words:
