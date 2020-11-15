@@ -12,12 +12,22 @@ import pandas as pd
 from enum import Enum
 from textblob import TextBlob
 from transformers import pipeline
+import urllib.request as ur
+import json
 
 # Used for the HuggingFace Library (see https://huggingface.co/transformers/quicktour.html)
 # This sentiment-analysis classifier "uses the DistilBERT architecture and has been 
 # fine-tuned on a dataset called SST-2 for the sentiment analysis task."
 # model_name = "distilbert-base-uncased-finetuned-sst-2-english"
 hugface_classifier = pipeline('sentiment-analysis')
+
+# Used for the Merriam-Webster Dictionary API
+# keys are obfuscated here because they are associated with an account
+# CAUTION: insert own keys for dict_key and thes_key
+dict_url = "https://dictionaryapi.com/api/v3/references/collegiate/json/"
+dict_key = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+thes_url = "https://dictionaryapi.com/api/v3/references/thesaurus/json/"
+thes_key = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 class Lyrics_Columns(Enum):
  	WORD_ORIGINAL = 1
@@ -100,10 +110,6 @@ for word in word_indexes.keys():
 	hugface_label = hugface_sentiment[0]["label"]
 	hugface_score = round(hugface_sentiment[0]["score"], 4)
 
-	# Use the Merriam-Webster Dictionary API for each word
-	# CAUTION (for when design app) from website: "All applications using Merriam-Webster APIs must feature the Merriam-Webster logo. 
-	# 				Please refer to our Brand Guidelines for directions on the use of our logo, brand name, and product names."
-
 	# Add the new column to the dictionary dataframe
 	word_df = pd.DataFrame([[word, all_chorus_count.get(word, 0), first_chorus_count.get(word, 0), no_chorus_count.get(word, 0), word_indexes.get(word), 
 								textblob_polarity, textblob_subjectivity, textblob_pos_tags, hugface_label, hugface_score]], columns = dict_columns)
@@ -111,6 +117,42 @@ for word in word_indexes.keys():
 
 # Save this dataframe as a .csv file
 dict_df.to_csv(artist_name + " " + song_name + " dictionary.csv")
+
+# For each word in the word_indexes list, save the word's thesaurus and dictionary merriam-webster responses to a json file
+# COMMENTED OUT FOR NOW SO THAT IT IS NOT RUN ACCIDENTALLY
+'''
+for word in word_indexes.keys():
+	# Use the Merriam-Webster Dictionary API for each word
+	# CAUTION (for when design app) from website: "All applications using Merriam-Webster APIs must feature the Merriam-Webster logo. 
+	# 				Please refer to our Brand Guidelines for directions on the use of our logo, brand name, and product names."
+	# Write the word's data out to a dictionary and thesaurus file for easy access later if desired
+	dict_file = open(word + "_m_w_dict.json", "w")
+	json_dict_url = ur.urlopen(dict_url + word + "?key=" + dict_key)
+	dict_data = json.loads(json_dict_url.read())
+	dict_file.write(json.dumps(dict_data))
+	dict_file.close()
+
+	thes_file = open(word + "_m_w_thes.json", "w")
+	json_thes_url = ur.urlopen(thes_url + word + "?key=" + thes_key)
+	thes_data = json.loads(json_thes_url.read())
+	thes_file.write(json.dumps(thes_data))
+	thes_file.close()
+
+	# TODO: need to look at the fields offered by dictionary and thesaurus and make another program to parse the ones we want from the json files
+	# Offhand (from browsing https://dictionaryapi.com/products/json) I think the most interesting ones are:
+	# STEM METADATA: "lists all of the entry's headwords, variants, inflections, undefined entry words, and defined run-on phrases. 
+	#					Each stem string is a valid search term that should match this entry."
+	# SUBJECT/STATUS LABELS: SLS "A subject/status label describes the subject area (eg, "computing") or regional/usage status (eg, "British", "formal", "slang")"
+	# ETYMOLOGY: ET "An etymology is an explanation of the historical origin of a word."
+	# FIRST KNOWN USE: DATE "The date of the earliest recorded use of a headword in English is captured in date."
+	# SYNONYMS SECTION: SYNS "Extensive discussions of synonyms for the headword"
+	# SYNONYM AND NEAR SYNONYM LISTS: SIM_LIST "A thesaurus entry may contain a list of synonyms and near synonyms for the headword. 
+	#											A list of all similar words (synonyms and near synonyms) is contained in a sim_list."
+	# ANTONYM LISTS: ANT_LIST "A thesaurus entry may contain a list of antonyms of the headword."
+	# NEAR ANTONYM LISTS: NEAR_LIST "A thesaurus entry may contain a list of near antonyms of the headword."
+	# ANTONYM AND NEAR ANTONYM LISTS: OPP_LIST "A thesaurus entry may contain a list of antonyms and near antonyms of the headword. 
+	# 											A list of all opposite words (antonyms and near antonyms) is contained in an opp_list."
+'''
 
 # IDEA FOR LATER:
 # If we expand this to a general-purpose interactive visualization (can enter many songs)
