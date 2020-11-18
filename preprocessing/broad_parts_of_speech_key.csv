@@ -1,0 +1,11 @@
+,abbreviation,part_of_speech,specific_pos,definition
+0,N,Noun,"['NN', 'NNS', 'NNP', 'NNPS']","a person, place, or thing"
+1,PRON,Pronoun,"['PRP', 'PRP$']",stands in for a noun in a sentence
+2,V,Verb,"['MD', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']",words that show action or a state of being
+3,ADJ,Adjective,"['JJ', 'JJR', 'JJS']",describe nouns and pronouns
+4,ADV,Adverb,"['RB', 'RBR', 'RBS']","describe verbs, adjectives, or other adjectives"
+5,DET,Determiner,"['CD', 'DT', 'PDT']","function like adjectives by modifying nouns, but are different than adjectives because they are needed for a sentence to have proper syntax"
+6,PREP,Preposition,['IN'],"show spacial, temporal, and role relations between a noun or pronoun and the other words in a sentence"
+7,CONJ,Conjunction,['CC'],"join words, phrases, and clauses in a sentence"
+8,INT,Interjection,['UH'],an exclamation
+9,OTH,Other,"['EX', 'FW', 'LS', 'POS', 'RP', 'TO', 'WDT', 'WP', 'WP$', 'WRB']",not one of the primary nine parts of speech
