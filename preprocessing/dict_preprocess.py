@@ -83,9 +83,20 @@ for index, row in lyrics_df.iterrows():
 	# add this word's index to the word_indexes dictionary
 	word_indexes.setdefault(word, []).append(word_index_in_song)
 
+# Open the broad_part_of_speech panda dataframe
+part_of_speech_df = pd.read_csv("broad_parts_of_speech_key.csv")
+# Make a dictionary where the key is the specific part of speech and the value is the broad part of speech
+part_of_speech_dict = {}
+for index, row in part_of_speech_df.iterrows():
+	# example: broad_pos = ["N"], specific_pos = ["NN", "NNS", "NNP", "NNPS"]
+	broad_pos = row["abbreviation"]
+	specific_pos = row["specific_pos"].strip('][').split(', ')
+	for element in specific_pos:
+		part_of_speech_dict[element[1:-1]] = broad_pos
+
 # Make a dictionary Panda dataframe from the above dictionaries
 dict_columns = ["word_can_search", "count_with_all_chorus", "count_with_first_chorus", "count_with_no_chorus", "list_of_indexes", 
-					"textblob_pos_tags", "hugface_label", "hugface_score"]
+					"textblob_pos_tags", "broad_pos_tag", "hugface_label", "hugface_score"]
 dict_df = pd.DataFrame(columns = dict_columns)
 for word in word_indexes.keys():
 	# Use the TextBlob Library for each word
@@ -104,6 +115,16 @@ for word in word_indexes.keys():
 	# textblob_polarity = textblob.polarity
 	# textblob_subjectivity = textblob.subjectivity
 	textblob_pos_tags = textblob.pos_tags
+
+	broad_pos_tag = ""
+	if (len(textblob_pos_tags) == 0):
+		print("error: no classification for word = ", word)
+		broad_pos_tag = "ERR"
+	elif(len(textblob_pos_tags) == 1):
+		broad_pos_tag = part_of_speech_dict[textblob_pos_tags[0][1]]
+	else:
+		print("error: more than two classifications for word = ", word, ", pos = ", textblob_pos_tags)
+		broad_pos_tag = "MULT"
 	
 	# Use the Huggingface Library for each word
 	hugface_sentiment = hugface_classifier(word)
@@ -112,7 +133,7 @@ for word in word_indexes.keys():
 
 	# Add the new column to the dictionary dataframe
 	word_df = pd.DataFrame([[word, all_chorus_count.get(word, 0), first_chorus_count.get(word, 0), no_chorus_count.get(word, 0), word_indexes.get(word), 
-								textblob_pos_tags, hugface_label, hugface_score]], columns = dict_columns)
+								textblob_pos_tags, broad_pos_tag, hugface_label, hugface_score]], columns = dict_columns)
 	dict_df = dict_df.append(word_df, ignore_index = True)
 
 # Save this dataframe as a .csv file

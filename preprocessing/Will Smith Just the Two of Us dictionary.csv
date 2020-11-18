@@ -1,269 +1,269 @@
-,word_can_search,count_with_all_chorus,count_with_first_chorus,count_with_no_chorus,list_of_indexes,textblob_pos_tags,hugface_label,hugface_score
-0,now,1,1,1,[1],"[('now', 'RB')]",POSITIVE,0.9831
-1,dad,4,4,4,"[2, 298, 444, 649]","[('dad', 'NN')]",POSITIVE,0.9941
-2,this,3,3,3,"[3, 644, 657]","[('this', 'DT')]",POSITIVE,0.9931
-3,is,2,2,2,"[4, 645]","[('is', 'VBZ')]",POSITIVE,0.9275
-4,a,12,12,12,"[5, 82, 160, 229, 259, 261, 264, 296, 332, 437, 442, 646]","[('a', 'DT')]",POSITIVE,0.9873
-5,very,1,1,1,[6],"[('very', 'RB')]",POSITIVE,0.9929
-6,sensitive,1,1,1,[7],"[('sensitive', 'JJ')]",POSITIVE,0.9997
-7,subject,1,1,1,[8],"[('subject', 'NN')]",POSITIVE,0.9933
-8,just,24,5,4,"[9, 14, 19, 24, 29, 84, 176, 188, 193, 198, 208, 232, 396, 408, 413, 418, 428, 457, 504, 604, 616, 621, 626, 636]","[('just', 'RB')]",POSITIVE,0.8226
-9,the,38,15,15,"[10, 15, 20, 25, 30, 35, 38, 76, 87, 154, 177, 189, 194, 199, 206, 209, 272, 310, 381, 397, 409, 414, 419, 426, 429, 461, 495, 527, 539, 559, 574, 586, 605, 617, 622, 627, 634, 637]","[('the', 'DT')]",POSITIVE,0.9636
-10,two,20,0,0,"[11, 16, 21, 26, 31, 178, 190, 195, 200, 210, 398, 410, 415, 420, 430, 606, 618, 623, 628, 638]","[('two', 'CD')]",POSITIVE,0.9899
-11,of,21,1,1,"[12, 17, 22, 27, 32, 179, 191, 196, 201, 211, 312, 399, 411, 416, 421, 431, 607, 619, 624, 629, 639]","[('of', 'IN')]",POSITIVE,0.9193
-12,us,20,0,0,"[13, 18, 23, 28, 33, 180, 192, 197, 202, 212, 400, 412, 417, 422, 432, 608, 620, 625, 630, 640]","[('us', 'PRP')]",POSITIVE,0.999
-13,from,3,3,3,"[34, 75, 526]","[('from', 'IN')]",POSITIVE,0.7563
-14,first,2,2,2,"[36, 79]","[('first', 'RB')]",POSITIVE,0.9978
-15,time,2,2,2,"[37, 273]","[('time', 'NN')]",POSITIVE,0.9581
-16,doctor,2,2,2,"[39, 262]","[('doctor', 'NN')]",POSITIVE,0.9869
-17,placed,2,2,2,"[40, 104]","[('placed', 'VBN')]",POSITIVE,0.9978
-18,you,30,27,27,"[41, 53, 101, 105, 142, 175, 213, 225, 245, 256, 270, 281, 289, 300, 319, 328, 342, 346, 351, 374, 385, 433, 445, 547, 550, 553, 570, 598, 603, 641]","[('you', 'PRP')]",POSITIVE,0.9991
-19,in,11,8,8,"[42, 59, 90, 106, 205, 357, 377, 425, 505, 565, 633]","[('in', 'IN')]",POSITIVE,0.979
-20,my,9,9,9,"[43, 60, 122, 134, 149, 172, 313, 478, 508]","[('my', 'PRP$')]",POSITIVE,0.9935
-21,arms,1,1,1,[44],"[('arms', 'NNS')]",POSITIVE,0.9996
-22,I,30,27,27,"[45, 63, 111, 116, 119, 127, 138, 140, 152, 170, 215, 222, 226, 253, 267, 275, 292, 308, 316, 320, 325, 338, 392, 435, 452, 454, 475, 596, 643, 653]","[('I', 'PRP')]",POSITIVE,0.9797
-23,knew,1,1,1,[46],"[('knew', 'NNS')]",POSITIVE,0.996
-24,I'd,2,2,2,"[47, 51]","[('I', 'PRP'), (""'d"", 'MD')]",POSITIVE,0.9956
-25,meet,2,2,2,"[48, 54]","[('meet', 'NN')]",POSITIVE,0.9994
-26,death,1,1,1,[49],"[('death', 'NN')]",NEGATIVE,0.9997
-27,before,1,1,1,[50],"[('before', 'IN')]",POSITIVE,0.8023
-28,let,3,3,3,"[52, 157, 555]","[('let', 'VB')]",NEGATIVE,0.7554
-29,harm,1,1,1,[55],"[('harm', 'NN')]",NEGATIVE,0.9997
-30,although,1,1,1,[56],"[('although', 'IN')]",NEGATIVE,0.8668
-31,questions,1,1,1,[57],"[('questions', 'NNS')]",NEGATIVE,0.859
-32,arose,1,1,1,[58],"[('arose', 'NN')]",POSITIVE,0.9921
-33,mind,2,2,2,"[61, 340]","[('mind', 'NN')]",POSITIVE,0.9984
-34,would,1,1,1,[62],"[('would', 'MD')]",POSITIVE,0.8556
-35,be,10,10,10,"[64, 72, 159, 239, 258, 295, 301, 331, 441, 492]","[('be', 'VB')]",POSITIVE,0.962
-36,man,3,3,3,"[65, 228, 333]","[('man', 'NN')]",POSITIVE,0.8134
-37,enough,1,1,1,[66],"[('enough', 'RB')]",POSITIVE,0.7941
-38,against,1,1,1,[67],"[('against', 'IN')]",NEGATIVE,0.95
-39,wrong,1,1,1,[68],"[('wrong', 'JJ')]",NEGATIVE,0.9997
-40,choose,1,1,1,[69],"[('choose', 'NN')]",POSITIVE,0.9872
-41,right,2,2,2,"[70, 91]","[('right', 'NN')]",POSITIVE,0.9998
-42,and,14,11,11,"[71, 151, 214, 236, 250, 337, 350, 365, 384, 434, 520, 551, 599, 642]","[('and', 'CC')]",POSITIVE,0.9708
-43,standing,1,1,1,[73],"[('standing', 'VBG')]",POSITIVE,0.9997
-44,up,1,1,1,[74],"[('up', 'RB')]",POSITIVE,0.9992
-45,hospital,1,1,1,[77],"[('hospital', 'NN')]",NEGATIVE,0.9807
-46,that,7,7,7,"[78, 109, 278, 286, 291, 481, 591]","[('that', 'IN')]",POSITIVE,0.9895
-47,night,2,2,2,"[80, 110]","[('night', 'NN')]",POSITIVE,0.9803
-48,took,1,1,1,[81],"[('took', 'VBD')]",POSITIVE,0.9954
-49,hour,1,1,1,[83],"[('hour', 'NN')]",POSITIVE,0.93
-50,to,12,12,12,"[85, 124, 148, 174, 294, 318, 330, 372, 440, 458, 473, 510]","[('to', 'TO')]",POSITIVE,0.9653
-51,get,1,1,1,[86],"[('get', 'VB')]",POSITIVE,0.9973
-52,car,1,1,1,[88],"[('car', 'NN')]",POSITIVE,0.996
-53,seat,1,1,1,[89],"[('seat', 'NN')]",POSITIVE,0.9957
-54,people,2,2,2,"[92, 544]","[('people', 'NNS')]",POSITIVE,0.9852
-55,driving,1,1,1,[93],"[('driving', 'VBG')]",POSITIVE,0.9972
-56,all,4,4,4,"[94, 163, 251, 271]","[('all', 'DT')]",POSITIVE,0.9903
-57,fast,1,1,1,[95],"[('fast', 'NN')]",POSITIVE,0.9989
-58,got,5,5,5,"[96, 100, 246, 393, 446]","[('got', 'VBD')]",POSITIVE,0.9995
-59,me,8,8,8,"[97, 158, 231, 234, 242, 303, 364, 470]","[('me', 'PRP')]",POSITIVE,0.9947
-60,kinda,1,1,1,[98],"[('kinda', 'NN')]",POSITIVE,0.9517
-61,upset,1,1,1,[99],"[('upset', 'NN')]",NEGATIVE,0.9983
-62,home,1,1,1,[102],"[('home', 'NN')]",POSITIVE,0.9998
-63,safe,1,1,1,[103],"[('safe', 'JJ')]",POSITIVE,0.9998
-64,your,10,10,10,"[107, 125, 130, 247, 366, 394, 467, 518, 566, 577]","[('your', 'PRP$')]",POSITIVE,0.9981
-65,bassinet,1,1,1,[108],"[('bassinet', 'NN')]",NEGATIVE,0.6367
-66,don't,3,3,3,"[112, 339, 534]","[('do', 'VBP'), (""n't"", 'RB')]",NEGATIVE,0.9883
-67,think,2,2,2,"[113, 227]","[('think', 'NN')]",POSITIVE,0.9803
-68,one,4,4,4,"[114, 390, 489, 512]","[('one', 'CD')]",POSITIVE,0.9883
-69,wink,1,1,1,[115],"[('wink', 'NN')]",POSITIVE,0.9978
-70,slept,1,1,1,[117],"[('slept', 'NN')]",NEGATIVE,0.9987
-71,as,2,2,2,"[118, 345]","[('as', 'IN')]",POSITIVE,0.8932
-72,slipped,1,1,1,[120],"[('slipped', 'VBD')]",NEGATIVE,0.9995
-73,out,4,4,4,"[121, 362, 537, 582]","[('out', 'IN')]",NEGATIVE,0.9803
-74,bed,1,1,1,[123],"[('bed', 'NN')]",NEGATIVE,0.6777
-75,crib,1,1,1,[126],"[('crib', 'NN')]",NEGATIVE,0.9501
-76,crept,1,1,1,[128],"[('crept', 'NN')]",NEGATIVE,0.9984
-77,touched,1,1,1,[129],"[('touched', 'VBN')]",POSITIVE,0.9997
-78,head,1,1,1,[131],"[('head', 'NN')]",POSITIVE,0.9758
-79,gently,1,1,1,[132],"[('gently', 'RB')]",POSITIVE,0.9996
-80,felt,1,1,1,[133],"[('felt', 'NN')]",POSITIVE,0.9833
-81,heart,3,3,3,"[135, 519, 567]","[('heart', 'NN')]",POSITIVE,0.9998
-82,melt,1,1,1,[136],"[('melt', 'NN')]",POSITIVE,0.9854
-83,because,3,3,3,"[137, 244, 563]","[('because', 'IN')]",NEGATIVE,0.8893
-84,know,2,2,2,"[139, 476]","[('know', 'VB')]",POSITIVE,0.9948
-85,loved,1,1,1,[141],"[('loved', 'VBN')]",POSITIVE,0.9999
-86,more,2,2,2,"[143, 449]","[('more', 'RBR')]",POSITIVE,0.9969
-87,than,2,2,2,"[144, 451]","[('than', 'IN')]",POSITIVE,0.9804
-88,life,4,4,4,"[145, 173, 499, 543]","[('life', 'NN')]",POSITIVE,0.9965
-89,itself,1,1,1,[146],"[('itself', 'PRP')]",POSITIVE,0.9738
-90,then,1,1,1,[147],"[('then', 'RB')]",POSITIVE,0.9452
-91,knees,1,1,1,[150],"[('knees', 'NNS')]",NEGATIVE,0.9991
-92,begged,1,1,1,[153],"[('begged', 'VBN')]",NEGATIVE,0.9941
-93,lord,1,1,1,[155],"[('lord', 'NN')]",POSITIVE,0.9943
-94,please,1,1,1,[156],"[('please', 'NN')]",POSITIVE,0.9995
-95,good,3,3,3,"[161, 443, 647]","[('good', 'JJ')]",POSITIVE,0.9998
-96,daddy,1,1,1,[162],"[('daddy', 'NN')]",POSITIVE,0.9927
-97,he,1,1,1,[164],"[('he', 'PRP')]",POSITIVE,0.9707
-98,needs,1,1,1,[165],"[('needs', 'NNS')]",NEGATIVE,0.8997
-99,love,3,3,3,"[166, 378, 597]","[('love', 'NN')]",POSITIVE,0.9999
-100,knowledge,1,1,1,[167],"[('knowledge', 'NN')]",POSITIVE,0.9996
-101,discipline,1,1,1,[168],"[('discipline', 'NN')]",POSITIVE,0.9988
-102,too,2,2,2,"[169, 571]","[('too', 'RB')]",NEGATIVE,0.9357
-103,pledge,2,2,2,"[171, 317]","[('pledge', 'NN')]",POSITIVE,0.9867
-104,we,6,0,0,"[181, 186, 401, 406, 609, 614]","[('we', 'PRP')]",POSITIVE,0.9982
-105,can,5,2,2,"[182, 326, 352, 402, 610]","[('can', 'MD')]",POSITIVE,0.9985
-106,make,4,1,1,"[183, 403, 546, 611]","[('make', 'VB')]",POSITIVE,0.9996
-107,it,7,4,4,"[184, 349, 358, 359, 404, 536, 612]","[('it', 'PRP')]",POSITIVE,0.9927
-108,if,5,2,2,"[185, 341, 380, 405, 613]","[('if', 'IN')]",POSITIVE,0.739
-109,try,4,1,1,"[187, 293, 407, 615]","[('try', 'NN')]",NEGATIVE,0.7526
-110,building,3,0,0,"[203, 423, 631]","[('building', 'NN')]",POSITIVE,0.9978
-111,castles,3,0,0,"[204, 424, 632]","[('castles', 'NNS')]",POSITIVE,0.9973
-112,sky,3,0,0,"[207, 427, 635]","[('sky', 'NN')]",POSITIVE,0.9979
-113,five,1,1,1,[216],"[('five', 'CD')]",POSITIVE,0.9966
-114,years,1,1,1,[217],"[('years', 'NNS')]",POSITIVE,0.9684
-115,old,1,1,1,[218],"[('old', 'JJ')]",NEGATIVE,0.9993
-116,bringin,1,1,1,[219],"[('bringin', 'NN')]",POSITIVE,0.9985
-117,comedy,1,1,1,[220],"[('comedy', 'NN')]",POSITIVE,0.9996
-118,everytime,1,1,1,[221],"[('everytime', 'NN')]",POSITIVE,0.9953
-119,look,1,1,1,[223],"[('look', 'NN')]",POSITIVE,0.9982
-120,at,1,1,1,[224],"[('at', 'IN')]",POSITIVE,0.9062
-121,little,1,1,1,[230],"[('little', 'JJ')]",NEGATIVE,0.9685
-122,like,2,2,2,"[233, 525]","[('like', 'IN')]",POSITIVE,0.9911
-123,wait,1,1,1,[235],"[('wait', 'NN')]",NEGATIVE,0.9988
-124,see,3,3,3,"[237, 309, 469]","[('see', 'VB')]",POSITIVE,0.9984
-125,gonna,4,4,4,"[238, 257, 516, 530]","[('gon', 'NN'), ('na', 'TO')]",POSITIVE,0.9932
-126,tall,1,1,1,[240],"[('tall', 'NN')]",POSITIVE,0.9997
-127,makes,1,1,1,[241],"[('makes', 'VBZ')]",POSITIVE,0.9994
-128,laugh,2,2,2,"[243, 304]","[('laugh', 'NN')]",POSITIVE,0.9998
-129,dads,1,1,1,[248],"[('dads', 'NNS')]",POSITIVE,0.9664
-130,ears,1,1,1,[249],"[('ears', 'NNS')]",POSITIVE,0.9941
-131,sometimes,1,1,1,[252],"[('sometimes', 'RB')]",POSITIVE,0.9073
-132,wonder,1,1,1,[254],"[('wonder', 'NN')]",POSITIVE,0.9998
-133,what,1,1,1,[255],"[('what', 'WP')]",POSITIVE,0.9943
-134,general,1,1,1,[260],"[('general', 'JJ')]",POSITIVE,0.9963
-135,maybe,1,1,1,[263],"[('maybe', 'RB')]",NEGATIVE,0.8917
-136,mc,1,1,1,[265],"[('mc', 'NN')]",POSITIVE,0.9838
-137,haha,1,1,1,[266],"[('haha', 'NN')]",POSITIVE,0.7155
-138,wanna,1,1,1,[268],"[('wan', 'NN'), ('na', 'NN')]",POSITIVE,0.9731
-139,kiss,1,1,1,[269],"[('kiss', 'NN')]",POSITIVE,0.9996
-140,but,7,7,7,"[274, 299, 368, 484, 497, 503, 533]","[('but', 'CC')]",NEGATIVE,0.9101
-141,will,4,4,4,"[276, 321, 545, 568]","[('will', 'MD')]",POSITIVE,0.9997
-142,test,1,1,1,[277],"[('test', 'NN')]",NEGATIVE,0.9606
-143,butt,1,1,1,[279],"[('butt', 'NN')]",NEGATIVE,0.999
-144,when,2,2,2,"[280, 307]","[('when', 'WRB')]",POSITIVE,0.9288
-145,cut,1,1,1,[282],"[('cut', 'NN')]",NEGATIVE,0.9738
-146,outta,1,1,1,[283],"[('outta', 'NN')]",NEGATIVE,0.9395
-147,line,1,1,1,[284],"[('line', 'NN')]",POSITIVE,0.956
-148,true,2,2,2,"[285, 595]","[('true', 'JJ')]",POSITIVE,0.9999
-149,uh-uh-uh,1,1,1,[287],"[('uh-uh-uh', 'JJ')]",NEGATIVE,0.9866
-150,why,1,1,1,[288],"[('why', 'WRB')]",NEGATIVE,0.9814
-151,do,4,4,4,"[290, 323, 562, 593]","[('do', 'VB')]",POSITIVE,0.9963
-152,tough,1,1,1,[297],"[('tough', 'JJ')]",NEGATIVE,0.9972
-153,making,1,1,1,[302],"[('making', 'VBG')]",POSITIVE,0.9991
-154,crazy,1,1,1,[305],"[('crazy', 'NN')]",NEGATIVE,0.965
-155,joy,1,1,1,[306],"[('joy', 'NN')]",POSITIVE,0.9999
-156,eyes,1,1,1,[311],"[('eyes', 'NNS')]",POSITIVE,0.999
-157,baby,1,1,1,[314],"[('baby', 'NN')]",POSITIVE,0.9969
-158,boy,1,1,1,[315],"[('boy', 'NN')]",POSITIVE,0.9915
-159,always,2,2,2,"[322, 572]","[('always', 'RB')]",POSITIVE,0.9983
-160,everything,1,1,1,[324],"[('everything', 'NN')]",POSITIVE,0.9989
-161,show,1,1,1,[327],"[('show', 'NN')]",POSITIVE,0.9941
-162,how,2,2,2,"[329, 650]","[('how', 'WRB')]",POSITIVE,0.9858
-163,dignity,1,1,1,[334],"[('dignity', 'NN')]",POSITIVE,0.9996
-164,integrity,1,1,1,[335],"[('integrity', 'NN')]",POSITIVE,0.9998
-165,honor,1,1,1,[336],"[('honor', 'NN')]",POSITIVE,0.9998
-166,lose,1,1,1,[343],"[('lose', 'VB')]",NEGATIVE,0.9996
-167,long,1,1,1,[344],"[('long', 'RB')]",NEGATIVE,0.9941
-168,came,1,1,1,[347],"[('came', 'VBD')]",POSITIVE,0.9961
-169,with,4,4,4,"[348, 363, 460, 558]","[('with', 'IN')]",POSITIVE,0.9826
-170,cry,1,1,1,[353],"[('cry', 'NN')]",NEGATIVE,0.999
-171,ain't,3,3,3,"[354, 486, 522]","[('ai', 'VBP'), (""n't"", 'RB')]",NEGATIVE,0.977
-172,no,2,2,2,"[355, 523]","[('no', 'DT')]",NEGATIVE,0.9964
-173,shame,1,1,1,[356],"[('shame', 'NN')]",NEGATIVE,0.9997
-174,didn't,1,1,1,[360],"[('did', 'VBD'), (""n't"", 'RB')]",NEGATIVE,0.9721
-175,work,1,1,1,[361],"[('work', 'NN')]",POSITIVE,0.9994
-176,mom,1,1,1,[367],"[('mom', 'NN')]",POSITIVE,0.9943
-177,yo,2,2,2,"[369, 485]","[('yo', 'NN')]",POSITIVE,0.9966
-178,push,1,1,1,[370],"[('push', 'NN')]",NEGATIVE,0.9843
-179,come,2,2,2,"[371, 594]","[('come', 'VB')]",POSITIVE,0.9984
-180,shove,1,1,1,[373],"[('shove', 'NN')]",NEGATIVE,0.9958
-181,was,1,1,1,[375],"[('was', 'VBD')]",POSITIVE,0.7796
-182,conceived,1,1,1,[376],"[('conceived', 'VBN')]",POSITIVE,0.9988
-183,so,2,2,2,"[379, 447]","[('so', 'RB')]",POSITIVE,0.913
-184,world,1,1,1,[382],"[('world', 'NN')]",POSITIVE,0.9981
-185,attacks,1,1,1,[383],"[('attacks', 'NNS')]",NEGATIVE,0.9993
-186,slide,1,1,1,[386],"[('slide', 'NN')]",NEGATIVE,0.5543
-187,off,1,1,1,[387],"[('off', 'IN')]",NEGATIVE,0.9975
-188,track,1,1,1,[388],"[('track', 'NN')]",POSITIVE,0.9972
-189,remember,1,1,1,[389],"[('remember', 'VB')]",POSITIVE,0.9982
-190,fact,1,1,1,[391],"[('fact', 'NN')]",POSITIVE,0.9984
-191,back,1,1,1,[395],"[('back', 'RB')]",POSITIVE,0.9845
-192,it's,2,2,2,"[436, 507]","[('it', 'PRP'), (""'s"", 'VBZ')]",POSITIVE,0.9988
-193,full-time,1,1,1,[438],"[('full-time', 'NN')]",POSITIVE,0.9957
-194,job,1,1,1,[439],"[('job', 'NN')]",POSITIVE,0.9979
-195,much,2,2,2,"[448, 651]","[('much', 'JJ')]",POSITIVE,0.9993
-196,stuff,1,1,1,[450],"[('stuff', 'NN')]",POSITIVE,0.9804
-197,had,1,1,1,[453],"[('had', 'VBD')]",POSITIVE,0.9295
-198,gotta,1,1,1,[455],"[('got', 'VBD'), ('ta', 'NNS')]",POSITIVE,0.9971
-199,study,1,1,1,[456],"[('study', 'NN')]",POSITIVE,0.9934
-200,keep,1,1,1,[459],"[('keep', 'VB')]",POSITIVE,0.9989
-201,changing,1,1,1,[462],"[('changing', 'VBG')]",POSITIVE,0.9993
-202,times,1,1,1,[463],"[('times', 'NNS')]",POSITIVE,0.9002
-203,101,1,1,1,[464],"[('101', 'CD')]",POSITIVE,0.9917
-204,dalmations,1,1,1,[465],"[('dalmations', 'NNS')]",NEGATIVE,0.8724
-205,on,5,5,5,"[466, 477, 502, 538, 585]","[('on', 'IN')]",POSITIVE,0.987
-206,cd-rom,1,1,1,[468],"[('cd-rom', 'NN')]",NEGATIVE,0.9634
-207,I'm,2,2,2,"[471, 600]","[('I', 'PRP'), (""'m"", 'VBP')]",POSITIVE,0.9981
-208,trying,1,1,1,[472],"[('trying', 'VBG')]",POSITIVE,0.9172
-209,pretend,1,1,1,[474],"[('pretend', 'NN')]",NEGATIVE,0.9992
-210,pc,1,1,1,[479],"[('pc', 'NN')]",POSITIVE,0.9676
-211,where,1,1,1,[480],"[('where', 'WRB')]",POSITIVE,0.768
-212,cd,1,1,1,[482],"[('cd', 'NN')]",POSITIVE,0.978
-213,go,2,2,2,"[483, 501]","[('go', 'VB')]",POSITIVE,0.9994
-214,nothing,1,1,1,[487],"[('nothing', 'NN')]",NEGATIVE,0.9992
-215,promised,1,1,1,[488],"[('promised', 'VBN')]",POSITIVE,0.9968
-216,day,2,2,2,"[490, 513]","[('day', 'NN')]",POSITIVE,0.9957
-217,I'll,1,1,1,[491],"[('I', 'PRP'), (""'ll"", 'MD')]",POSITIVE,0.9997
-218,gone,1,1,1,[493],"[('gone', 'VBN')]",NEGATIVE,0.999
-219,feel,1,1,1,[494],"[('feel', 'NN')]",POSITIVE,0.995
-220,strife,1,1,1,[496],"[('strife', 'NN')]",NEGATIVE,0.998
-221,trust,1,1,1,[498],"[('trust', 'NN')]",POSITIVE,0.9997
-222,does,1,1,1,[500],"[('does', 'VBZ')]",POSITIVE,0.9992
-223,case,1,1,1,[506],"[('case', 'NN')]",NEGATIVE,0.565
-224,place,1,1,1,[509],"[('place', 'NN')]",POSITIVE,0.9992
-225,impart,1,1,1,[511],"[('impart', 'NN')]",POSITIVE,0.9997
-226,some,1,1,1,[514],"[('some', 'DT')]",POSITIVE,0.9431
-227,girl's,1,1,1,[515],"[('girl', 'NN'), (""'s"", 'POS')]",POSITIVE,0.9878
-228,break,1,1,1,[517],"[('break', 'NN')]",NEGATIVE,0.9982
-229,ooh,1,1,1,[521],"[('ooh', 'NN')]",POSITIVE,0.9856
-230,pain,1,1,1,[524],"[('pain', 'NN')]",NEGATIVE,0.9988
-231,opposite,1,1,1,[528],"[('opposite', 'NN')]",NEGATIVE,0.9969
-232,sex,1,1,1,[529],"[('sex', 'NN')]",POSITIVE,0.9982
-233,hurt,1,1,1,[531],"[('hurt', 'NN')]",NEGATIVE,0.9997
-234,bad,2,2,2,"[532, 554]","[('bad', 'JJ')]",NEGATIVE,0.9998
-235,take,1,1,1,[535],"[('take', 'VB')]",POSITIVE,0.9961
-236,next,1,1,1,[540],"[('next', 'JJ')]",POSITIVE,0.9865
-237,son,1,1,1,[541],"[('son', 'NN')]",POSITIVE,0.9942
-238,throughout,1,1,1,[542],"[('throughout', 'IN')]",POSITIVE,0.9917
-239,mad,1,1,1,[548],"[('mad', 'NN')]",NEGATIVE,0.9996
-240,disrespect,1,1,1,[549],"[('disrespect', 'NN')]",NEGATIVE,0.9995
-241,treat,1,1,1,[552],"[('treat', 'NN')]",POSITIVE,0.9999
-242,god,1,1,1,[556],"[('god', 'NN')]",POSITIVE,0.9449
-243,deal,1,1,1,[557],"[('deal', 'NN')]",POSITIVE,0.9989
-244,things,1,1,1,[560],"[('things', 'NNS')]",POSITIVE,0.9926
-245,they,1,1,1,[561],"[('they', 'PRP')]",POSITIVE,0.9649
-246,hate,1,1,1,[564],"[('hate', 'NN')]",NEGATIVE,0.9997
-247,consume,1,1,1,[569],"[('consume', 'NN')]",POSITIVE,0.9199
-248,tell,1,1,1,[573],"[('tell', 'NN')]",POSITIVE,0.9845
-249,truth,1,1,1,[575],"[('truth', 'NN')]",POSITIVE,0.9991
-250,say,1,1,1,[576],"[('say', 'VB')]",POSITIVE,0.9529
-251,prayers,1,1,1,[578],"[('prayers', 'NNS')]",POSITIVE,0.933
-252,hold,1,1,1,[579],"[('hold', 'NN')]",POSITIVE,0.9987
-253,doors,1,1,1,[580],"[('doors', 'NNS')]",POSITIVE,0.9932
-254,pull,1,1,1,[581],"[('pull', 'NN')]",POSITIVE,0.9451
-255,chairs,1,1,1,[583],"[('chairs', 'NNS')]",POSITIVE,0.9956
-256,easy,1,1,1,[584],"[('easy', 'JJ')]",POSITIVE,0.9972
-257,swears,1,1,1,[587],"[('swears', 'NNS')]",NEGATIVE,0.9718
-258,you're,1,1,1,[588],"[('you', 'PRP'), (""'re"", 'VBP')]",POSITIVE,0.9998
-259,living,1,1,1,[589],"[('living', 'NN')]",POSITIVE,0.9994
-260,proof,1,1,1,[590],"[('proof', 'NN')]",POSITIVE,0.9975
-261,dreams,1,1,1,[592],"[('dreams', 'NNS')]",POSITIVE,0.998
-262,here,1,1,1,[601],"[('here', 'RB')]",POSITIVE,0.9937
-263,for,2,2,2,"[602, 656]","[('for', 'IN')]",POSITIVE,0.9701
-264,song,1,1,1,[648],"[('song', 'NN')]",POSITIVE,0.9978
-265,am,1,1,1,[652],"[('am', 'VBP')]",POSITIVE,0.9547
-266,getting,1,1,1,[654],"[('getting', 'VBG')]",POSITIVE,0.9967
-267,paid,1,1,1,[655],"[('paid', 'NN')]",POSITIVE,0.9979
+,word_can_search,count_with_all_chorus,count_with_first_chorus,count_with_no_chorus,list_of_indexes,textblob_pos_tags,broad_pos_tag,hugface_label,hugface_score
+0,now,1,1,1,[1],"[('now', 'RB')]",ADV,POSITIVE,0.9831
+1,dad,4,4,4,"[2, 298, 444, 649]","[('dad', 'NN')]",N,POSITIVE,0.9941
+2,this,3,3,3,"[3, 644, 657]","[('this', 'DT')]",DET,POSITIVE,0.9931
+3,is,2,2,2,"[4, 645]","[('is', 'VBZ')]",V,POSITIVE,0.9275
+4,a,12,12,12,"[5, 82, 160, 229, 259, 261, 264, 296, 332, 437, 442, 646]","[('a', 'DT')]",DET,POSITIVE,0.9873
+5,very,1,1,1,[6],"[('very', 'RB')]",ADV,POSITIVE,0.9929
+6,sensitive,1,1,1,[7],"[('sensitive', 'JJ')]",ADJ,POSITIVE,0.9997
+7,subject,1,1,1,[8],"[('subject', 'NN')]",N,POSITIVE,0.9933
+8,just,24,5,4,"[9, 14, 19, 24, 29, 84, 176, 188, 193, 198, 208, 232, 396, 408, 413, 418, 428, 457, 504, 604, 616, 621, 626, 636]","[('just', 'RB')]",ADV,POSITIVE,0.8226
+9,the,38,15,15,"[10, 15, 20, 25, 30, 35, 38, 76, 87, 154, 177, 189, 194, 199, 206, 209, 272, 310, 381, 397, 409, 414, 419, 426, 429, 461, 495, 527, 539, 559, 574, 586, 605, 617, 622, 627, 634, 637]","[('the', 'DT')]",DET,POSITIVE,0.9636
+10,two,20,0,0,"[11, 16, 21, 26, 31, 178, 190, 195, 200, 210, 398, 410, 415, 420, 430, 606, 618, 623, 628, 638]","[('two', 'CD')]",DET,POSITIVE,0.9899
+11,of,21,1,1,"[12, 17, 22, 27, 32, 179, 191, 196, 201, 211, 312, 399, 411, 416, 421, 431, 607, 619, 624, 629, 639]","[('of', 'IN')]",PREP,POSITIVE,0.9193
+12,us,20,0,0,"[13, 18, 23, 28, 33, 180, 192, 197, 202, 212, 400, 412, 417, 422, 432, 608, 620, 625, 630, 640]","[('us', 'PRP')]",PRON,POSITIVE,0.999
+13,from,3,3,3,"[34, 75, 526]","[('from', 'IN')]",PREP,POSITIVE,0.7563
+14,first,2,2,2,"[36, 79]","[('first', 'RB')]",ADV,POSITIVE,0.9978
+15,time,2,2,2,"[37, 273]","[('time', 'NN')]",N,POSITIVE,0.9581
+16,doctor,2,2,2,"[39, 262]","[('doctor', 'NN')]",N,POSITIVE,0.9869
+17,placed,2,2,2,"[40, 104]","[('placed', 'VBN')]",V,POSITIVE,0.9978
+18,you,30,27,27,"[41, 53, 101, 105, 142, 175, 213, 225, 245, 256, 270, 281, 289, 300, 319, 328, 342, 346, 351, 374, 385, 433, 445, 547, 550, 553, 570, 598, 603, 641]","[('you', 'PRP')]",PRON,POSITIVE,0.9991
+19,in,11,8,8,"[42, 59, 90, 106, 205, 357, 377, 425, 505, 565, 633]","[('in', 'IN')]",PREP,POSITIVE,0.979
+20,my,9,9,9,"[43, 60, 122, 134, 149, 172, 313, 478, 508]","[('my', 'PRP$')]",PRON,POSITIVE,0.9935
+21,arms,1,1,1,[44],"[('arms', 'NNS')]",N,POSITIVE,0.9996
+22,I,30,27,27,"[45, 63, 111, 116, 119, 127, 138, 140, 152, 170, 215, 222, 226, 253, 267, 275, 292, 308, 316, 320, 325, 338, 392, 435, 452, 454, 475, 596, 643, 653]","[('I', 'PRP')]",PRON,POSITIVE,0.9797
+23,knew,1,1,1,[46],"[('knew', 'NNS')]",N,POSITIVE,0.996
+24,I'd,2,2,2,"[47, 51]","[('I', 'PRP'), (""'d"", 'MD')]",MULT,POSITIVE,0.9956
+25,meet,2,2,2,"[48, 54]","[('meet', 'NN')]",N,POSITIVE,0.9994
+26,death,1,1,1,[49],"[('death', 'NN')]",N,NEGATIVE,0.9997
+27,before,1,1,1,[50],"[('before', 'IN')]",PREP,POSITIVE,0.8023
+28,let,3,3,3,"[52, 157, 555]","[('let', 'VB')]",V,NEGATIVE,0.7554
+29,harm,1,1,1,[55],"[('harm', 'NN')]",N,NEGATIVE,0.9997
+30,although,1,1,1,[56],"[('although', 'IN')]",PREP,NEGATIVE,0.8668
+31,questions,1,1,1,[57],"[('questions', 'NNS')]",N,NEGATIVE,0.859
+32,arose,1,1,1,[58],"[('arose', 'NN')]",N,POSITIVE,0.9921
+33,mind,2,2,2,"[61, 340]","[('mind', 'NN')]",N,POSITIVE,0.9984
+34,would,1,1,1,[62],"[('would', 'MD')]",V,POSITIVE,0.8556
+35,be,10,10,10,"[64, 72, 159, 239, 258, 295, 301, 331, 441, 492]","[('be', 'VB')]",V,POSITIVE,0.962
+36,man,3,3,3,"[65, 228, 333]","[('man', 'NN')]",N,POSITIVE,0.8134
+37,enough,1,1,1,[66],"[('enough', 'RB')]",ADV,POSITIVE,0.7941
+38,against,1,1,1,[67],"[('against', 'IN')]",PREP,NEGATIVE,0.95
+39,wrong,1,1,1,[68],"[('wrong', 'JJ')]",ADJ,NEGATIVE,0.9997
+40,choose,1,1,1,[69],"[('choose', 'NN')]",N,POSITIVE,0.9872
+41,right,2,2,2,"[70, 91]","[('right', 'NN')]",N,POSITIVE,0.9998
+42,and,14,11,11,"[71, 151, 214, 236, 250, 337, 350, 365, 384, 434, 520, 551, 599, 642]","[('and', 'CC')]",CONJ,POSITIVE,0.9708
+43,standing,1,1,1,[73],"[('standing', 'VBG')]",V,POSITIVE,0.9997
+44,up,1,1,1,[74],"[('up', 'RB')]",ADV,POSITIVE,0.9992
+45,hospital,1,1,1,[77],"[('hospital', 'NN')]",N,NEGATIVE,0.9807
+46,that,7,7,7,"[78, 109, 278, 286, 291, 481, 591]","[('that', 'IN')]",PREP,POSITIVE,0.9895
+47,night,2,2,2,"[80, 110]","[('night', 'NN')]",N,POSITIVE,0.9803
+48,took,1,1,1,[81],"[('took', 'VBD')]",V,POSITIVE,0.9954
+49,hour,1,1,1,[83],"[('hour', 'NN')]",N,POSITIVE,0.93
+50,to,12,12,12,"[85, 124, 148, 174, 294, 318, 330, 372, 440, 458, 473, 510]","[('to', 'TO')]",OTH,POSITIVE,0.9653
+51,get,1,1,1,[86],"[('get', 'VB')]",V,POSITIVE,0.9973
+52,car,1,1,1,[88],"[('car', 'NN')]",N,POSITIVE,0.996
+53,seat,1,1,1,[89],"[('seat', 'NN')]",N,POSITIVE,0.9957
+54,people,2,2,2,"[92, 544]","[('people', 'NNS')]",N,POSITIVE,0.9852
+55,driving,1,1,1,[93],"[('driving', 'VBG')]",V,POSITIVE,0.9972
+56,all,4,4,4,"[94, 163, 251, 271]","[('all', 'DT')]",DET,POSITIVE,0.9903
+57,fast,1,1,1,[95],"[('fast', 'NN')]",N,POSITIVE,0.9989
+58,got,5,5,5,"[96, 100, 246, 393, 446]","[('got', 'VBD')]",V,POSITIVE,0.9995
+59,me,8,8,8,"[97, 158, 231, 234, 242, 303, 364, 470]","[('me', 'PRP')]",PRON,POSITIVE,0.9947
+60,kinda,1,1,1,[98],"[('kinda', 'NN')]",N,POSITIVE,0.9517
+61,upset,1,1,1,[99],"[('upset', 'NN')]",N,NEGATIVE,0.9983
+62,home,1,1,1,[102],"[('home', 'NN')]",N,POSITIVE,0.9998
+63,safe,1,1,1,[103],"[('safe', 'JJ')]",ADJ,POSITIVE,0.9998
+64,your,10,10,10,"[107, 125, 130, 247, 366, 394, 467, 518, 566, 577]","[('your', 'PRP$')]",PRON,POSITIVE,0.9981
+65,bassinet,1,1,1,[108],"[('bassinet', 'NN')]",N,NEGATIVE,0.6367
+66,don't,3,3,3,"[112, 339, 534]","[('do', 'VBP'), (""n't"", 'RB')]",MULT,NEGATIVE,0.9883
+67,think,2,2,2,"[113, 227]","[('think', 'NN')]",N,POSITIVE,0.9803
+68,one,4,4,4,"[114, 390, 489, 512]","[('one', 'CD')]",DET,POSITIVE,0.9883
+69,wink,1,1,1,[115],"[('wink', 'NN')]",N,POSITIVE,0.9978
+70,slept,1,1,1,[117],"[('slept', 'NN')]",N,NEGATIVE,0.9987
+71,as,2,2,2,"[118, 345]","[('as', 'IN')]",PREP,POSITIVE,0.8932
+72,slipped,1,1,1,[120],"[('slipped', 'VBD')]",V,NEGATIVE,0.9995
+73,out,4,4,4,"[121, 362, 537, 582]","[('out', 'IN')]",PREP,NEGATIVE,0.9803
+74,bed,1,1,1,[123],"[('bed', 'NN')]",N,NEGATIVE,0.6777
+75,crib,1,1,1,[126],"[('crib', 'NN')]",N,NEGATIVE,0.9501
+76,crept,1,1,1,[128],"[('crept', 'NN')]",N,NEGATIVE,0.9984
+77,touched,1,1,1,[129],"[('touched', 'VBN')]",V,POSITIVE,0.9997
+78,head,1,1,1,[131],"[('head', 'NN')]",N,POSITIVE,0.9758
+79,gently,1,1,1,[132],"[('gently', 'RB')]",ADV,POSITIVE,0.9996
+80,felt,1,1,1,[133],"[('felt', 'NN')]",N,POSITIVE,0.9833
+81,heart,3,3,3,"[135, 519, 567]","[('heart', 'NN')]",N,POSITIVE,0.9998
+82,melt,1,1,1,[136],"[('melt', 'NN')]",N,POSITIVE,0.9854
+83,because,3,3,3,"[137, 244, 563]","[('because', 'IN')]",PREP,NEGATIVE,0.8893
+84,know,2,2,2,"[139, 476]","[('know', 'VB')]",V,POSITIVE,0.9948
+85,loved,1,1,1,[141],"[('loved', 'VBN')]",V,POSITIVE,0.9999
+86,more,2,2,2,"[143, 449]","[('more', 'RBR')]",ADV,POSITIVE,0.9969
+87,than,2,2,2,"[144, 451]","[('than', 'IN')]",PREP,POSITIVE,0.9804
+88,life,4,4,4,"[145, 173, 499, 543]","[('life', 'NN')]",N,POSITIVE,0.9965
+89,itself,1,1,1,[146],"[('itself', 'PRP')]",PRON,POSITIVE,0.9738
+90,then,1,1,1,[147],"[('then', 'RB')]",ADV,POSITIVE,0.9452
+91,knees,1,1,1,[150],"[('knees', 'NNS')]",N,NEGATIVE,0.9991
+92,begged,1,1,1,[153],"[('begged', 'VBN')]",V,NEGATIVE,0.9941
+93,lord,1,1,1,[155],"[('lord', 'NN')]",N,POSITIVE,0.9943
+94,please,1,1,1,[156],"[('please', 'NN')]",N,POSITIVE,0.9995
+95,good,3,3,3,"[161, 443, 647]","[('good', 'JJ')]",ADJ,POSITIVE,0.9998
+96,daddy,1,1,1,[162],"[('daddy', 'NN')]",N,POSITIVE,0.9927
+97,he,1,1,1,[164],"[('he', 'PRP')]",PRON,POSITIVE,0.9707
+98,needs,1,1,1,[165],"[('needs', 'NNS')]",N,NEGATIVE,0.8997
+99,love,3,3,3,"[166, 378, 597]","[('love', 'NN')]",N,POSITIVE,0.9999
+100,knowledge,1,1,1,[167],"[('knowledge', 'NN')]",N,POSITIVE,0.9996
+101,discipline,1,1,1,[168],"[('discipline', 'NN')]",N,POSITIVE,0.9988
+102,too,2,2,2,"[169, 571]","[('too', 'RB')]",ADV,NEGATIVE,0.9357
+103,pledge,2,2,2,"[171, 317]","[('pledge', 'NN')]",N,POSITIVE,0.9867
+104,we,6,0,0,"[181, 186, 401, 406, 609, 614]","[('we', 'PRP')]",PRON,POSITIVE,0.9982
+105,can,5,2,2,"[182, 326, 352, 402, 610]","[('can', 'MD')]",V,POSITIVE,0.9985
+106,make,4,1,1,"[183, 403, 546, 611]","[('make', 'VB')]",V,POSITIVE,0.9996
+107,it,7,4,4,"[184, 349, 358, 359, 404, 536, 612]","[('it', 'PRP')]",PRON,POSITIVE,0.9927
+108,if,5,2,2,"[185, 341, 380, 405, 613]","[('if', 'IN')]",PREP,POSITIVE,0.739
+109,try,4,1,1,"[187, 293, 407, 615]","[('try', 'NN')]",N,NEGATIVE,0.7526
+110,building,3,0,0,"[203, 423, 631]","[('building', 'NN')]",N,POSITIVE,0.9978
+111,castles,3,0,0,"[204, 424, 632]","[('castles', 'NNS')]",N,POSITIVE,0.9973
+112,sky,3,0,0,"[207, 427, 635]","[('sky', 'NN')]",N,POSITIVE,0.9979
+113,five,1,1,1,[216],"[('five', 'CD')]",DET,POSITIVE,0.9966
+114,years,1,1,1,[217],"[('years', 'NNS')]",N,POSITIVE,0.9684
+115,old,1,1,1,[218],"[('old', 'JJ')]",ADJ,NEGATIVE,0.9993
+116,bringin,1,1,1,[219],"[('bringin', 'NN')]",N,POSITIVE,0.9985
+117,comedy,1,1,1,[220],"[('comedy', 'NN')]",N,POSITIVE,0.9996
+118,everytime,1,1,1,[221],"[('everytime', 'NN')]",N,POSITIVE,0.9953
+119,look,1,1,1,[223],"[('look', 'NN')]",N,POSITIVE,0.9982
+120,at,1,1,1,[224],"[('at', 'IN')]",PREP,POSITIVE,0.9062
+121,little,1,1,1,[230],"[('little', 'JJ')]",ADJ,NEGATIVE,0.9685
+122,like,2,2,2,"[233, 525]","[('like', 'IN')]",PREP,POSITIVE,0.9911
+123,wait,1,1,1,[235],"[('wait', 'NN')]",N,NEGATIVE,0.9988
+124,see,3,3,3,"[237, 309, 469]","[('see', 'VB')]",V,POSITIVE,0.9984
+125,gonna,4,4,4,"[238, 257, 516, 530]","[('gon', 'NN'), ('na', 'TO')]",MULT,POSITIVE,0.9932
+126,tall,1,1,1,[240],"[('tall', 'NN')]",N,POSITIVE,0.9997
+127,makes,1,1,1,[241],"[('makes', 'VBZ')]",V,POSITIVE,0.9994
+128,laugh,2,2,2,"[243, 304]","[('laugh', 'NN')]",N,POSITIVE,0.9998
+129,dads,1,1,1,[248],"[('dads', 'NNS')]",N,POSITIVE,0.9664
+130,ears,1,1,1,[249],"[('ears', 'NNS')]",N,POSITIVE,0.9941
+131,sometimes,1,1,1,[252],"[('sometimes', 'RB')]",ADV,POSITIVE,0.9073
+132,wonder,1,1,1,[254],"[('wonder', 'NN')]",N,POSITIVE,0.9998
+133,what,1,1,1,[255],"[('what', 'WP')]",OTH,POSITIVE,0.9943
+134,general,1,1,1,[260],"[('general', 'JJ')]",ADJ,POSITIVE,0.9963
+135,maybe,1,1,1,[263],"[('maybe', 'RB')]",ADV,NEGATIVE,0.8917
+136,mc,1,1,1,[265],"[('mc', 'NN')]",N,POSITIVE,0.9838
+137,haha,1,1,1,[266],"[('haha', 'NN')]",N,POSITIVE,0.7155
+138,wanna,1,1,1,[268],"[('wan', 'NN'), ('na', 'NN')]",MULT,POSITIVE,0.9731
+139,kiss,1,1,1,[269],"[('kiss', 'NN')]",N,POSITIVE,0.9996
+140,but,7,7,7,"[274, 299, 368, 484, 497, 503, 533]","[('but', 'CC')]",CONJ,NEGATIVE,0.9101
+141,will,4,4,4,"[276, 321, 545, 568]","[('will', 'MD')]",V,POSITIVE,0.9997
+142,test,1,1,1,[277],"[('test', 'NN')]",N,NEGATIVE,0.9606
+143,butt,1,1,1,[279],"[('butt', 'NN')]",N,NEGATIVE,0.999
+144,when,2,2,2,"[280, 307]","[('when', 'WRB')]",OTH,POSITIVE,0.9288
+145,cut,1,1,1,[282],"[('cut', 'NN')]",N,NEGATIVE,0.9738
+146,outta,1,1,1,[283],"[('outta', 'NN')]",N,NEGATIVE,0.9395
+147,line,1,1,1,[284],"[('line', 'NN')]",N,POSITIVE,0.956
+148,true,2,2,2,"[285, 595]","[('true', 'JJ')]",ADJ,POSITIVE,0.9999
+149,uh-uh-uh,1,1,1,[287],"[('uh-uh-uh', 'JJ')]",ADJ,NEGATIVE,0.9866
+150,why,1,1,1,[288],"[('why', 'WRB')]",OTH,NEGATIVE,0.9814
+151,do,4,4,4,"[290, 323, 562, 593]","[('do', 'VB')]",V,POSITIVE,0.9963
+152,tough,1,1,1,[297],"[('tough', 'JJ')]",ADJ,NEGATIVE,0.9972
+153,making,1,1,1,[302],"[('making', 'VBG')]",V,POSITIVE,0.9991
+154,crazy,1,1,1,[305],"[('crazy', 'NN')]",N,NEGATIVE,0.965
+155,joy,1,1,1,[306],"[('joy', 'NN')]",N,POSITIVE,0.9999
+156,eyes,1,1,1,[311],"[('eyes', 'NNS')]",N,POSITIVE,0.999
+157,baby,1,1,1,[314],"[('baby', 'NN')]",N,POSITIVE,0.9969
+158,boy,1,1,1,[315],"[('boy', 'NN')]",N,POSITIVE,0.9915
+159,always,2,2,2,"[322, 572]","[('always', 'RB')]",ADV,POSITIVE,0.9983
+160,everything,1,1,1,[324],"[('everything', 'NN')]",N,POSITIVE,0.9989
+161,show,1,1,1,[327],"[('show', 'NN')]",N,POSITIVE,0.9941
+162,how,2,2,2,"[329, 650]","[('how', 'WRB')]",OTH,POSITIVE,0.9858
+163,dignity,1,1,1,[334],"[('dignity', 'NN')]",N,POSITIVE,0.9996
+164,integrity,1,1,1,[335],"[('integrity', 'NN')]",N,POSITIVE,0.9998
+165,honor,1,1,1,[336],"[('honor', 'NN')]",N,POSITIVE,0.9998
+166,lose,1,1,1,[343],"[('lose', 'VB')]",V,NEGATIVE,0.9996
+167,long,1,1,1,[344],"[('long', 'RB')]",ADV,NEGATIVE,0.9941
+168,came,1,1,1,[347],"[('came', 'VBD')]",V,POSITIVE,0.9961
+169,with,4,4,4,"[348, 363, 460, 558]","[('with', 'IN')]",PREP,POSITIVE,0.9826
+170,cry,1,1,1,[353],"[('cry', 'NN')]",N,NEGATIVE,0.999
+171,ain't,3,3,3,"[354, 486, 522]","[('ai', 'VBP'), (""n't"", 'RB')]",MULT,NEGATIVE,0.977
+172,no,2,2,2,"[355, 523]","[('no', 'DT')]",DET,NEGATIVE,0.9964
+173,shame,1,1,1,[356],"[('shame', 'NN')]",N,NEGATIVE,0.9997
+174,didn't,1,1,1,[360],"[('did', 'VBD'), (""n't"", 'RB')]",MULT,NEGATIVE,0.9721
+175,work,1,1,1,[361],"[('work', 'NN')]",N,POSITIVE,0.9994
+176,mom,1,1,1,[367],"[('mom', 'NN')]",N,POSITIVE,0.9943
+177,yo,2,2,2,"[369, 485]","[('yo', 'NN')]",N,POSITIVE,0.9966
+178,push,1,1,1,[370],"[('push', 'NN')]",N,NEGATIVE,0.9843
+179,come,2,2,2,"[371, 594]","[('come', 'VB')]",V,POSITIVE,0.9984
+180,shove,1,1,1,[373],"[('shove', 'NN')]",N,NEGATIVE,0.9958
+181,was,1,1,1,[375],"[('was', 'VBD')]",V,POSITIVE,0.7796
+182,conceived,1,1,1,[376],"[('conceived', 'VBN')]",V,POSITIVE,0.9988
+183,so,2,2,2,"[379, 447]","[('so', 'RB')]",ADV,POSITIVE,0.913
+184,world,1,1,1,[382],"[('world', 'NN')]",N,POSITIVE,0.9981
+185,attacks,1,1,1,[383],"[('attacks', 'NNS')]",N,NEGATIVE,0.9993
+186,slide,1,1,1,[386],"[('slide', 'NN')]",N,NEGATIVE,0.5543
+187,off,1,1,1,[387],"[('off', 'IN')]",PREP,NEGATIVE,0.9975
+188,track,1,1,1,[388],"[('track', 'NN')]",N,POSITIVE,0.9972
+189,remember,1,1,1,[389],"[('remember', 'VB')]",V,POSITIVE,0.9982
+190,fact,1,1,1,[391],"[('fact', 'NN')]",N,POSITIVE,0.9984
+191,back,1,1,1,[395],"[('back', 'RB')]",ADV,POSITIVE,0.9845
+192,it's,2,2,2,"[436, 507]","[('it', 'PRP'), (""'s"", 'VBZ')]",MULT,POSITIVE,0.9988
+193,full-time,1,1,1,[438],"[('full-time', 'NN')]",N,POSITIVE,0.9957
+194,job,1,1,1,[439],"[('job', 'NN')]",N,POSITIVE,0.9979
+195,much,2,2,2,"[448, 651]","[('much', 'JJ')]",ADJ,POSITIVE,0.9993
+196,stuff,1,1,1,[450],"[('stuff', 'NN')]",N,POSITIVE,0.9804
+197,had,1,1,1,[453],"[('had', 'VBD')]",V,POSITIVE,0.9295
+198,gotta,1,1,1,[455],"[('got', 'VBD'), ('ta', 'NNS')]",MULT,POSITIVE,0.9971
+199,study,1,1,1,[456],"[('study', 'NN')]",N,POSITIVE,0.9934
+200,keep,1,1,1,[459],"[('keep', 'VB')]",V,POSITIVE,0.9989
+201,changing,1,1,1,[462],"[('changing', 'VBG')]",V,POSITIVE,0.9993
+202,times,1,1,1,[463],"[('times', 'NNS')]",N,POSITIVE,0.9002
+203,101,1,1,1,[464],"[('101', 'CD')]",DET,POSITIVE,0.9917
+204,dalmations,1,1,1,[465],"[('dalmations', 'NNS')]",N,NEGATIVE,0.8724
+205,on,5,5,5,"[466, 477, 502, 538, 585]","[('on', 'IN')]",PREP,POSITIVE,0.987
+206,cd-rom,1,1,1,[468],"[('cd-rom', 'NN')]",N,NEGATIVE,0.9634
+207,I'm,2,2,2,"[471, 600]","[('I', 'PRP'), (""'m"", 'VBP')]",MULT,POSITIVE,0.9981
+208,trying,1,1,1,[472],"[('trying', 'VBG')]",V,POSITIVE,0.9172
+209,pretend,1,1,1,[474],"[('pretend', 'NN')]",N,NEGATIVE,0.9992
+210,pc,1,1,1,[479],"[('pc', 'NN')]",N,POSITIVE,0.9676
+211,where,1,1,1,[480],"[('where', 'WRB')]",OTH,POSITIVE,0.768
+212,cd,1,1,1,[482],"[('cd', 'NN')]",N,POSITIVE,0.978
+213,go,2,2,2,"[483, 501]","[('go', 'VB')]",V,POSITIVE,0.9994
+214,nothing,1,1,1,[487],"[('nothing', 'NN')]",N,NEGATIVE,0.9992
+215,promised,1,1,1,[488],"[('promised', 'VBN')]",V,POSITIVE,0.9968
+216,day,2,2,2,"[490, 513]","[('day', 'NN')]",N,POSITIVE,0.9957
+217,I'll,1,1,1,[491],"[('I', 'PRP'), (""'ll"", 'MD')]",MULT,POSITIVE,0.9997
+218,gone,1,1,1,[493],"[('gone', 'VBN')]",V,NEGATIVE,0.999
+219,feel,1,1,1,[494],"[('feel', 'NN')]",N,POSITIVE,0.995
+220,strife,1,1,1,[496],"[('strife', 'NN')]",N,NEGATIVE,0.998
+221,trust,1,1,1,[498],"[('trust', 'NN')]",N,POSITIVE,0.9997
+222,does,1,1,1,[500],"[('does', 'VBZ')]",V,POSITIVE,0.9992
+223,case,1,1,1,[506],"[('case', 'NN')]",N,NEGATIVE,0.565
+224,place,1,1,1,[509],"[('place', 'NN')]",N,POSITIVE,0.9992
+225,impart,1,1,1,[511],"[('impart', 'NN')]",N,POSITIVE,0.9997
+226,some,1,1,1,[514],"[('some', 'DT')]",DET,POSITIVE,0.9431
+227,girl's,1,1,1,[515],"[('girl', 'NN'), (""'s"", 'POS')]",MULT,POSITIVE,0.9878
+228,break,1,1,1,[517],"[('break', 'NN')]",N,NEGATIVE,0.9982
+229,ooh,1,1,1,[521],"[('ooh', 'NN')]",N,POSITIVE,0.9856
+230,pain,1,1,1,[524],"[('pain', 'NN')]",N,NEGATIVE,0.9988
+231,opposite,1,1,1,[528],"[('opposite', 'NN')]",N,NEGATIVE,0.9969
+232,sex,1,1,1,[529],"[('sex', 'NN')]",N,POSITIVE,0.9982
+233,hurt,1,1,1,[531],"[('hurt', 'NN')]",N,NEGATIVE,0.9997
+234,bad,2,2,2,"[532, 554]","[('bad', 'JJ')]",ADJ,NEGATIVE,0.9998
+235,take,1,1,1,[535],"[('take', 'VB')]",V,POSITIVE,0.9961
+236,next,1,1,1,[540],"[('next', 'JJ')]",ADJ,POSITIVE,0.9865
+237,son,1,1,1,[541],"[('son', 'NN')]",N,POSITIVE,0.9942
+238,throughout,1,1,1,[542],"[('throughout', 'IN')]",PREP,POSITIVE,0.9917
+239,mad,1,1,1,[548],"[('mad', 'NN')]",N,NEGATIVE,0.9996
+240,disrespect,1,1,1,[549],"[('disrespect', 'NN')]",N,NEGATIVE,0.9995
+241,treat,1,1,1,[552],"[('treat', 'NN')]",N,POSITIVE,0.9999
+242,god,1,1,1,[556],"[('god', 'NN')]",N,POSITIVE,0.9449
+243,deal,1,1,1,[557],"[('deal', 'NN')]",N,POSITIVE,0.9989
+244,things,1,1,1,[560],"[('things', 'NNS')]",N,POSITIVE,0.9926
+245,they,1,1,1,[561],"[('they', 'PRP')]",PRON,POSITIVE,0.9649
+246,hate,1,1,1,[564],"[('hate', 'NN')]",N,NEGATIVE,0.9997
+247,consume,1,1,1,[569],"[('consume', 'NN')]",N,POSITIVE,0.9199
+248,tell,1,1,1,[573],"[('tell', 'NN')]",N,POSITIVE,0.9845
+249,truth,1,1,1,[575],"[('truth', 'NN')]",N,POSITIVE,0.9991
+250,say,1,1,1,[576],"[('say', 'VB')]",V,POSITIVE,0.9529
+251,prayers,1,1,1,[578],"[('prayers', 'NNS')]",N,POSITIVE,0.933
+252,hold,1,1,1,[579],"[('hold', 'NN')]",N,POSITIVE,0.9987
+253,doors,1,1,1,[580],"[('doors', 'NNS')]",N,POSITIVE,0.9932
+254,pull,1,1,1,[581],"[('pull', 'NN')]",N,POSITIVE,0.9451
+255,chairs,1,1,1,[583],"[('chairs', 'NNS')]",N,POSITIVE,0.9956
+256,easy,1,1,1,[584],"[('easy', 'JJ')]",ADJ,POSITIVE,0.9972
+257,swears,1,1,1,[587],"[('swears', 'NNS')]",N,NEGATIVE,0.9718
+258,you're,1,1,1,[588],"[('you', 'PRP'), (""'re"", 'VBP')]",MULT,POSITIVE,0.9998
+259,living,1,1,1,[589],"[('living', 'NN')]",N,POSITIVE,0.9994
+260,proof,1,1,1,[590],"[('proof', 'NN')]",N,POSITIVE,0.9975
+261,dreams,1,1,1,[592],"[('dreams', 'NNS')]",N,POSITIVE,0.998
+262,here,1,1,1,[601],"[('here', 'RB')]",ADV,POSITIVE,0.9937
+263,for,2,2,2,"[602, 656]","[('for', 'IN')]",PREP,POSITIVE,0.9701
+264,song,1,1,1,[648],"[('song', 'NN')]",N,POSITIVE,0.9978
+265,am,1,1,1,[652],"[('am', 'VBP')]",V,POSITIVE,0.9547
+266,getting,1,1,1,[654],"[('getting', 'VBG')]",V,POSITIVE,0.9967
+267,paid,1,1,1,[655],"[('paid', 'NN')]",N,POSITIVE,0.9979

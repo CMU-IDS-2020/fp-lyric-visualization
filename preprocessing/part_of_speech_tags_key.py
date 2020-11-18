@@ -4,7 +4,6 @@
 import numpy as np
 import pandas as pd
 
-'''
 specific_pos_columns = ["abbreviation", "part_of_speech", "definition"]
 
 # Parts of speech specified by the NLTK library
@@ -49,7 +48,6 @@ specific_pos = [["CC", "coordinating conjunction", ""],
 ]
 specific_pos_df = pd.DataFrame(specific_pos, columns = specific_pos_columns)
 specific_pos_df.to_csv("specific_parts_of_speech_key.csv")
-'''
 
 # Broader Parts of Speech 
 # https://www.englishclub.com/grammar/parts-of-speech.htm
@@ -57,14 +55,15 @@ specific_pos_df.to_csv("specific_parts_of_speech_key.csv")
 broad_pos_columns = ["abbreviation", "part_of_speech", "specific_pos", "definition"]
 broad_pos = [["N", "Noun", ["NN", "NNS", "NNP", "NNPS"], "a person, place, or thing"],
  ["PRON", "Pronoun", ["PRP", "PRP$"], "stands in for a noun in a sentence"],
- ["V", "Verb", ["MD", "VBD", "VBG", "VBN", "VBP", "VBZ"], "words that show action or a state of being"],
+ ["V", "Verb", ["MD", "VB", "VBD", "VBG", "VBN", "VBP", "VBZ"], "words that show action or a state of being"],
  ["ADJ", "Adjective", ["JJ", "JJR", "JJS"], "describe nouns and pronouns"],
  ["ADV", "Adverb", ["RB", "RBR", "RBS"], "describe verbs, adjectives, or other adjectives"],
  ["DET", "Determiner", ["CD", "DT", "PDT"], "function like adjectives by modifying nouns, but are different than adjectives because they are needed for a sentence to have proper syntax"],
  ["PREP", "Preposition", ["IN"], "show spacial, temporal, and role relations between a noun or pronoun and the other words in a sentence"],
  ["CONJ", "Conjunction", ["CC"], "join words, phrases, and clauses in a sentence"],
  ["INT", "Interjection", ["UH"], "an exclamation"],
- ["OTH", "Other", ["EX", "FW", "LS", "POS", "RP", "TO", "WDT", "WP", "WP$", "WRB"], "not one of the primary nine parts of speech"]
+ ["OTH", "Other", ["EX", "FW", "LS", "POS", "RP", "TO", "WDT", "WP", "WP$", "WRB"], "not one of the primary nine parts of speech"],
+ ["MULT", "Multiple", [], "multiple parts of speech"]
 ]
 broad_pos_df = pd.DataFrame(broad_pos, columns = broad_pos_columns)
 # Save as a csv file
