@@ -85,8 +85,7 @@ for index, row in lyrics_df.iterrows():
 
 # Make a dictionary Panda dataframe from the above dictionaries
 dict_columns = ["word_can_search", "count_with_all_chorus", "count_with_first_chorus", "count_with_no_chorus", "list_of_indexes", 
-					"textblob_polarity", "textblob_subjectivity", "textblob_pos_tags",
-					"hugface_label", "hugface_score"]
+					"textblob_pos_tags", "hugface_label", "hugface_score"]
 dict_df = pd.DataFrame(columns = dict_columns)
 for word in word_indexes.keys():
 	# Use the TextBlob Library for each word
@@ -101,8 +100,9 @@ for word in word_indexes.keys():
 	# 				  CAUTION: in their example here, something like "John's" is split into [('John', 'NNP'), ("'s", 'POS')]
 	# 				  what the abbreviations mean: https://pythonprogramming.net/natural-language-toolkit-nltk-part-speech-tagging/
 	textblob = TextBlob(word)
-	textblob_polarity = textblob.polarity
-	textblob_subjectivity = textblob.subjectivity
+	# remove these (see CAUTION above)
+	# textblob_polarity = textblob.polarity
+	# textblob_subjectivity = textblob.subjectivity
 	textblob_pos_tags = textblob.pos_tags
 	
 	# Use the Huggingface Library for each word
@@ -112,14 +112,11 @@ for word in word_indexes.keys():
 
 	# Add the new column to the dictionary dataframe
 	word_df = pd.DataFrame([[word, all_chorus_count.get(word, 0), first_chorus_count.get(word, 0), no_chorus_count.get(word, 0), word_indexes.get(word), 
-								textblob_polarity, textblob_subjectivity, textblob_pos_tags, hugface_label, hugface_score]], columns = dict_columns)
+								textblob_pos_tags, hugface_label, hugface_score]], columns = dict_columns)
 	dict_df = dict_df.append(word_df, ignore_index = True)
 
 # Save this dataframe as a .csv file
 dict_df.to_csv(artist_name + " " + song_name + " dictionary.csv")
-
-merged_lyrics_dict_df =
-merged_lyrics_dict_df.to_csv(artist_name + " " + song_name + " merged.csv")
 
 # For each word in the word_indexes list, save the word's thesaurus and dictionary merriam-webster responses to a json file
 # COMMENTED OUT FOR NOW SO THAT IT IS NOT RUN ACCIDENTALLY
