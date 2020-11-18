@@ -4,9 +4,11 @@
 # Purpose of File: to create a Panda dataframe called lyrics_dataframe of words by their location in a song
 # Tools used:
 # LyricsGenius (see https://pypi.org/project/lyricsgenius/)
+# HuggingFace Library (https://huggingface.co/transformers/quicktour.html)
 import numpy as np
 import pandas as pd
 import lyricsgenius
+from transformers import pipeline
 
 # The artist and song that will be preprocessed
 artist_name = "Will Smith"
@@ -54,6 +56,15 @@ lyrics_columns = ["word_original", "word_no_punctuation", "word_can_search", "wo
 	"line_index_in_song", "stanza_index_in_song", "stanza_description", "line_index_in_stanza", "word_index_in_line"]
 lyrics_df = pd.DataFrame(columns = lyrics_columns)
 
+lines_columns = ["line_index_in_song", "line_classified", "line_label", "line_score"]
+lines_df = pd.DataFrame(columns = lines_columns)
+
+# Used for the HuggingFace Library (see https://huggingface.co/transformers/quicktour.html)
+# This sentiment-analysis classifier "uses the DistilBERT architecture and has been 
+# fine-tuned on a dataset called SST-2 for the sentiment analysis task."
+# model_name = "distilbert-base-uncased-finetuned-sst-2-english"
+hugface_classifier = pipeline('sentiment-analysis')
+
 # Add the words to a lyrics Panda dataframe with their indexes
 # only needed for when reading from the genius lyrics
 # lines = lyrics.split("\n")
@@ -75,6 +86,7 @@ for line in file:
 		# otherwise, process all of the words in the line
 		else:
 			words = line.split(" ")
+			new_line = ""
 			for word in words:
 				# remove any punctuation that might have come with the word
 				# and save the word and its location data as a row in the dataframe
@@ -91,6 +103,10 @@ for line in file:
 					first_word_df = pd.DataFrame([["me-", "me", "me", word_in_song, 
 						line_in_song, stanza_in_song, stanza_description, line_in_stanza, word_in_line]], columns = lyrics_columns)
 					lyrics_df = lyrics_df.append(first_word_df, ignore_index = True)
+					
+					# add the word to the line that will be classified
+					new_line = new_line + " " + "me"
+					
 					# increment the word indexes
 					word_in_song = word_in_song + 1
 					word_in_line = word_in_line + 1
@@ -98,6 +114,9 @@ for line in file:
 					second_word_df = pd.DataFrame([["I'm", "I'm", "I'm", word_in_song, 
 						line_in_song, stanza_in_song, stanza_description, line_in_stanza, word_in_line]], columns = lyrics_columns)
 					lyrics_df = lyrics_df.append(second_word_df, ignore_index = True)
+					
+					# add the word to the line that will be classified
+					new_line = new_line + " " + "I'm"
 				else:
 					# For "Just the two of us" the punctuations to remove are
 					# (this is complicated by things like an' for and)
@@ -151,15 +170,30 @@ for line in file:
 					word_df = pd.DataFrame([[word, word_no_punctuation, word_can_search, word_in_song, 
 						line_in_song, stanza_in_song, stanza_description, line_in_stanza, word_in_line]], columns = lyrics_columns)
 					lyrics_df = lyrics_df.append(word_df, ignore_index = True)
+
+					# add the word to the line that will be classified
+					new_line = new_line + " " + word_can_search
 				#increment the word indexes
 				word_in_song = word_in_song + 1
 				word_in_line = word_in_line + 1
+			
+			# Use the Huggingface Library for each line
+			hugface_sentiment = hugface_classifier(new_line)
+			hugface_label = hugface_sentiment[0]["label"]
+			hugface_score = round(hugface_sentiment[0]["score"], 4)
+			# Save the result to the lines dataframe
+			new_line_df = pd.DataFrame([[line_in_song, new_line, hugface_label, hugface_score]], columns = lines_columns)
+			lines_df = lines_df.append(new_line_df, ignore_index = True)
+
 			# increment the line indexes
 			line_in_song = line_in_song + 1
 			line_in_stanza = line_in_stanza + 1
 
-# Save this dataframe as a .csv file
+# Save the lyrics dataframe as a .csv file
 lyrics_df.to_csv(artist_name + " " + song_name + " lyrics.csv")
+
+# Save the lines dataframe as a .csv file
+lines_df.to_csv(artist_name + " " + song_name + " lines.csv")
 
 # close the file that was opened for reading
 # FOR TEST/DEBUG
