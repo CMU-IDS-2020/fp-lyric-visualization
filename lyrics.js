@@ -224,13 +224,13 @@ function buildScatterPlot() {
     // Function that is triggered when selecting lyrics
     function updateChartLyricSelection() {
         let selectedWords = [];
-        jQuery('span.lyric.selected-lyric').each(function() { selectedWords.push(jQuery(this).attr('word_original'));});
+        jQuery('span.lyric.selected-lyric').each(function() { selectedWords.push(jQuery(this).attr('lyricind'));});
         myCircle.classed("selected-lyric-scatter-plot", function(d){ return isSelectedLyric(selectedWords, d ) } );
     }
 
     // A function that return TRUE or FALSE according to if the word is selected in the lyrics block
     function isSelectedLyric(selectedWords, datum) {
-        return selectedWords.includes(datum.word_original);
+        return selectedWords.includes(String(datum.word_index_in_song-1));
     }
     // When clicking on a word in the lyrics, highlight it in the lyrics block as well as the plot
     jQuery('span.lyric').off('click');
@@ -250,7 +250,7 @@ function buildScatterPlot() {
 
     // Remove stopwords
     let dataNoStopwords = [];
-    data.forEach(function(a) { if (!stopwords.includes(a['word_original'].toLowerCase())) {dataNoStopwords.push(a);} });
+    data.forEach(function(a) { if (!stopwords.includes(a['word_can_search'].toLowerCase())) {dataNoStopwords.push(a);} });
     data = dataNoStopwords;
 
     // Add X axis
@@ -324,8 +324,19 @@ function buildScatterPlot() {
             .attr("cx", function (d) { return x(d.x); } )
             .attr("cy", function (d) { return y(d.y); } )
             .attr("r", 5)
-            .style("fill", "#69b3a2")
+            .style("fill", "#69b3a280")
         .on("mouseover.tooltip", mouseover )
         .on("mousemove.tooltip", mousemove )
         .on("mouseleave.tooltip", mouseleave )
+        .on('click', function(d, i) {
+            if (d3.select(this).attr('class') == 'selected-scatter-point') {
+                // Un select
+                jQuery('span.lyric[word_original="' + d.word_original + '"').removeClass('selected-in-scatter-plot');
+                d3.select(this).attr('class', '');
+            } else {
+                // select
+                jQuery('span.lyric[word_original="' + d.word_original + '"').addClass('selected-in-scatter-plot');
+                d3.select(this).attr('class', 'selected-scatter-point');
+            }
+        });
 }
