@@ -2,6 +2,10 @@
 /** Global variable for lyrics object */
 var lyrics;
 
+/** Stopwords from the NLTK library */
+var stopwords = ['i','me','my','myself','we','our','ours','ourselves','you','your','yours','yourself','yourselves','he','him','his','himself','she','her','hers','herself','it','its','itself','they','them','their','theirs','themselves','what','which','who','whom','this','that','these','those','am','is','are','was','were','be','been','being','have','has','had','having','do','does','did','doing','a','an','the','and','but','if','or','because','as','until','while','of','at','by','for','with','about','against','between','into','through','during','before','after','above','below','to','from','up','down','in','out','on','off','over','under','again','further','then','once','here','there','when','where','why','how','all','any','both','each','few','more','most','other','some','such','no','nor','not','only','own','same','so','than','too','very','s','t','can','will','just','don','should','now'];
+
+
 /**
  * Get the JSON for a new song from the server
  */
@@ -25,7 +29,7 @@ function getNewSongCompleted(data) {
     lyrics = data.responseJSON;
 
     // Sort by lyrics index
-    lyrics.sort((a, b) => (a['Unamed: 0'] > b['Unamed: 0']) ? -1 : 1);
+    lyrics.sort((a, b) => (a['Unnamed: 0'] > b['Unnamed: 0']) ? 1 : -1);
 
     // Clear the lyrics div
     jQuery('#lyrics, #scatter-plot').html('');
@@ -39,28 +43,49 @@ function getNewSongCompleted(data) {
     });
 
     // Pre-select some variables
-    jQuery('#x-var-select option[value="Unnamed: 0"]').prop('selected', true);
-    jQuery('#y-var-select option[value="hugface_score"]').prop('selected', true);
+    jQuery('#x-var-select option[value="line_positivity_norm"]').prop('selected', true);
+    jQuery('#y-var-select option[value="word_positivity_norm"]').prop('selected', true);
 
     buildScatterPlot();
 }
 
 function buildLyricsBlock() {
     let prevLineIndex = 0;
+    let prevStanzaDescription = false;
     let lineHtml = jQuery('<div class="lyric-line" />');
 
     lyrics.forEach(function(lyric) {
         let lineIndex = lyric['line_index_in_song'];
-        if (lineIndex != prevLineIndex) {
+        let stanzaDescription = lyric['stanza_description'];
+
+        if (lineIndex != prevLineIndex) { // The start of a new line
+            // Append the line to the lyrics section
+            lineHtml.attr('line_index', lineIndex - 1);
             jQuery('#lyrics').append(lineHtml);
+
+            // Start a new line
             lineHtml = jQuery('<div class="lyric-line" />');
             prevLineIndex = lineIndex;
+
+            // If new line starts a new stanza, put a lil stanza description on it
+            if (stanzaDescription != prevStanzaDescription) {
+                // Add some space to separate stanzas
+                lineHtml.append(jQuery('<div class="stanza-separator" />')
+                        .text('[' + stanzaDescription + ']'));
+                prevStanzaDescription = stanzaDescription;
+            }
+
+            // Add the Heat Map section. It's a right border
+            let colorPercent = parseFloat(lyric['line_positivity_norm']) * 100.;
+            lineHtml.css('border-left', 'solid 30px ' + perc2color(colorPercent));
         }
         let lyricSpan = lyricJsonToHtml(lyric);
         lineHtml.append(lyricSpan);
     });
 
     initHoverHighlightRepeatUsage();
+
+    initHoverIsolateLyricLine();
 }
 
 /**
@@ -75,6 +100,24 @@ function lyricJsonToHtml(lyric) {
             .attr('word_original', lyric['word_original'])
             .attr('class', 'lyric')
             .text(lyric['word_original'] + ' ');
+}
+
+/**
+ * Given a value 0-100, generate a color between red-to-yellow-to-green
+ */
+function perc2color(perc) {
+    // From: https://gist.github.com/mlocati/7210513
+    var r, g, b = 0;
+    if(perc < 50) {
+        r = 255;
+        g = Math.round(5.1 * perc);
+    }
+    else {
+        g = 255;
+        r = Math.round(510 - 5.10 * perc);
+    }
+    var h = r * 0x10000 + g * 0x100 + b * 0x1;
+    return '#' + ('000000' + h.toString(16)).slice(-6);
 }
 
 /**
@@ -101,6 +144,33 @@ function initHoverHighlightRepeatUsage() {
 }
 
 /**
+ * When hovering over a line of lyrics, isolate this line on the right
+ * And dislay the part of speech info above each word
+ */
+function initHoverIsolateLyricLine() {
+    jQuery('.lyric-line').hover(function() {
+        let lineIndex = jQuery(this).attr('line_index');
+
+        // Clear section
+        jQuery('#lyric-line-isolation').html('');
+
+        // Go through the lyrics JSON object and build out the line in html
+        lyrics.forEach(function(lyricObj) {
+            if (lyricObj['line_index_in_song'] == lineIndex) {
+                let lyricHtml = jQuery('<span />')
+                        .attr('class', 'isolated-lyric')
+                        .text(lyricObj['word_original'] + ' ');
+                lyricHtml.prepend(jQuery('<span />')
+                        .attr('class', 'isolated-lyric-pos')
+                        .text(lyricObj['broad_pos_tag']))
+                jQuery('#lyric-line-isolation').append(lyricHtml);
+            }
+        });
+    }, function() { }
+    );
+}
+
+/**
  * Build a scatter plot
  */
 function buildScatterPlot() {
@@ -110,7 +180,7 @@ function buildScatterPlot() {
     // set the dimensions and margins of the graph
     var margin = {top: 10, right: 30, bottom: 30, left: 60},
             width = jQuery('#plots').width() - margin.left - margin.right,
-            height = jQuery(window).height() - 200 - margin.top - margin.bottom;
+            height = jQuery(window).height() - 500 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
     svg = d3.select("#scatter-plot")
@@ -178,6 +248,11 @@ function buildScatterPlot() {
     data.forEach(function(a) { a['x'] = a[x_var]; });
     data.forEach(function(a) { a['y'] = a[y_var]; });
 
+    // Remove stopwords
+    let dataNoStopwords = [];
+    data.forEach(function(a) { if (!stopwords.includes(a['word_original'].toLowerCase())) {dataNoStopwords.push(a);} });
+    data = dataNoStopwords;
+
     // Add X axis
     var x = d3.scaleLinear()
         .domain(d3.extent(data, function(d) { return +d.x; }))
@@ -229,14 +304,16 @@ function buildScatterPlot() {
         .attr("text-anchor", "end")
         .attr("x", width/2 + margin.left)
         .attr("y", height + margin.top + 20)
-        .text(x_var);
+        .attr('fill', '#000')
+        .text('Line Positivity');//.text(x_var);
     // Y axis label:
     svg.append("text")
         .attr("text-anchor", "end")
         .attr("transform", "rotate(-90)")
         .attr("y", -margin.left + 20)
         .attr("x", -margin.top - height/2 + 20)
-        .text(y_var)
+        .attr('fill', '#000')
+        .text('Word Positivity');//.text(y_var)
 
     // Add dots
     var myCircle = svg.append('g')

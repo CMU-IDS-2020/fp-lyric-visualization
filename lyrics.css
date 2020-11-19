@@ -7,12 +7,30 @@ body {
   background-color: #fff;
 }
 
+.song-info {
+    padding-left: 10px;
+}
+.song-info h4, .song-info h2 {
+    display: inline-block;
+}
 /******************************
  ******** LYRICS STYLING ******
  ******************************/
 
+#lyrics {
+    /*width: fit-content !important;*/
+}
 .lyric {
     cursor: pointer;
+}
+.lyric-line {
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+.stanza-separator {
+    padding: 12px 0px 6px 0em;
+    opacity: 0.6;
+    font-size: small !important;
 }
 .same-word-highlight {
     font-weight: bold;
@@ -25,10 +43,40 @@ body {
     color: blue;
     font-weight: bold;
 }
+.heat-map-block {
+    width: 2em;
+    display: inline-block;
+    height: 2em;
+    float: right;
+}
+
+
+.lyric-line { font-size: 1em; transition: all 0.2s; }
+.lyric-line:hover { font-size: 1.5em; }
+.lyric-line:hover + .lyric-line { font-size: 1.3em; }
+.lyric-line:hover + .lyric-line + .lyric-line { font-size: 1.1em; }
+
+
+#lyric-line-isolation {
+    min-height: 10vh;
+}
+.isolated-lyric {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 0.4em;
+    text-align: center;
+}
+.isolated-lyric-pos {
+    display: block;
+    font-size: 0.5em;
+}
+
 
 /******************************
  ******** D3JS STYLING ********
  ******************************/
+#plots {
+}
 
 #scatter-plot {
     position: fixed;

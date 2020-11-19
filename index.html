@@ -18,18 +18,26 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col mx-auto"><h2>Artist: Will Smith<br/>Song: Just The Two of Us</h2></div>
+            <div class="col mx-auto song-info">
+                <h4>Artist:</h4><h2>Will Smith</h2><br/>
+                <h4>Song:</h4> <h2>Just The Two of Us</h2>
+            </div>
         </div>
         <div class="row">
-            <div class="col-sm-4" id="lyrics">
+            <div class="col-sm-6" id="lyrics">
 
             </div>
-            <div class="col-sm-8" id="plots">
-                <div>
-                    X Variable: <select id="x-var-select"></select><br/>
-                    y Variable: <select id="y-var-select"></select>
+            <div class="col-sm-6" id="plots">
+                <div style="position:fixed;">
+                    <div id="lyric-line-isolation">
+                        Hover over a lyric to see the words' part of speech here.
+                    </div>
+                    <div style="display:none;">
+                        X Variable: <select id="x-var-select"></select><br/>
+                        y Variable: <select id="y-var-select"></select>
+                    </div>
+                    <div id="scatter-plot"></div>
                 </div>
-                <div id="scatter-plot"></div>
             </div>
         </div>
     </div>
