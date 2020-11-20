@@ -213,9 +213,9 @@ function buildScatterPlot() {
 
         // If brushed, do stuff
         if (x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1) {
-            jQuery('span.lyric[word_original="' + datum.word_original + '"').addClass('selected-in-scatter-plot');
+            jQuery('span.lyric[lyricind="' + String(datum.word_index_in_song-1) + '"').addClass('selected-in-scatter-plot');
         } else {
-            jQuery('span.lyric[word_original="' + datum.word_original + '"').removeClass('selected-in-scatter-plot');
+            jQuery('span.lyric[lyricind="' + String(datum.word_index_in_song-1) + '"').removeClass('selected-in-scatter-plot');
         }
 
         return x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1;    // This return TRUE or FALSE depending on if the points is in the selected area
@@ -331,11 +331,11 @@ function buildScatterPlot() {
         .on('click', function(d, i) {
             if (d3.select(this).attr('class') == 'selected-scatter-point') {
                 // Un select
-                jQuery('span.lyric[word_original="' + d.word_original + '"').removeClass('selected-in-scatter-plot');
+                jQuery('span.lyric[lyricind="' + String(d.word_index_in_song-1) + '"').removeClass('selected-in-scatter-plot');
                 d3.select(this).attr('class', '');
             } else {
                 // select
-                jQuery('span.lyric[word_original="' + d.word_original + '"').addClass('selected-in-scatter-plot');
+                jQuery('span.lyric[lyricind="' + String(d.word_index_in_song-1) + '"').addClass('selected-in-scatter-plot');
                 d3.select(this).attr('class', 'selected-scatter-point');
             }
         });
