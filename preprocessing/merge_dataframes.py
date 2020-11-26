@@ -21,6 +21,14 @@ merged_df = lyrics_df.merge(dict_df, how="left", on = "word_can_search")
 
 merged_df = merged_df.merge(lines_df, how="left", on = "line_index_in_song")
 
+from tsne import tsne_column, normalize_positivity
+
+# Normalize the positivity value from hugging face
+merged_df = normalize_positivity(merged_df)
+
+# Compute T-SNE dimensions
+merged_df['tsne_x'], merged_df['tsne_y'] = tsne_column(merged_df['word_can_search'])
+
 # drop the 'unnamed' columns
 # help from https://stackoverflow.com/questions/43983622/remove-unnamed-columns-in-pandas-dataframe
 merged_df.rename({"Unnamed: 0_x":"x"}, axis="columns", inplace=True)
