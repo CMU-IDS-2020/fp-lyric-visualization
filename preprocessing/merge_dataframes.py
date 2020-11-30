@@ -14,10 +14,15 @@ lyrics_df = pd.read_csv(artist_name + " " + song_name + " lyrics.csv")
 # Read in the dictionary dataframe
 dict_df = pd.read_csv(artist_name + " " + song_name + " dictionary.csv")
 
+merged_df = lyrics_df.merge(dict_df, how="left", on = "word_can_search")
+
+# Read in the synonyms dataframe
+syns_df = pd.read_csv(artist_name + " " + song_name + " synonyms_and_more.csv")
+
+merged_df = merged_df.merge(syns_df, how="left", on = "word_can_search")
+
 # Read in the lines dataframe
 lines_df = pd.read_csv(artist_name + " " + song_name + " lines.csv")
-
-merged_df = lyrics_df.merge(dict_df, how="left", on = "word_can_search")
 
 merged_df = merged_df.merge(lines_df, how="left", on = "line_index_in_song")
 
@@ -35,8 +40,6 @@ merged_df.rename({"Unnamed: 0_x":"x"}, axis="columns", inplace=True)
 merged_df.drop(["x"], axis=1, inplace=True)
 merged_df.rename({"Unnamed: 0_y":"y"}, axis="columns", inplace=True)
 merged_df.drop(["y"], axis=1, inplace=True)
-merged_df.rename({"Unnamed: 0":"z"}, axis="columns", inplace=True)
-merged_df.drop(["z"], axis=1, inplace=True)
 
 # Save this dataframe as a .csv file
 merged_df.to_csv(artist_name + " " + song_name + " merged.csv")
