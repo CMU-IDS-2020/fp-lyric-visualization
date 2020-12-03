@@ -51,10 +51,10 @@ body {
 }
 
 
-.lyric-line { font-size: 1em; transition: all 0.2s; }
+/*.lyric-line { font-size: 1em; transition: all 0.2s; }
 .lyric-line:hover { font-size: 1.5em; }
 .lyric-line:hover + .lyric-line { font-size: 1.3em; }
-.lyric-line:hover + .lyric-line + .lyric-line { font-size: 1.1em; }
+.lyric-line:hover + .lyric-line + .lyric-line { font-size: 1.1em; }*/
 
 
 #lyric-line-isolation {
@@ -82,14 +82,14 @@ body {
     position: fixed;
 }
 .selected-scatter-point {
-    fill: #e69750 !important;
+    /*fill: #e69750 !important;*/
     opacity: 1 !important;
-    stroke: black !important;
-    stroke-width: 1px !important;
+    stroke: #e69750 !important;
+    stroke-width: 3px !important;
 }
 .selected-lyric-scatter-plot {
-    fill: blue !important;
+    /*fill: blue !important;*/
     opacity: 1 !important;
-    stroke: black !important;
-    stroke-width: 1px !important;
+    stroke: blue !important;
+    stroke-width: 3px !important;
 }

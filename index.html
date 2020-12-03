@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="/lyrics.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v4.js"></script>
 
     <script src="/lyrics.js"></script>
@@ -18,16 +18,17 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col mx-auto song-info">
-                <h4>Artist:</h4><h2>Will Smith</h2><br/>
-                <h4>Song:</h4> <h2>Just The Two of Us</h2>
-            </div>
+            <h1><center>Song comparator</center></h1>
         </div>
         <div class="row">
-            <div class="col-sm-6" id="lyrics">
-
+            <div class="col-sm-4">
+                <div class="col mx-auto song-info">
+                    <h4>Artist:</h4><input type="text" name="artist0" value="Kanye West" disabled/><br/>
+                    <h4>Song:</h4><input type="text" name="song0" value="Jesus Walks" disabled/></h2>
+                </div>
+                <div id="lyrics0"></div>
             </div>
-            <div class="col-sm-6" id="plots">
+            <div class="col-sm-4" id="plots">
                 <div style="position:fixed;">
                     <div id="lyric-line-isolation">
                         Hover over a lyric to see the words' part of speech here.
@@ -38,6 +39,23 @@
                     </div>
                     <div id="scatter-plot"></div>
                 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col mx-auto song-info">
+                    <h4>Artist:</h4><input type="text" name="artist1" value="Kanye West" disabled/><br/>
+                    <h4>Song:</h4><input type="text" name="song1" value="Wash Us in the Blood" disabled/></h2>
+                </div>
+                <div id="lyrics1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading modal -->
+    <div class="modal" id="loadingModal">
+        <div style="width:100%;height:100%;text-align:center;padding-top:40vh;font-size:3rem;">
+            Loading...
+            <div class="spinner-border" style="width:5rem;height:5rem;">
+                <span class="sr-only">Loading...</span>
             </div>
         </div>
     </div>

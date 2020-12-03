@@ -1,6 +1,7 @@
 
 /** Global variable for lyrics object */
-var lyrics;
+var lyrics0;
+var lyrics1;
 
 /** Stopwords from the NLTK library */
 var stopwords = ['i','me','my','myself','we','our','ours','ourselves','you','your','yours','yourself','yourselves','he','him','his','himself','she','her','hers','herself','it','its','itself','they','them','their','theirs','themselves','what','which','who','whom','this','that','these','those','am','is','are','was','were','be','been','being','have','has','had','having','do','does','did','doing','a','an','the','and','but','if','or','because','as','until','while','of','at','by','for','with','about','against','between','into','through','during','before','after','above','below','to','from','up','down','in','out','on','off','over','under','again','further','then','once','here','there','when','where','why','how','all','any','both','each','few','more','most','other','some','such','no','nor','not','only','own','same','so','than','too','very','s','t','can','will','just','don','should','now'];
@@ -10,10 +11,17 @@ var stopwords = ['i','me','my','myself','we','our','ours','ourselves','you','you
  * Get the JSON for a new song from the server
  */
 function getNewSong() {
+    jQuery('#loadingModal').modal('show');
+
     jQuery.getJSON({
         url: '/getSong',
         type: 'GET',
-        data: { artist: 'Will Smith', songName:'Just the Two of Us' }, // TODO: don't hardcode the song
+        data: {
+                artist0: jQuery('input[name="artist0"]').val(),
+                songName0:jQuery('input[name="song0"]').val(),
+                artist1: jQuery('input[name="artist1"]').val(),
+                songName1:jQuery('input[name="song1"]').val()
+        },
         complete: getNewSongCompleted
     });
 }
@@ -25,20 +33,28 @@ function getNewSong() {
  */
 function getNewSongCompleted(data) {
     console.log(data.responseJSON);
+    jQuery('#loadingModal').modal('hide');
 
-    lyrics = data.responseJSON;
+    lyrics0 = data.responseJSON.lyrics0;
+    lyrics1 = data.responseJSON.lyrics1;
 
     // Sort by lyrics index
-    lyrics.sort((a, b) => (a['Unnamed: 0'] > b['Unnamed: 0']) ? 1 : -1);
+    lyrics0.sort((a, b) => (a['word_index_in_song'] > b['word_index_in_song']) ? 1 : -1);
+    lyrics1.sort((a, b) => (a['word_index_in_song'] > b['word_index_in_song']) ? 1 : -1);
+
+    // Set variables so the plots know which song the lyrics go to
+    lyrics0.forEach(function(a) { a['song_index'] = 0; });
+    lyrics1.forEach(function(a) { a['song_index'] = 1; });
 
     // Clear the lyrics div
-    jQuery('#lyrics, #scatter-plot').html('');
+    jQuery('#lyrics0, #scatter-plot').html('');
 
-    buildLyricsBlock();
+    buildLyricsBlock(lyrics0, jQuery('#lyrics0'));
+    buildLyricsBlock(lyrics1, jQuery('#lyrics1'));
 
     // Populate the variable selects
     jQuery('#x-var-select, #y-var-select').html('');
-    Object.keys(lyrics[0]).forEach(function(varName) {
+    Object.keys(lyrics0[0]).forEach(function(varName) {
         jQuery('#x-var-select, #y-var-select').append(jQuery('<option>').attr('value', varName).text(varName));
     });
 
@@ -49,7 +65,7 @@ function getNewSongCompleted(data) {
     buildScatterPlot();
 }
 
-function buildLyricsBlock() {
+function buildLyricsBlock(lyrics, parent) {
     let prevLineIndex = 0;
     let prevStanzaDescription = false;
     let lineHtml = jQuery('<div class="lyric-line" />');
@@ -61,7 +77,7 @@ function buildLyricsBlock() {
         if (lineIndex != prevLineIndex) { // The start of a new line
             // Append the line to the lyrics section
             lineHtml.attr('line_index', lineIndex - 1);
-            jQuery('#lyrics').append(lineHtml);
+            parent.append(lineHtml);
 
             // Start a new line
             lineHtml = jQuery('<div class="lyric-line" />');
@@ -83,7 +99,7 @@ function buildLyricsBlock() {
         lineHtml.append(lyricSpan);
     });
 
-    initHoverHighlightRepeatUsage();
+    // initHoverHighlightRepeatUsage();
 
     initHoverIsolateLyricLine();
 }
@@ -93,8 +109,9 @@ function buildLyricsBlock() {
  */
 function lyricJsonToHtml(lyric) {
     return jQuery('<span />')
-            .attr('id', 'lyric_' + lyric['Unnamed: 0'])
-            .attr('lyricInd', lyric['Unnamed: 0'])
+            .attr('id', 'lyric_' + lyric['word_index_in_song'])
+            .attr('lyricInd', lyric['word_index_in_song'])
+            .attr('song_index', lyric['song_index'])
             .attr('line', lyric['line_index_in_song'])
             .attr('hugface_label', lyric['hugface_label'])
             .attr('word_original', lyric['word_original'])
@@ -120,28 +137,28 @@ function perc2color(perc) {
     return '#' + ('000000' + h.toString(16)).slice(-6);
 }
 
-/**
- * When hovering on a lyric, highlight the word used in other parts of the song
- */
-function initHoverHighlightRepeatUsage() {
-    jQuery('span.lyric').hover(function() {
-        let thisLyricInd = parseInt(jQuery(this).attr('lyricInd'));
+// /**
+//  * When hovering on a lyric, highlight the word used in other parts of the song
+//  */
+// function initHoverHighlightRepeatUsage() {
+//     jQuery('span.lyric').hover(function() {
+//         let thisLyricInd = parseInt(jQuery(this).attr('lyricInd'));
 
-        // Get lyric object
-        let lyricJson = lyrics[thisLyricInd];
+//         // Get lyric object
+//         let lyricJson = lyrics[thisLyricInd];
 
-        // Get the other instances of this word
-        let otherUsesAr = JSON.parse(lyricJson['list_of_indexes']);
+//         // Get the other instances of this word
+//         let otherUsesAr = JSON.parse(lyricJson['list_of_indexes']);
 
-        otherUsesAr.forEach(function(lyricInd) {
-            jQuery('span[lyricInd="' + (lyricInd-1) + '"]').addClass('same-word-highlight');
-        });
-    },
-    function() {
-        // Mouse out, remove the hover class
-        jQuery('span.lyric').removeClass('same-word-highlight');
-    });
-}
+//         otherUsesAr.forEach(function(lyricInd) {
+//             jQuery('span[lyricInd="' + (lyricInd) + '"]').addClass('same-word-highlight');
+//         });
+//     },
+//     function() {
+//         // Mouse out, remove the hover class
+//         jQuery('span.lyric').removeClass('same-word-highlight');
+//     });
+// }
 
 /**
  * When hovering over a line of lyrics, isolate this line on the right
@@ -155,7 +172,7 @@ function initHoverIsolateLyricLine() {
         jQuery('#lyric-line-isolation').html('');
 
         // Go through the lyrics JSON object and build out the line in html
-        lyrics.forEach(function(lyricObj) {
+        lyrics0.concat(lyrics1).forEach(function(lyricObj) {
             if (lyricObj['line_index_in_song'] == lineIndex) {
                 let lyricHtml = jQuery('<span />')
                         .attr('class', 'isolated-lyric')
@@ -211,11 +228,15 @@ function buildScatterPlot() {
         y0 = brush_coords[0][1],
         y1 = brush_coords[1][1];
 
+        let word_ind = String(datum.word_index_in_song);
+        let song_ind = String(datum.song_index);
+        let selector = 'span.lyric[lyricind="' + word_ind + '"][song_index="' + song_ind + '"]';
+
         // If brushed, do stuff
         if (x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1) {
-            jQuery('span.lyric[lyricind="' + String(datum.word_index_in_song-1) + '"').addClass('selected-in-scatter-plot');
+            jQuery(selector).addClass('selected-in-scatter-plot');
         } else {
-            jQuery('span.lyric[lyricind="' + String(datum.word_index_in_song-1) + '"').removeClass('selected-in-scatter-plot');
+            jQuery(selector).removeClass('selected-in-scatter-plot');
         }
 
         return x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1;    // This return TRUE or FALSE depending on if the points is in the selected area
@@ -223,14 +244,19 @@ function buildScatterPlot() {
 
     // Function that is triggered when selecting lyrics
     function updateChartLyricSelection() {
-        let selectedWords = [];
-        jQuery('span.lyric.selected-lyric').each(function() { selectedWords.push(jQuery(this).attr('lyricind'));});
-        myCircle.classed("selected-lyric-scatter-plot", function(d){ return isSelectedLyric(selectedWords, d ) } );
+        // Song 0
+        let selectedWords0 = [];
+        jQuery('#lyrics0 span.lyric.selected-lyric').each(function() { selectedWords0.push(jQuery(this).attr('lyricind'));});
+        myCircle.classed("selected-lyric-scatter-plot", function(d){ return isSelectedLyric(selectedWords0, d, 0 ) } );
+        // Song 1
+        let selectedWords1 = [];
+        jQuery('#lyrics1 span.lyric.selected-lyric').each(function() { selectedWords1.push(jQuery(this).attr('lyricind'));});
+        myCircle.classed("selected-lyric-scatter-plot", function(d){ return isSelectedLyric(selectedWords1, d, 1 ) } );
     }
 
     // A function that return TRUE or FALSE according to if the word is selected in the lyrics block
-    function isSelectedLyric(selectedWords, datum) {
-        return selectedWords.includes(String(datum.word_index_in_song-1));
+    function isSelectedLyric(selectedWords, datum, song_index) {
+        return selectedWords.includes(String(datum.word_index_in_song)) && (datum.song_index == song_index);
     }
     // When clicking on a word in the lyrics, highlight it in the lyrics block as well as the plot
     jQuery('span.lyric').off('click');
@@ -244,7 +270,7 @@ function buildScatterPlot() {
     let y_var = jQuery('#y-var-select option:selected').val();
 
     // Get the data ready
-    let data = JSON.parse(JSON.stringify(lyrics)); // Copy lyrics object
+    let data = JSON.parse(JSON.stringify(lyrics0.concat(lyrics1))); // Copy lyrics object
     data.forEach(function(a) { a['x'] = a[x_var]; });
     data.forEach(function(a) { a['y'] = a[y_var]; });
 
@@ -315,6 +341,9 @@ function buildScatterPlot() {
         .attr('fill', '#000')
         .text('Word Positivity');//.text(y_var)
 
+    // var myColor = d3.scaleOrdinal().domain(data)
+    // .range(["#69b3a280", "blue", "green", "yellow", "black", "grey", "darkgreen", "pink", "brown", "slateblue", "grey1", "orange"])
+
     // Add dots
     var myCircle = svg.append('g')
         .selectAll("dot")
@@ -324,18 +353,21 @@ function buildScatterPlot() {
             .attr("cx", function (d) { return x(d.x); } )
             .attr("cy", function (d) { return y(d.y); } )
             .attr("r", 5)
-            .style("fill", "#69b3a280")
+            .style("fill", function (d) { return d.song_index == 0 ? "#69b3a280" : "#9869b380"; })
         .on("mouseover.tooltip", mouseover )
         .on("mousemove.tooltip", mousemove )
         .on("mouseleave.tooltip", mouseleave )
         .on('click', function(d, i) {
+            let word_ind = String(d.word_index_in_song);
+            let song_ind = String(d.song_index);
+            let selector = 'span.lyric[lyricind="' + word_ind + '"][song_index="' + song_ind + '"]';
             if (d3.select(this).attr('class') == 'selected-scatter-point') {
                 // Un select
-                jQuery('span.lyric[lyricind="' + String(d.word_index_in_song-1) + '"').removeClass('selected-in-scatter-plot');
+                jQuery(selector).removeClass('selected-in-scatter-plot');
                 d3.select(this).attr('class', '');
             } else {
                 // select
-                jQuery('span.lyric[lyricind="' + String(d.word_index_in_song-1) + '"').addClass('selected-in-scatter-plot');
+                jQuery(selector).addClass('selected-in-scatter-plot');
                 d3.select(this).attr('class', 'selected-scatter-point');
             }
         });

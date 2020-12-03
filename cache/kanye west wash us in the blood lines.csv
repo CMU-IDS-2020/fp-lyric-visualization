@@ -1,0 +1,97 @@
+,line_original,line_index_in_song,line_classified,line_label,line_score,tsne_x,tsne_y
+0,"A roaring lion, walketh about, seekin' whom he may devour",1, a roaring lion walketh about seekin' whom he may devour,POSITIVE,0.9909,-28.532774,-16.699215
+1,"(Ronny J, please turn me up)",2, ronny j please turn me up,POSITIVE,0.9991,46.470997,-7.668696
+2,"Take some, rain, nonstop, rain don't want war",3," take some, rain nonstop rain don't want war",POSITIVE,0.9855,21.411282,-64.366165
+3,"Rain come, rain come",4, rain come rain come,POSITIVE,0.8479,246.83057,443.86496
+4,"Come shine, come rain, come up",5, come shine come rain come up,POSITIVE,0.9943,22.745514,-410.62686
+5,"Southside, let it bang",6, southside let it bang,POSITIVE,0.9964,-21.108746,53.14536
+6,"Outside, let it rain",7, outside let it rain,NEGATIVE,0.9802,30.111427,-72.05363
+7,Rain down on a pain,8, rain down on a pain,NEGATIVE,0.9979,43.88057,-68.75684
+8,Rain down on the slain,9, rain down on the slain,NEGATIVE,0.9934,61.266453,-68.93923
+9,Rain down for my mom (Ooh),10, rain down for my mom ooh,NEGATIVE,0.8428,48.9827,-20.546831
+10,Rain down on the farm (Ah),11, rain down on the farm ah,NEGATIVE,0.9957,38.453754,-54.17756
+11,Shower us with your love (Huh),12, shower us with your love huh,POSITIVE,0.9991,-22.611368,-38.217533
+12,Wash us in the blood  (Ooh),13, wash us in the blood ooh,NEGATIVE,0.6457,0.3123763,-22.991165
+13,Drop this for the thugs (Ah),14, drop this for the thugs ah,NEGATIVE,0.9751,-26.483255,-55.626343
+14,Know I grew up in the mud (Huh),15, know I grew up in the mud huh,NEGATIVE,0.9967,-64.89067,24.711123
+15,The top is not enough,16, the top is not enough,NEGATIVE,0.9988,-54.895348,54.28878
+16,Wash us in the blood (Ah),17, wash us in the blood ah,NEGATIVE,0.923,-2.3995042,-42.210857
+17,Is there anybody here? Huh,18, is there anybody here huh,NEGATIVE,0.9878,47.92859,44.297287
+18,Is there anybody here? Ooh,19, is there anybody here ooh,NEGATIVE,0.8118,45.05277,37.478024
+19,That can save no matter how much he player-hate? Hahaha,20, that can save no matter how much he player-hate hahaha,NEGATIVE,0.9992,0.8077684,76.71463
+20,"It was the blood that, ooh",21, it was the blood that ooh,POSITIVE,0.9771,15.545924,14.980245
+21,"It was the blood that, God",22, it was the blood that god,POSITIVE,0.7465,24.447512,7.515968
+22,"It was the blood that cleansed me, ha",23, it was the blood that cleansed me ha,POSITIVE,0.9805,14.913015,4.4666414
+23,"It was the, ooh",24, it was the ooh,POSITIVE,0.9739,17.949095,23.92973
+24,Shower down on us (Ah),25, shower down on us ah,POSITIVE,0.9886,69.595,-47.58391
+25,Wash us in the blood (Huh),26, wash us in the blood huh,NEGATIVE,0.9694,-0.32721072,-53.815784
+26,Wash us in the blood (Ooh),27, wash us in the blood ooh,NEGATIVE,0.6457,-8.737606,-22.52392
+27,Whole life bein' thugs (Hah),28, whole life bein' thugs hah,NEGATIVE,0.9839,-85.43752,-16.02541
+28,"No choice, sellin' drugs (Huh)",29, no choice sellin' drugs huh,NEGATIVE,0.9982,-71.204895,9.814879
+29,"Southside, what it does? (God)",30, southside what it does god,POSITIVE,0.982,-9.06746,48.952255
+30,Rain down on us (Ah),31, rain down on us ah,NEGATIVE,0.9024,59.75724,-55.605366
+31,Genocide what it does (Huh),32, genocide what it does huh,NEGATIVE,0.9948,2.0809216,53.806297
+32,Slavery what it does (Ooh),33, slavery what it does ooh,NEGATIVE,0.99,14.227189,41.766293
+33,Rain down on us (Ah),34, rain down on us ah,NEGATIVE,0.9024,50.97251,-56.455727
+34,Whole life sellin' drugs (Huh),35, whole life sellin' drugs huh,NEGATIVE,0.9803,-80.3409,4.1667614
+35,Wash us in the blood (Ooh),36, wash us in the blood ooh,NEGATIVE,0.6457,-2.8711014,-12.5569315
+36,Wash us in Your blood (Ah),37, wash us in your blood ah,NEGATIVE,0.7914,-11.605834,-36.438507
+37,Wash us in the blood (And as we live in this evil and crooked and jezebelic world),38, wash us in the blood and as we live in this evil and crooked and jezebelic world,NEGATIVE,0.9591,24.256937,-27.064001
+38,Wash us in the blood,39, wash us in the blood,NEGATIVE,0.9143,5.580439,-35.867985
+39,Wash us in the blood,40, wash us in the blood,NEGATIVE,0.9143,9.330755,-46.19225
+40,"Holy Spirit, come down (Come take)",41, holy spirit come down come take,POSITIVE,0.9535,99.53819,-1.520663
+41,"Holy Spirit, come down (Come down)",42, holy spirit come down come down,NEGATIVE,0.9917,100.25423,10.087266
+42,"Holy Spirit, help now (Way down)",43, holy spirit help now way down,NEGATIVE,0.991,72.16385,19.66517
+43,"Holy Spirit, help now (Uh, uh)",44, holy spirit help now uh uh,NEGATIVE,0.9571,60.90099,11.606795
+44,"Holy Spirit, come down (Spirit)",45, holy spirit come down spirit,POSITIVE,0.8874,89.66647,4.7355833
+45,"Holy Spirit, come down (Ayy)",46, holy spirit come down ayy,NEGATIVE,0.9414,67.67582,-2.7817762
+46,"Holy Spirit, help now (Come down)",47, holy spirit help now come down,NEGATIVE,0.9868,85.61078,15.644743
+47,"Holy Spirit, help now (Yeah)",48, holy spirit help now yeah,POSITIVE,0.9943,60.03754,20.444273
+48,Wash us in the blood (Blood),49, wash us in the blood blood,NEGATIVE,0.8941,16.434092,-38.004642
+49,Whole life bein' thugs (Hah),50, whole life bein' thugs hah,NEGATIVE,0.9839,-77.42664,-12.831919
+50,"No choice, sellin' drugs (Ooh)",51, no choice sellin' drugs ooh,NEGATIVE,0.9984,-67.851364,-0.5312565
+51,Genocide what it does (Ah),52, genocide what it does ah,NEGATIVE,0.994,2.8301861,45.394287
+52,Mass incarc' what it does (Huh),53, mass incarc' what it does huh,NEGATIVE,0.9986,-8.717433,60.22136
+53,Cost a cause what it does (Ooh),54, cost a because what it does ooh,NEGATIVE,0.9835,8.79544,67.34664
+54,'Nother life bein' lost (Woah),55, 'nother life bein' lost woah,NEGATIVE,0.9951,-75.048874,-25.811083
+55,"Let it off, set it off",56, let it off set it off,NEGATIVE,0.9945,-22.115656,66.20989
+56,"Execution, thirty states (That's right)",57, execution thirty states that's right,POSITIVE,0.9991,-4.856272,30.878714
+57,Thirty states still execute (Ah),58, thirty states still execute ah,NEGATIVE,0.697,-12.743361,35.298046
+58,"Thou shall not kill, I shall not spill, Nextels at the rendezvous (Ooh)",59, thou shall not kill I shall not spill nextels at the rendezvous ooh,NEGATIVE,0.9302,-12.813671,-12.846224
+59,We dodgin' time in the federal (Get 'em),60, we dodgin' time in the federal get 'em,NEGATIVE,0.9944,-97.885735,-6.6694813
+60,Squad box you in like a sectional,61, squad box you in like a sectional,POSITIVE,0.9977,-52.268314,36.0444
+61,We walk through the glass and the residue (Ooh),62, we walk through the glass and the residue ooh,NEGATIVE,0.9541,-3.3900735,9.579252
+62,Now look what we headed to (Ah),63, now look what we headed to ah,POSITIVE,0.9911,-40.828484,-57.300167
+63,Rain down on us (Huh),64, rain down on us huh,NEGATIVE,0.9667,47.61285,-45.89859
+64,Rain down on us (Ooh),65, rain down on us ooh,POSITIVE,0.9736,50.899593,-32.791756
+65,Wash us in the blood (Hah),66, wash us in the blood hah,NEGATIVE,0.9555,10.734079,-24.65907
+66,Wash us in the blood (Huh),67, wash us in the blood huh,NEGATIVE,0.9694,-9.963561,-50.43476
+67,"Holy Spirit, come down (Ooh)",68, holy spirit come down ooh,POSITIVE,0.8798,82.62663,-3.9289591
+68,"Holy Spirit, come down (Hah)",69, holy spirit come down hah,NEGATIVE,0.9464,76.60509,4.2603006
+69,And they tryna control Ye (Huh),70, and they tryna control ye huh,NEGATIVE,0.9923,-50.563396,-13.709609
+70,They want me to calm down (Ooh),71, they want me to calm down ooh,NEGATIVE,0.9895,-22.961742,4.878396
+71,They don't want me to Kanye,72, they don't want me to kanye,NEGATIVE,0.9917,-37.57022,10.0980625
+72,They don't want Kanye to be Kanye,73, they don't want kanye to be kanye,NEGATIVE,0.9724,-33.510323,19.551311
+73,They wanna sign a fake Kanye,74, they wanna sign a fake kanye,NEGATIVE,0.9993,-27.957085,30.126978
+74,They tryna sign a calm Ye,75, they tryna sign a calm ye,NEGATIVE,0.9871,-45.53827,-6.584766
+75,"That's right, I call 'em Calm-Ye",76, that's right I call 'em calm-ye,POSITIVE,0.9938,-60.62863,-21.346146
+76,But don't take me the wrong way (God),77, but don't take me the wrong way god,POSITIVE,0.9839,-86.00487,40.492065
+77,But don't take me the wrong way (Hah),78, but don't take me the wrong way hah,POSITIVE,0.9815,-90.29108,34.581993
+78,'Cause God took me a long way (Huh),79, 'cause god took me a long way huh,NEGATIVE,0.9907,-83.8015,19.884718
+79,They wanna edit the interviews (We),80, they wanna edit the interviews we,NEGATIVE,0.997,-34.993206,35.810722
+80,They wanna take it to interludes (Me),81, they wanna take it to interludes me,POSITIVE,0.5519,-33.980453,49.2708
+81,Cut a whole sentence to interlude (Together),82, cut a whole sentence to interlude together,NEGATIVE,0.9944,-38.934452,62.030064
+82,You know that it's fake if it's in the news (Ooh),83, you know that it's fake if it's in the news ooh,NEGATIVE,0.9994,-18.70911,19.03072
+83,So I let it fly when I'm in the booth (Ah),84, so I let it fly when I'm in the booth ah,POSITIVE,0.5034,-45.82723,18.468966
+84,The devil a liar and I been the truth,85, the devil a liar and I been the truth,NEGATIVE,0.9691,27.414032,-14.364935
+85,Livin' 'cause nobody livin',86, livin' 'cause nobody livin',NEGATIVE,0.9949,-91.36317,-29.195805
+86,"And nobody gettin' it, doin' it different (Ah)",87, and nobody gettin' it doin' it different ah,NEGATIVE,0.9819,-98.93637,-20.42825
+87,Rain down on us (Huh),88, rain down on us huh,NEGATIVE,0.9667,56.423813,-45.00942
+88,"Holy Spirit, come down (Ooh)",89, holy spirit come down ooh,POSITIVE,0.8798,77.18915,-11.223817
+89,"Holy Spirit, come down (Ah)",90, holy spirit come down ah,NEGATIVE,0.946,91.60528,-10.974389
+90,We need You now,91, we need you now,POSITIVE,0.9969,-34.46711,-37.590363
+91,Wash us in the blood (Ooh),92, wash us in the blood ooh,NEGATIVE,0.6457,6.424616,-14.206411
+92,Whole life bein' thugs (Ah),93, whole life bein' thugs ah,NEGATIVE,0.9758,-84.98867,-6.2084618
+93,"No choice, sellin' drugs (God)",94, no choice sellin' drugs god,NEGATIVE,0.9977,-62.811024,7.275903
+94,Genocide what it does,95, genocide what it does,NEGATIVE,0.9934,12.598236,53.482864
+95,Slavery what it does,96, slavery what it does,NEGATIVE,0.9866,21.584564,50.50116

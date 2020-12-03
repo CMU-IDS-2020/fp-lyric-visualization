@@ -1,0 +1,67 @@
+,line_original,line_index_in_song,line_classified,line_label,line_score,tsne_x,tsne_y
+0,We at war,1, we at war,NEGATIVE,0.9847,19.323597,4.62993
+1,"We at war with terrorism, racism",2, we at war with terrorism racism,NEGATIVE,0.9887,16.66579,7.123241
+2,But most of all we at war with ourselves,3, but most of all we at war with ourselves,NEGATIVE,0.8996,17.594786,11.55206
+3,(Jesus walk),4, jesus walk,POSITIVE,0.9099,15.681024,-6.598993
+4,God show me the way because the Devil's tryna break me down,5, god show me the way because the devil's tryna break me down,NEGATIVE,0.9939,2.0186303,3.134668
+5,(Jesus walk with me),6, jesus walk with me,POSITIVE,0.9918,0.16289902,-17.952755
+6,You know what the Midwest is? Young and restless,7, you know what the midwest is young and restless,NEGATIVE,0.9002,4.40158,23.826826
+7,Where restless (Niggas) might snatch your necklace,8, where restless niggas might snatch your necklace,NEGATIVE,0.9929,-6.135646,12.959294
+8,And next these (Niggas) might jack your Lexus,9, and next these niggas might jack your lexus,NEGATIVE,0.9973,-9.60472,11.936835
+9,Somebody tell these (Niggas) who Kanye West is,10, somebody tell these niggas who kanye west is,NEGATIVE,0.9914,-13.229951,10.068999
+10,I walk through the valley of the Chi where death is,11, I walk through the valley of the chi where death is,NEGATIVE,0.978,1.6857501,-3.8104208
+11,Top floor the view alone will leave you breathless *gasps*,12, top floor the view alone will leave you breathless *gasps*,POSITIVE,0.9989,7.2428164,10.469874
+12,Try to catch it *gasps* it's kinda hard,13, try to catch it *gasps* it's kinda hard,NEGATIVE,0.9989,-1.5659453,19.399738
+13,"Getting choked by detectives, yeah, yeah, now check the method",14, getting choked by detectives yeah yeah now check the method,NEGATIVE,0.9978,-18.372608,13.80061
+14,"They be askin' us questions, harass and arrest us",15, they be askin' us questions harass and arrest us,NEGATIVE,0.9963,-19.314781,25.14568
+15,"Sayin' ""We eat pieces of shit like you for breakfast""",16," sayin' ""we eat pieces of shit like you for breakfast""",POSITIVE,0.9831,-14.428899,17.234247
+16,Huh? Y'all eat pieces of shit? What's the basis?,17, huh y'all eat pieces of shit what's the basis,NEGATIVE,0.992,-15.955637,20.724493
+17,We ain't going nowhere but got suits and cases,18, we ain't going nowhere but got suits and cases,NEGATIVE,0.9697,-6.29553,31.46635
+18,"A trunk full of coke, rental car from Avis",19, a trunk full of coke rental car from avis,NEGATIVE,0.9896,-24.6844,12.672429
+19,My mama used to say only Jesus can save us,20, my mama used to say only jesus can save us,NEGATIVE,0.9763,-4.849871,-4.6131945
+20,Well mama I know I act a fool,21, well mama I know I act a fool,NEGATIVE,0.9994,-23.39861,19.972864
+21,"But I'll be gone 'til November, I got packs to move",22, but I'll be gone 'til november I got packs to move,POSITIVE,0.671,-3.1198738,28.002398
+22,I hope,23, I hope,POSITIVE,0.9999,26.271618,-5.548679
+23,(Jesus walk),24, jesus walk,POSITIVE,0.9099,18.85932,-14.309517
+24,God show me the way because the Devil's tryna break me down,25, god show me the way because the devil's tryna break me down,NEGATIVE,0.9939,-1.4817305,0.83559424
+25,(Jesus walk with me),26, jesus walk with me,POSITIVE,0.9918,5.0516787,-18.36886
+26,The only thing that I pray is that my feet don't fail me now,27, the only thing that I pray is that my feet don't fail me now,POSITIVE,0.9844,-16.453646,-9.733071
+27,(Jesus walk),28, jesus walk,POSITIVE,0.9099,22.692286,-10.799399
+28,And I don't think there's nothin' I can do now to right my wrongs,29, and I don't think there's nothin' I can do now to right my wrongs,NEGATIVE,0.9997,0.22056311,35.136127
+29,(Jesus walk with me),30, jesus walk with me,POSITIVE,0.9918,10.011012,-18.686111
+30,I wanna talk to God but I'm afraid 'cause we ain't spoke in so long,31, I wanna talk to god but I'm afraid 'cause we ain't spoke in so long,NEGATIVE,0.9891,-9.219885,27.06317
+31,(Jesus walk),32, jesus walk,POSITIVE,0.9099,20.304274,-5.74356
+32,God show me the way because the Devil's tryna break me down,33, god show me the way because the devil's tryna break me down,NEGATIVE,0.9939,1.2794408,6.882202
+33,(Jesus walk with me),34, jesus walk with me,POSITIVE,0.9918,2.8493102,-14.109169
+34,The only thing that I pray is that my feet don't fail me now,35, the only thing that I pray is that my feet don't fail me now,POSITIVE,0.9844,-14.848994,-13.328031
+35,(Jesus walk),36, jesus walk,POSITIVE,0.9099,18.674192,-9.816319
+36,And I don't think there's nothin' I can do now to right my wrongs,37, and I don't think there's nothin' I can do now to right my wrongs,NEGATIVE,0.9997,2.5423703,32.921455
+37,(Jesus walk with me),38, jesus walk with me,POSITIVE,0.9918,2.4605353,-22.252745
+38,I wanna talk to God but I'm afraid 'cause we ain't spoke in so long,39, I wanna talk to god but I'm afraid 'cause we ain't spoke in so long,NEGATIVE,0.9891,-11.987363,28.511524
+39,"So long, so long",40, so long so long,NEGATIVE,0.9906,26.678656,-17.10579
+40,(Jesus walk with me),41, jesus walk with me,POSITIVE,0.9918,7.5856023,-14.617923
+41,"To the hustlers, killers, murderers, drug dealers, even the scrippers",42, to the hustlers killers murderers drug dealers even the scrippers,NEGATIVE,0.9749,4.309997,16.336311
+42,(Jesus walks for them),43, jesus walks for them,POSITIVE,0.9968,6.668725,-7.2529984
+43,"To the victims of welfare feel we livin' in Hell here, hell yeah",44, to the victims of welfare feel we livin' in hell here hell yeah,NEGATIVE,0.9963,-9.681506,17.09891
+44,(Jesus walks for them),45, jesus walks for them,POSITIVE,0.9968,8.728358,-4.681405
+45,"Now, hear ye, hear ye, want to see Thee more clearly",46, now hear ye hear ye want to see thee more clearly,POSITIVE,0.9993,12.881134,18.930428
+46,I know He hear me when my feet get weary,47, I know he hear me when my feet get weary,NEGATIVE,0.9117,-12.158888,-4.4858594
+47,'Cause we're the almost nearly extinct,48, 'cause we're the almost nearly extinct,NEGATIVE,0.999,-17.320295,32.334095
+48,"We rappers is role models: we rap, we don't think",49, we rappers is role models: we rap we don't think,NEGATIVE,0.9174,-9.471132,5.9785457
+49,I ain't here to argue about His facial features,50, I ain't here to argue about his facial features,NEGATIVE,0.5938,-10.496323,35.2909
+50,Or here to convert atheists into believers,51, or here to convert atheists into believers,NEGATIVE,0.9876,8.62981,1.8347616
+51,I'm just tryna say the way school need teachers,52, I'm just tryna say the way school need teachers,NEGATIVE,0.9844,-4.971052,22.572369
+52,"The way Kathie Lee needed Regis, that's the way I need Jesus",53, the way kathie lee needed regis that's the way I need jesus,NEGATIVE,0.9842,-3.1578164,8.96889
+53,"So here go my single, dawg, radio needs this",54, so here go my single dawg radio needs this,NEGATIVE,0.9975,-18.091179,8.310913
+54,They say you can rap about anything except for Jesus,55, they say you can rap about anything except for jesus,NEGATIVE,0.8945,-9.058773,1.6002955
+55,"That means guns, sex, lies, videotape",56, that means guns sex lies videotape,NEGATIVE,0.995,0.033021927,13.775507
+56,"But if I talk about God my record won't get played, huh?",57, but if I talk about god my record won't get played huh,NEGATIVE,0.9905,-13.376063,2.6020458
+57,Well if this take away from my spins,58, well if this take away from my spins,NEGATIVE,0.9802,-18.892998,1.6665255
+58,Which'll probably take away from my ends,59, which'll probably take away from my ends,NEGATIVE,0.9903,-24.878708,-2.762876
+59,Then I hope this take away from my sins,60, then I hope this take away from my sins,POSITIVE,0.9954,-18.12315,-2.7613664
+60,And bring the day that I'm dreamin' about,61, and bring the day that I'm dreamin' about,POSITIVE,0.9998,-25.750282,4.5754266
+61,"Next time I'm in the club, everybody screamin' out",62, next time I'm in the club everybody screamin' out,NEGATIVE,0.9613,-11.2741165,22.013308
+62,(Jesus walk),63, jesus walk,POSITIVE,0.9099,14.811813,-11.525812
+63,God show me the way because the Devil's tryna break me down,64, god show me the way because the devil's tryna break me down,NEGATIVE,0.9939,-2.093472,4.4053946
+64,(Jesus walk with me),65, jesus walk with me,POSITIVE,0.9918,7.3755226,-22.574265
+65,The only thing that I pray is that my feet don't fail me now,66, the only thing that I pray is that my feet don't fail me now,POSITIVE,0.9844,-12.360533,-10.352101

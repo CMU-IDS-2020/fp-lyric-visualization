@@ -61,6 +61,18 @@ def tsne_column(col):
 
     return X_embedded[:,0], X_embedded[:,1]
 
+def tsne_list(list_of_words):
+    """ Given a unique list of words, compute the t-SNE coordinates.
+        Return a dictionary {word: [x_value, y_value]} """
+    word_embeddings = []
+    for word in list_of_words:
+        word_embeddings.append(_word_embedding(word))
+
+    tsne_results = TSNE(n_components=2).fit_transform(np.array(word_embeddings))
+    tsne_dict = {}
+    for word in list_of_words:
+        tsne_dict[word] = tsne_results[list_of_words.index(word)]
+    return tsne_dict
 
 
 def normalize_positivity(df):
