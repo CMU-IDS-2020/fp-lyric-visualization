@@ -2,6 +2,7 @@ import http.server
 import socketserver
 import json
 import os
+import string
 import pandas as pd
 import numpy as np
 import argparse
@@ -17,14 +18,30 @@ genius = lyricsgenius.Genius("tub_dvzlNtK1D1lLS7o4YUqX2fGBnJdAVbW_OgjEjRKtfhyUop
 
 CACHE_DIR = 'cache'
 
+def format_filename(s):
+    """Take a string and return a valid filename constructed from the string.
+    Uses a whitelist approach: any characters not present in valid_chars are
+    removed. Also spaces are replaced with underscores.
+
+    Note: this method may produce invalid filenames such as ``, `.` or `..`
+    When I use this method I prepend a date string like '2009_01_15_19_46_32_'
+    and append a file extension like '.txt', so I avoid the potential of using
+    an invalid filename.
+    FROM: https://gist.github.com/seanh/93666
+    """
+    valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
+    filename = ''.join(c for c in s if c in valid_chars)
+    filename = filename.replace(' ','_') # I don't like spaces in filenames.
+    return filename
+
 def get_lyrics_df(artist_name, song_name):
     # Get genius results in case the user did not type something correctly.
     # Helps with consistency in file names.
     song = genius.search_song(song_name, artist_name)
     song_name, artist_name = song.title, song.artist
 
-    lyrics_fn = os.path.join(CACHE_DIR, artist_name + " " + song_name + " lyrics.csv")
-    lines_fn = os.path.join(CACHE_DIR, artist_name + " " + song_name + " lines.csv")
+    lyrics_fn = os.path.join(CACHE_DIR, format_filename(artist_name + " " + song_name + " lyrics.csv"))
+    lines_fn = os.path.join(CACHE_DIR, format_filename(artist_name + " " + song_name + " lines.csv"))
 
     if os.path.exists(lyrics_fn):
         # Used cached file

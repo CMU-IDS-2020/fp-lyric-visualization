@@ -345,9 +345,7 @@ function buildScatterPlot() {
     }
     // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
     var mouseleave = function(d) {
-        tooltip.transition()
-            .duration(200)
-            .style("opacity", 0)
+        tooltip.style("opacity", 0)
     }
 
     // Add X axis label:
@@ -507,7 +505,6 @@ function buildLinesScatterPlot() {
     // Its opacity is set to 0: we don't see it by default.
     var tooltip = d3.select("#lines-scatter-plot")
         .append("div")
-        .style("opacity", 0)
         .attr("class", "tooltip")
         .style("background-color", "white")
         .style("border", "solid")
@@ -530,9 +527,7 @@ function buildLinesScatterPlot() {
     }
     // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
     var mouseleavelines = function(d) {
-        tooltip.transition()
-            .duration(200)
-            .style("opacity", 0)
+        tooltip.style("opacity", 0)
     }
 
     // Add X axis label:
