@@ -15,7 +15,7 @@ model = model.to(device)
 model.eval()
 
 def _word_embedding(word):
-    """ Given a string word, get a numpy array representing the embedding
+    """ Given a string word or words, get a numpy array representing the embedding
         return np.array[embedding_size] """
     # Code referenced from https://github.com/BramVanroy/bert-for-inference/blob/master/introduction-to-bert.ipynb
     ids = tokenizer.encode(word)

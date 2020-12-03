@@ -11,6 +11,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
     <script src="https://d3js.org/d3.v4.js"></script>
 
     <script src="/lyrics.js"></script>
@@ -29,15 +33,27 @@
                 <div id="lyrics0"></div>
             </div>
             <div class="col-sm-4" id="plots">
-                <div style="position:fixed;">
-                    <div id="lyric-line-isolation">
+                <div style="position: fixed;">
+                    <div id="lyric-line-isolation" style="display: none;">
                         Hover over a lyric to see the words' part of speech here.
                     </div>
-                    <div>
-                        X Variable: <select id="x-var-select"></select><br/>
-                        y Variable: <select id="y-var-select"></select>
+                    <div style="text-align: center;">
+                        Each point is a <input id="scatter-plot-toggle" type="checkbox" checked data-toggle="toggle" data-on="Line" data-off="Word" data-onstyle="primary" data-offstyle="info">
                     </div>
-                    <div id="scatter-plot"></div>
+                    <div id="lyrics-plot" style="display:none;">
+                        <div>
+                            X Variable: <select id="x-var-select"></select><br/>
+                            y Variable: <select id="y-var-select"></select>
+                        </div>
+                        <div id="scatter-plot"></div>
+                    </div>
+                    <div id="lines-plot">
+                        <div>
+                            X Variable: <select id="x-var-lines-select"></select><br/>
+                            y Variable: <select id="y-var-lines-select"></select>
+                        </div>
+                        <div id="lines-scatter-plot"></div>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -52,7 +68,7 @@
 
     <!-- Loading modal -->
     <div class="modal" id="loadingModal">
-        <div style="width:100%;height:100%;text-align:center;padding-top:40vh;font-size:3rem;">
+        <div style="width:100%;height:100%;text-align:center;padding-top:40vh;font-size:3rem;color:#4fc0f7;">
             Loading...
             <div class="spinner-border" style="width:5rem;height:5rem;">
                 <span class="sr-only">Loading...</span>
@@ -66,6 +82,12 @@
 
         // Rebuild the scatter plot if you change which variables to show
         jQuery('#y-var-select, #x-var-select').change(buildScatterPlot);
+        jQuery('#y-var-lines-select, #x-var-lines-select').change(buildLinesScatterPlot);
+
+        // Toggle displays of lines or words plot functionality
+        jQuery('#scatter-plot-toggle').change(function() {
+            jQuery('#lyrics-plot, #lines-plot').toggle();
+        });
     });
 </script>
 </html>

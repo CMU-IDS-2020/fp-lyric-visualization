@@ -20,6 +20,10 @@ body {
 #lyrics {
     /*width: fit-content !important;*/
 }
+#lyrics0, #lyrics1 {
+    max-height: 80vh;
+    overflow: auto;
+}
 .lyric {
     cursor: pointer;
 }
@@ -78,7 +82,7 @@ body {
 #plots {
 }
 
-#scatter-plot {
+#scatter-plot, #lines-scatter-plot {
     position: fixed;
 }
 .selected-scatter-point {

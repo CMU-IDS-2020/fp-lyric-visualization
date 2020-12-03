@@ -66,6 +66,14 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
             lyrics_df1['tsne_x_combined'] = lyrics_df1['word_can_search'].apply(lambda x: tsne_dict[x][0])
             lyrics_df1['tsne_y_combined'] = lyrics_df1['word_can_search'].apply(lambda x: tsne_dict[x][1])
 
+            # Do the tsne for the words combined
+            all_lines_unique = list(set(list(lines_df0['line_classified'].unique()) + list(lines_df1['line_classified'].unique())))
+            tsne_dict = tsne_list(all_lines_unique)
+            lines_df0['tsne_x_combined'] = lines_df0['line_classified'].apply(lambda x: tsne_dict[x][0])
+            lines_df0['tsne_y_combined'] = lines_df0['line_classified'].apply(lambda x: tsne_dict[x][1])
+            lines_df1['tsne_x_combined'] = lines_df1['line_classified'].apply(lambda x: tsne_dict[x][0])
+            lines_df1['tsne_y_combined'] = lines_df1['line_classified'].apply(lambda x: tsne_dict[x][1])
+
             # Convert to dictionaries
             lyrics0, lyrics1, lines0, lines1 = lyrics_df0.to_dict('records'), lyrics_df1.to_dict('records'), \
                     lines_df0.to_dict('records'), lines_df1.to_dict('records')
