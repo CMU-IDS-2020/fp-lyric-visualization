@@ -15,6 +15,7 @@ var stopwords = ['i','me','my','myself','we','our','ours','ourselves','you','you
  */
 function getNewSong() {
     jQuery('#loadingModal').modal('show');
+    jQuery('#get-new-song-button').hide();
 
     jQuery.getJSON({
         url: '/getSong',
@@ -57,7 +58,7 @@ function getNewSongCompleted(data) {
     lines1.forEach(function(a) { a['song_index'] = 1; });
 
     // Clear the lyrics div
-    jQuery('#lyrics0, #scatter-plot, #lines-scatter-plot').html('');
+    jQuery('#lyrics0, #lyrics1, #scatter-plot, #lines-scatter-plot').html('');
 
     buildLyricsBlock(lyrics0, jQuery('#lyrics0'));
     buildLyricsBlock(lyrics1, jQuery('#lyrics1'));
@@ -88,9 +89,10 @@ function buildLyricsBlock(lyrics, parent) {
     let prevLineIndex = 0;
     let prevStanzaDescription = false;
     let lineHtml = jQuery('<div class="lyric-line" />');
+    let lineIndex = -1;
 
     lyrics.forEach(function(lyric) {
-        let lineIndex = lyric['line_index_in_song'];
+        lineIndex = lyric['line_index_in_song'];
         let stanzaDescription = lyric['stanza_description'];
 
         if (lineIndex != prevLineIndex) { // The start of a new line
@@ -105,7 +107,7 @@ function buildLyricsBlock(lyrics, parent) {
             // If new line starts a new stanza, put a lil stanza description on it
             if (stanzaDescription != prevStanzaDescription) {
                 // Add some space to separate stanzas
-                lineHtml.append(jQuery('<div class="stanza-separator" />')
+                parent.append(jQuery('<div class="stanza-separator" />')
                         .text('[' + stanzaDescription + ']'));
                 prevStanzaDescription = stanzaDescription;
             }
@@ -117,6 +119,10 @@ function buildLyricsBlock(lyrics, parent) {
         let lyricSpan = lyricJsonToHtml(lyric);
         lineHtml.append(lyricSpan);
     });
+
+    // Don't forget the last line :)
+    lineHtml.attr('line_index', lineIndex);
+    parent.append(lineHtml);
 
     // initHoverHighlightRepeatUsage();
 
@@ -350,7 +356,8 @@ function buildScatterPlot() {
         .attr("x", width/2 + margin.left)
         .attr("y", height + margin.top + 20)
         .attr('fill', '#000')
-        .text('Line Positivity');//.text(x_var);
+        // .text('Line Positivity');
+        .text(x_var);
     // Y axis label:
     svg.append("text")
         .attr("text-anchor", "end")
@@ -358,10 +365,8 @@ function buildScatterPlot() {
         .attr("y", -margin.left + 20)
         .attr("x", -margin.top - height/2 + 20)
         .attr('fill', '#000')
-        .text('Word Positivity');//.text(y_var)
-
-    // var myColor = d3.scaleOrdinal().domain(data)
-    // .range(["#69b3a280", "blue", "green", "yellow", "black", "grey", "darkgreen", "pink", "brown", "slateblue", "grey1", "orange"])
+        // .text('Word Positivity');
+        .text(y_var);
 
     // Add dots
     var myCircle = svg.append('g')
@@ -453,11 +458,14 @@ function buildLinesScatterPlot() {
         // Song 0
         let selectedLines0 = [];
         jQuery('#lyrics0 div.lyric-line.selected-lyric').each(function() { selectedLines0.push(jQuery(this).attr('line_index'));});
-        myCircle_lines.classed("selected-lyric-scatter-plot", function(d){ return isSelectedLyric(selectedLines0, d, 0 ) } );
+
         // Song 1
         let selectedLines1 = [];
         jQuery('#lyrics1 div.lyric-line.selected-lyric').each(function() { selectedLines1.push(jQuery(this).attr('line_index'));});
-        myCircle_lines.classed("selected-lyric-scatter-plot", function(d){ return isSelectedLyric(selectedLines1, d, 1 ) } );
+
+        myCircle_lines.classed("selected-lyric-scatter-plot", function(d) {
+            return isSelectedLyric(selectedLines0, d, 0) || isSelectedLyric(selectedLines1, d, 1);
+        });
     }
 
     // A function that return TRUE or FALSE according to if the word is selected in the lyrics block
@@ -479,11 +487,6 @@ function buildLinesScatterPlot() {
     let data = JSON.parse(JSON.stringify(lines0.concat(lines1))); // Copy lyrics object
     data.forEach(function(a) { a['x'] = a[x_var]; });
     data.forEach(function(a) { a['y'] = a[y_var]; });
-
-    // // Remove stopwords
-    // let dataNoStopwords = [];
-    // data.forEach(function(a) { if (!stopwords.includes(a['word_can_search'].toLowerCase())) {dataNoStopwords.push(a);} });
-    // data = dataNoStopwords;
 
     // Add X axis
     var x = d3.scaleLinear()
@@ -538,7 +541,8 @@ function buildLinesScatterPlot() {
         .attr("x", width/2 + margin.left)
         .attr("y", height + margin.top + 20)
         .attr('fill', '#000')
-        .text('Line Positivity');//.text(x_var);
+        // .text('Line Positivity');
+        .text(x_var);
     // Y axis label:
     svg_lines.append("text")
         .attr("text-anchor", "end")
@@ -546,10 +550,8 @@ function buildLinesScatterPlot() {
         .attr("y", -margin.left + 20)
         .attr("x", -margin.top - height/2 + 20)
         .attr('fill', '#000')
-        .text('Word Positivity');//.text(y_var)
-
-    // var myColor = d3.scaleOrdinal().domain(data)
-    // .range(["#69b3a280", "blue", "green", "yellow", "black", "grey", "darkgreen", "pink", "brown", "slateblue", "grey1", "orange"])
+        // .text('Word Positivity');
+        .text(y_var);
 
     // Add dots
     var myCircle_lines = svg_lines.append('g')

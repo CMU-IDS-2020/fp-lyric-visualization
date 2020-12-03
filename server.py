@@ -12,9 +12,17 @@ from preprocessing.dict_preprocess import preprocess_dict
 from preprocessing.merge_dataframes import merge_dataframes
 from preprocessing.tsne import tsne_list
 
+import lyricsgenius
+genius = lyricsgenius.Genius("tub_dvzlNtK1D1lLS7o4YUqX2fGBnJdAVbW_OgjEjRKtfhyUopjvonY50UzhPlKe")
+
 CACHE_DIR = 'cache'
 
 def get_lyrics_df(artist_name, song_name):
+    # Get genius results in case the user did not type something correctly.
+    # Helps with consistency in file names.
+    song = genius.search_song(song_name, artist_name)
+    song_name, artist_name = song.title, song.artist
+
     lyrics_fn = os.path.join(CACHE_DIR, artist_name + " " + song_name + " lyrics.csv")
     lines_fn = os.path.join(CACHE_DIR, artist_name + " " + song_name + " lines.csv")
 

@@ -1,0 +1,91 @@
+,line_original,line_index_in_song,line_classified,line_label,line_score,tsne_x,tsne_y
+0,"Yo VIP, let's kick it",1, yo vip let's kick it,POSITIVE,0.9477,-8.610606,-62.94296
+1,Ice ice baby,2, ice ice baby,POSITIVE,0.9922,73.75809,27.35749
+2,Ice ice baby,3, ice ice baby,POSITIVE,0.9922,71.92451,38.43699
+3,"Alright stop, collaborate and listen",4, alright stop collaborate and listen,POSITIVE,0.9092,-7.697422,-77.40781
+4,Ice is back with a brand new invention,5, ice is back with a brand new invention,POSITIVE,0.9993,34.09046,1.9016382
+5,Something grabs a hold of me tightly,6, something grabs a hold of me tightly,POSITIVE,0.9969,-40.645195,-15.170226
+6,Flow like a harpoon daily and nightly,7, flow like a harpoon daily and nightly,POSITIVE,0.9984,-3.2658718,41.985428
+7,"""Will it ever stop?"" Yo I don't know",8," ""will it ever stop?"" yo I don't know",NEGATIVE,0.9657,-39.347095,-43.5511
+8,Turn off the lights and I'll glow,9, turn off the lights and I'll glow,POSITIVE,0.9996,1.4317098,27.385748
+9,"To the extreme, I rock a mic like a vandal",10, to the extreme I rock a mic like a vandal,NEGATIVE,0.9947,-36.02478,14.014806
+10,Light up a stage and wax a chump like a candle,11, light up a stage and wax a chump like a candle,NEGATIVE,0.5317,11.615475,20.040367
+11,"Dance, rush the speaker that booms",12, dance rush the speaker that booms,POSITIVE,0.9995,-20.593424,20.410904
+12,I'm killing your brain like a poisonous mushroom,13, I'm killing your brain like a poisonous mushroom,NEGATIVE,0.9995,-64.82373,-22.639029
+13,Deadly when I play a dope melody,14, deadly when I play a dope melody,NEGATIVE,0.9987,-32.182404,11.985691
+14,Anything less than the best is a felony,15, anything less than the best is a felony,NEGATIVE,0.9914,-47.81645,24.227535
+15,"Love it or leave it, you better gangway",16, love it or leave it you better gangway,POSITIVE,0.9997,-14.851415,-43.0909
+16,"You better hit the bullseye, the kid don't play",17, you better hit the bullseye the kid don't play,NEGATIVE,0.9942,-14.539802,-32.093544
+17,"And if there was a problem, yo, I'll solve it",18, and if there was a problem yo I'll solve it,NEGATIVE,0.9978,-41.66215,-55.748917
+18,Check out the hook while my DJ revolves it,19, check out the hook while my dj revolves it,POSITIVE,0.9857,-8.683824,10.172572
+19,Ice ice baby Vanilla,20, ice ice baby vanilla,POSITIVE,0.9796,90.1947,49.57714
+20,Ice ice baby Vanilla,21, ice ice baby vanilla,POSITIVE,0.9796,100.104256,48.32031
+21,Ice ice baby Vanilla,22, ice ice baby vanilla,POSITIVE,0.9796,82.72729,58.00813
+22,Ice ice baby Vanilla,23, ice ice baby vanilla,POSITIVE,0.9796,110.86477,46.224926
+23,Now that the party is jumping,24, now that the party is jumping,POSITIVE,0.9682,23.231274,-3.1388395
+24,With the bass kicked in and the Vegas are pumping,25, with the bass kicked in and the vegas are pumping,POSITIVE,0.9979,14.273231,3.254662
+25,Quick to the point to the point no faking,26, quick to the point to the point no faking,NEGATIVE,0.999,-68.26438,-67.57648
+26,Cooking MCs like a pound of bacon,27, cooking mcs like a pound of bacon,NEGATIVE,0.897,-17.742733,38.330654
+27,Burnin' them if you're not quick and nimble,28, burnin' them if you're not quick and nimble,POSITIVE,0.9515,-27.628365,-37.95169
+28,I go crazy when I hear a cymbal,29, I go crazy when I hear a cymbal,NEGATIVE,0.7135,-49.065983,8.806155
+29,And a hi-hat with a souped up tempo,30, and a hi-hat with a souped up tempo,NEGATIVE,0.6457,-30.369581,44.660393
+30,"I'm on a roll, it's time to go solo",31, I'm on a roll it's time to go solo,POSITIVE,0.9979,-21.50973,-60.179142
+31,Rollin',32, rollin',POSITIVE,0.9946,-67.76602,-42.129566
+32,In my 5.0,33, in my 5.0,POSITIVE,0.9188,2.7506444,-43.112377
+33,With the rag-top down so my hair can blow,34, with the rag-top down so my hair can blow,NEGATIVE,0.9945,-23.121561,52.6783
+34,The girlies on standby waving just to say hi,35, the girlies on standby waving just to say hi,POSITIVE,0.999,6.119955,-12.77698
+35,"“Did you stop?” No, I just drove by",36, “did you stop?” no I just drove by,NEGATIVE,0.9933,-53.971886,-9.310313
+36,Kept on pursuing to the next stop,37, kept on pursuing to the next stop,NEGATIVE,0.8884,21.869408,-54.01223
+37,I busted a left and I'm heading to the next block,38, I busted a left and I'm heading to the next block,NEGATIVE,0.9976,28.354183,-45.496098
+38,The block was dead,39, the block was dead,NEGATIVE,0.9996,25.267654,-17.453928
+39,Yo so I continued to A1A Beachfront Avenue,40, yo so I continued to a1a beachfront avenue,NEGATIVE,0.9508,18.58516,-37.334934
+40,Girls were hot wearing less than bikinis,41, girls were hot wearing less than bikinis,NEGATIVE,0.9565,-46.45821,39.336555
+41,Rockman lovers driving Lamborghinis,42, rockman lovers driving lamborghinis,POSITIVE,0.9966,-42.40972,56.995224
+42,Jealous 'cause I'm out getting mine,43, jealous 'cause I'm out getting mine,NEGATIVE,0.9289,-40.14763,-30.172226
+43,Shay with a gauge and Vanilla with a nine,44, shay with a gauge and vanilla with a nine,POSITIVE,0.7314,-29.71901,30.982231
+44,Ready for the chumps on the wall,45, ready for the chumps on the wall,NEGATIVE,0.9957,-0.32033283,-2.5208676
+45,The chumps acting ill because they're full of eight ball,46, the chumps acting ill because they're full of eight ball,NEGATIVE,0.9997,-5.9516745,-10.736658
+46,Gunshots raged out like a bell,47, gunshots raged out like a bell,NEGATIVE,0.9948,-64.94566,9.990202
+47,I grabbed my nine all I heard were shells,48, I grabbed my nine all I heard were shells,NEGATIVE,0.9964,1.4555118,-27.830233
+48,Falling on the concrete real fast,49, falling on the concrete real fast,POSITIVE,0.8699,-69.2813,27.911531
+49,Jumped in my car slammed on the gas,50, jumped in my car slammed on the gas,NEGATIVE,0.9844,37.88854,-33.484867
+50,Bumper to bumper the avenue's packed,51, bumper to bumper the avenue's packed,POSITIVE,0.9997,19.705057,-27.604258
+51,I'm trying to get away before the jackers jack,52, I'm trying to get away before the jackers jack,NEGATIVE,0.997,-35.046684,-16.633953
+52,Police on the scene you know what I mean,53, police on the scene you know what I mean,NEGATIVE,0.8684,-27.958094,-78.68462
+53,They passed me up confronted all the dope fiends,54, they passed me up confronted all the dope fiends,POSITIVE,0.9322,-10.10969,-18.5171
+54,If there was a problem yo I'll solve it,55, if there was a problem yo I'll solve it,NEGATIVE,0.9975,-47.889053,-61.682446
+55,Check out the hook while my DJ revolves it,56, check out the hook while my dj revolves it,POSITIVE,0.9857,-0.22504807,9.940727
+56,Ice ice baby Vanilla,57, ice ice baby vanilla,POSITIVE,0.9796,92.21128,39.697094
+57,Ice ice baby Vanilla,58, ice ice baby vanilla,POSITIVE,0.9796,80.703514,47.506317
+58,Ice ice baby Vanilla,59, ice ice baby vanilla,POSITIVE,0.9796,95.02325,57.906788
+59,Ice ice baby Vanilla,60, ice ice baby vanilla,POSITIVE,0.9796,102.91957,37.35679
+60,Take heed 'cause I'm a lyrical poet,61, take heed 'cause I'm a lyrical poet,POSITIVE,0.9889,-50.231213,-37.589485
+61,Miami's on the scene just in case you didn't know it,62, miami's on the scene just in case you didn't know it,NEGATIVE,0.5361,-33.512737,-73.128525
+62,My town that created all the bass sound,63, my town that created all the bass sound,POSITIVE,0.9975,-14.042481,-1.0184338
+63,Enough to shake and kick holes in the ground,64, enough to shake and kick holes in the ground,POSITIVE,0.9265,19.257877,30.98546
+64,'Cause my style's like a chemical spill,65, 'cause my style's like a chemical spill,NEGATIVE,0.9992,-53.273388,-26.378912
+65,Feasible rhymes that you can vision and feel,66, feasible rhymes that you can vision and feel,POSITIVE,0.9994,-25.456188,-1.8871137
+66,"Conducted and formed, this is a hell of a concept",67, conducted and formed this is a hell of a concept,NEGATIVE,0.9954,-73.8189,-6.9950447
+67,We make it hype and you want to step,68, we make it hype and you want to step,POSITIVE,0.9988,-20.437109,-11.270771
+68,With this.  Shay plays on the fade,69, with this. shay plays on the fade,NEGATIVE,0.9846,-12.175226,26.256445
+69,"Slice like a ninja, cut like a razor blade",70, slice like a ninja cut like a razor blade,NEGATIVE,0.9517,0.6078811,52.389572
+70,"So fast, other DJs say “Damn!”",71, so fast other djs say “damn!”,NEGATIVE,0.9546,-37.45726,-0.18950658
+71,If rhyme was a drug I'd sell it by the gram,72, if rhyme was a drug I'd sell it by the gram,NEGATIVE,0.9986,-24.295282,-24.44684
+72,Keep my composure when it's time to get loose,73, keep my composure when it's time to get loose,POSITIVE,0.9933,-26.362188,-51.558437
+73,Magnetized by the mic while I kick my juice,74, magnetized by the mic while I kick my juice,NEGATIVE,0.5045,-20.339716,10.544066
+74,If there was a problem yo I'll solve it,75, if there was a problem yo I'll solve it,NEGATIVE,0.9975,-50.29351,-53.741657
+75,Check out the hook while my DJ revolves it,76, check out the hook while my dj revolves it,POSITIVE,0.9857,-4.3009734,16.857344
+76,Ice ice baby Vanilla,77, ice ice baby vanilla,POSITIVE,0.9796,100.62369,66.90317
+77,Ice ice baby Vanilla,78, ice ice baby vanilla,POSITIVE,0.9796,106.98332,57.241005
+78,Ice ice baby Vanilla,79, ice ice baby vanilla,POSITIVE,0.9796,88.21769,67.11576
+79,Ice ice baby,80, ice ice baby,POSITIVE,0.9922,81.57583,33.514862
+80,Vanilla Iceeeee,81, vanilla iceeeee,POSITIVE,0.8547,68.199066,57.599762
+81,"Yo man, let's get out of here",82, yo man let's get out of here,NEGATIVE,0.9946,-0.39341453,-64.18595
+82,Word to your mother,83, word to your mother,POSITIVE,0.9978,-45.187534,-80.180534
+83,"Ice ice baby, too cold",84, ice ice baby too cold,NEGATIVE,0.9982,87.006905,13.533034
+84,"Ice ice baby, too cold",85, ice ice baby too cold,NEGATIVE,0.9982,99.63508,16.848211
+85,"Ice ice baby, too cold",86, ice ice baby too cold,NEGATIVE,0.9982,91.72293,21.841648
+86,"Ice ice baby, too cold too cold",87, ice ice baby too cold too cold,NEGATIVE,0.9976,92.3107,3.53258
+87,"Ice ice baby, too cold too cold",88, ice ice baby too cold too cold,NEGATIVE,0.9976,103.0335,5.9623723
+88,"Ice ice baby, too cold too cold",89, ice ice baby too cold too cold,NEGATIVE,0.9976,99.2053,-3.0558524
+89,Ice,90, ice,POSITIVE,0.9661,59.705826,31.302109

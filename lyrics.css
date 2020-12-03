@@ -13,6 +13,11 @@ body {
 .song-info h4, .song-info h2 {
     display: inline-block;
 }
+
+button#get-new-song-button {
+    margin-bottom: 20px;
+}
+
 /******************************
  ******** LYRICS STYLING ******
  ******************************/
@@ -31,8 +36,18 @@ body {
     padding-bottom: 3px;
     padding-left: 5px;
 }
+.lyric-line {
+    border-left: 0px !important;
+}
+#lyrics0 {
+    background: #69b3a233;
+}
+#lyrics1 {
+    background: #9869b333;
+}
+
 .stanza-separator {
-    padding: 12px 0px 6px 0em;
+    padding: 12px 0px 6px 5px;
     opacity: 0.6;
     font-size: small !important;
 }
@@ -54,6 +69,10 @@ body {
     float: right;
 }
 
+.form-control {
+    width: fit-content !important;
+    display: inline-block !important;
+}
 
 /*.lyric-line { font-size: 1em; transition: all 0.2s; }
 .lyric-line:hover { font-size: 1.5em; }

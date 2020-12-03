@@ -1,0 +1,55 @@
+,line_original,line_index_in_song,line_classified,line_label,line_score,tsne_x,tsne_y
+0,Mmm num ba de,1, mmm num ba de,NEGATIVE,0.7904,-37.65314,-65.96146
+1,Dum bum ba be,2, dum bum ba be,NEGATIVE,0.9971,-50.462967,-61.413647
+2,Doo buh dum ba beh beh,3, doo buh dum ba beh beh,NEGATIVE,0.9718,-48.34058,-31.24596
+3,Pressure pushing down on me,4, pressure pushing down on me,NEGATIVE,0.9814,43.743305,-25.459076
+4,"Pressing down on you, no man ask for",5, pressing down on you no man ask for,POSITIVE,0.8463,25.194494,12.703307
+5,Under pressure that burns a building down,6, under pressure that burns a building down,NEGATIVE,0.9992,36.75971,4.0386863
+6,Splits a family in two,7, splits a family in two,NEGATIVE,0.7692,38.771008,-8.404508
+7,Puts people on streets,8, puts people on streets,POSITIVE,0.9914,49.046597,12.018111
+8,Um ba ba be,9, um ba ba be,NEGATIVE,0.9406,-30.399698,-52.217377
+9,Um ba ba be,10, um ba ba be,NEGATIVE,0.9406,-41.195522,-49.793514
+10,De day da,11, de day da,POSITIVE,0.9345,-19.194832,-37.811337
+11,Ee day da- that's okay,12, ee day da- that's okay,POSITIVE,0.9998,-27.603958,-23.083918
+12,It's the terror of knowing what this world is about,13, it's the terror of knowing what this world is about,NEGATIVE,0.8637,-6.5609174,44.795006
+13,"Watching some good friends screaming, ""Let me out!""",14," watching some good friends screaming ""let me out!""",NEGATIVE,0.9925,34.359474,42.93417
+14,Pray tomorrow gets me higher,15, pray tomorrow gets me higher,POSITIVE,0.9828,-14.281587,-3.0118568
+15,"Pressure on people, people on streets",16, pressure on people people on streets,NEGATIVE,0.9958,57.78985,34.60752
+16,Day day de mm hm,17, day day de mm hm,POSITIVE,0.6465,-6.725532,-34.20693
+17,Da da da ba ba,18, da da da ba ba,NEGATIVE,0.9854,-65.15594,-52.71885
+18,Okay,19, okay,POSITIVE,0.9998,3.073738,-57.444225
+19,"Chipping around, kick my brains around the floor",20, chipping around kick my brains around the floor,NEGATIVE,0.9932,39.91545,27.470352
+20,These are the days it never rains but it pours,21, these are the days it never rains but it pours,POSITIVE,0.9955,3.5183444,2.2375612
+21,Ee do ba be,22, ee do ba be,NEGATIVE,0.9311,-34.33763,-37.87106
+22,Ee da ba ba ba,23, ee da ba ba ba,NEGATIVE,0.9851,-54.360195,-44.742413
+23,Um bo bo,24, um bo bo,POSITIVE,0.6602,-21.372011,-64.94554
+24,Be lap,25, be lap,POSITIVE,0.9604,-12.454164,-51.173756
+25,People on streets,26, people on streets,POSITIVE,0.9418,64.423035,10.129623
+26,Ee da de da de,27, ee da de da de,NEGATIVE,0.9732,-66.65625,-31.246305
+27,People on streets,28, people on streets,POSITIVE,0.9418,72.37333,17.681646
+28,Ee da de da de da de da,29, ee da de da de da de da,NEGATIVE,0.9911,-76.19299,-37.815136
+29,It's the terror of knowing what this world is about,30, it's the terror of knowing what this world is about,NEGATIVE,0.8637,1.8653331,50.84253
+30,"Watching some good friends screaming, 'Let me out'",31, watching some good friends screaming 'let me out',NEGATIVE,0.9956,24.802256,45.404484
+31,"Pray tomorrow gets me higher, high",32, pray tomorrow gets me higher high,POSITIVE,0.9925,-8.096105,-10.317295
+32,"Pressure on people, people on streets",33, pressure on people people on streets,NEGATIVE,0.9958,57.97916,23.809134
+33,Turned away from it all like a blind man,34, turned away from it all like a blind man,NEGATIVE,0.9957,24.880068,27.506445
+34,Sat on a fence but it don't work,35, sat on a fence but it don't work,NEGATIVE,0.9996,56.911594,-6.862715
+35,Keep coming up with love but it's so slashed and torn,36, keep coming up with love but it's so slashed and torn,NEGATIVE,0.9984,-5.3867335,14.829984
+36,"Why, why, why?",37, why why why,NEGATIVE,0.9974,-48.82033,-0.066104285
+37,"Love, love, love, love, love",38, love love love love love,POSITIVE,0.9997,-50.767555,37.08581
+38,Insanity laughs under pressure we're breaking,39, insanity laughs under pressure we're breaking,POSITIVE,0.9942,18.496008,-0.70277965
+39,Can't we give ourselves one more chance?,40, can't we give ourselves one more chance,NEGATIVE,0.9971,-29.99057,9.1617565
+40,Why can't we give love that one more chance?,41, why can't we give love that one more chance,NEGATIVE,0.9823,-21.42913,16.353127
+41,"Why can't we give love, give love, give love, give love",42, why can't we give love give love give love give love,POSITIVE,0.7225,-31.051153,31.316397
+42,"Give love, give love, give love, give love, give love?",43, give love give love give love give love give love,POSITIVE,0.9997,-39.399715,40.779312
+43,Because love's such an old-fashioned word,44, because love's such and old-fashioned word,POSITIVE,0.9979,-7.852305,28.356915
+44,And love dares you to care for,45, and love dares you to care for,POSITIVE,0.9998,5.7548327,23.751392
+45,The people on the (People on streets) edge of the night,46, the people on the people on streets edge of the night,POSITIVE,0.9474,74.44161,33.059624
+46,And love (People on streets) dares you to change our way of,47, and love people on streets dares you to change our way of,POSITIVE,0.9996,12.931642,13.982265
+47,Caring about ourselves,48, caring about ourselves,POSITIVE,0.9994,10.618328,36.812603
+48,This is our last dance,49, this is our last dance,POSITIVE,0.5028,6.6683025,-19.18195
+49,This is our last dance,50, this is our last dance,POSITIVE,0.5028,13.969359,-25.892569
+50,This is ourselves under pressure,51, this is ourselves under pressure,NEGATIVE,0.9913,22.657108,-11.195545
+51,Under pressure,52, under pressure,NEGATIVE,0.9852,30.231192,-51.98355
+52,Under pressure,53, under pressure,NEGATIVE,0.9852,30.245169,-41.79448
+53,Pressure,54, pressure,NEGATIVE,0.9933,10.129568,-47.92406

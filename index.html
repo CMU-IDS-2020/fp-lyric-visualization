@@ -22,13 +22,18 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <h1><center>Song comparator</center></h1>
+            <center class="col">
+                <h1>
+                    Song comparator
+                </h1>
+                <button type="button" id="get-new-song-button" class="btn btn-primary" onclick="getNewSong()" style="display:none;">Re-Run With New Songs</button>
+            </center>
         </div>
         <div class="row">
             <div class="col-sm-4">
                 <div class="col mx-auto song-info">
-                    <h4>Artist:</h4><input type="text" name="artist0" value="Kanye West" disabled/><br/>
-                    <h4>Song:</h4><input type="text" name="song0" value="Jesus Walks" disabled/></h2>
+                    <h4>Artist:</h4><input type="text" name="artist0" value="Vanilla Ice" class="form-control"/><br/>
+                    <h4>Song:</h4><input type="text" name="song0" value="Ice Ice Baby" class="form-control"/></h2>
                 </div>
                 <div id="lyrics0"></div>
             </div>
@@ -37,20 +42,20 @@
                     <div id="lyric-line-isolation" style="display: none;">
                         Hover over a lyric to see the words' part of speech here.
                     </div>
-                    <div style="text-align: center;">
-                        Each point is a <input id="scatter-plot-toggle" type="checkbox" checked data-toggle="toggle" data-on="Line" data-off="Word" data-onstyle="primary" data-offstyle="info">
+                    <div style="margin: 0.5em 0px;">
+                        Each point is a: <input id="scatter-plot-toggle" type="checkbox" checked data-toggle="toggle" data-on="Line" data-off="Word" data-onstyle="primary" data-offstyle="info">
                     </div>
                     <div id="lyrics-plot" style="display:none;">
                         <div>
-                            X Variable: <select id="x-var-select"></select><br/>
-                            y Variable: <select id="y-var-select"></select>
+                            X Variable: <select id="x-var-select" class="form-control"></select><br/>
+                            y Variable: <select id="y-var-select" class="form-control"></select>
                         </div>
                         <div id="scatter-plot"></div>
                     </div>
                     <div id="lines-plot">
                         <div>
-                            X Variable: <select id="x-var-lines-select"></select><br/>
-                            y Variable: <select id="y-var-lines-select"></select>
+                            X Variable: <select id="x-var-lines-select" class="form-control"></select><br/>
+                            y Variable: <select id="y-var-lines-select" class="form-control"></select>
                         </div>
                         <div id="lines-scatter-plot"></div>
                     </div>
@@ -58,8 +63,8 @@
             </div>
             <div class="col-sm-4">
                 <div class="col mx-auto song-info">
-                    <h4>Artist:</h4><input type="text" name="artist1" value="Kanye West" disabled/><br/>
-                    <h4>Song:</h4><input type="text" name="song1" value="Wash Us in the Blood" disabled/></h2>
+                    <h4>Artist:</h4><input type="text" name="artist1" value="Queen" class="form-control"/><br/>
+                    <h4>Song:</h4><input type="text" name="song1" value="Under Pressure" class="form-control"/></h2>
                 </div>
                 <div id="lyrics1"></div>
             </div>
@@ -87,6 +92,11 @@
         // Toggle displays of lines or words plot functionality
         jQuery('#scatter-plot-toggle').change(function() {
             jQuery('#lyrics-plot, #lines-plot').toggle();
+        });
+
+        // When changing the song, enable the button
+        jQuery('input[name="artist0"], input[name="song0"], input[name="artist1"], input[name="song1"]').keyup(function() {
+            jQuery('#get-new-song-button').show();
         });
     });
 </script>
