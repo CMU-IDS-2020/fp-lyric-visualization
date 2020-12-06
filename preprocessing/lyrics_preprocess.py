@@ -174,7 +174,10 @@ def preprocess_lyrics(artist_name, song_name):
 							word_can_search = "nothing"
 						
 						if (word_can_search[-2:] == "n'"):
-							word_can_search = word_can_search[0:-1] + "g"
+							if (word_can_search == "an'"):
+								word_can_search = "and"
+							else:
+								word_can_search = word_can_search[0:-1] + "g"
 						
 						if (word_can_search == "'cause"):
 							word_can_search = "because"
