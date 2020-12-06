@@ -117,15 +117,28 @@
         // When changing comparison dimension do a few things.
         // (1) show the dimension plot and hide all others
         // (2) make the nav-link active
+        // (3) remove the selections made in the scatter plots and their correspondence with the text
         jQuery('#lines-plot, #lyrics-plot, #positivity-plot').hide();
         jQuery('.nav-link').removeClass('active');
+
+        // Turn off the clicking of the words/lines in the lyrics. Will turn back on below
+        jQuery('div.lyric-line, span.lyric').off('click');
+
+        // remove the selections made in the scatter plots and their correspondence with the text
+        removeAllScatterPlotSelections();
 
         if (dimension == 'wordSimilarities') {
             jQuery('#lyrics-plot').show();
             jQuery('#word-nav').addClass('active');
+
+            // Clicking a WORD in the lyrics highlights it in the plot
+            clickWordInLyricsInit();
         } else if (dimension == 'lineSimilarities') {
             jQuery('#lines-plot').show();
             jQuery('#line-nav').addClass('active');
+
+            // Clicking a LINE in the lyrics highlights it in the plot
+            clickLineInLyricsInit();
         } else if (dimension == 'positivity') {
             jQuery('#positivity-plot').show();
             jQuery('#positivity-nav').addClass('active');
