@@ -218,6 +218,34 @@ function initHoverIsolateLyricLine() {
     );
 }
 
+// Function that is triggered when selecting lyrics WORDS
+function updateChartLyricSelection() {
+    // Song 0
+    let selectedWords0 = [];
+    jQuery('#lyrics0 span.lyric.selected-lyric').each(function() { selectedWords0.push(jQuery(this).attr('lyricind'));});
+
+    // Song 1
+    let selectedWords1 = [];
+    jQuery('#lyrics1 span.lyric.selected-lyric').each(function() { selectedWords1.push(jQuery(this).attr('lyricind'));});
+
+    myCircle.classed("selected-lyric-scatter-plot", function(d) {
+        return isSelectedLyric(selectedWords0, d, 0) || isSelectedLyric(selectedWords1, d, 1);
+    });
+}
+
+// A function that return TRUE or FALSE according to if the WORD is selected in the lyrics block
+function isSelectedLyric(selectedWords, datum, song_index) {
+    return selectedWords.includes(String(datum.word_index_in_song)) && (datum.song_index == song_index);
+}
+
+// Clicking a word in the lyrics highlights it in the scatter plot
+function clickWordInLyricsInit() {
+    jQuery('span.lyric').click(function() {
+        jQuery(this).hasClass('selected-lyric') ? jQuery(this).removeClass('selected-lyric') : jQuery(this).addClass('selected-lyric');
+        updateChartLyricSelection();
+    });
+}
+
 /**
  * Build a scatter plot
  */
@@ -231,7 +259,7 @@ function buildScatterPlot() {
             height = jQuery(window).height() - 500 - margin.top - margin.bottom;
 
     // append the svg object to the body of the page
-    svg = d3.select("#scatter-plot")
+    svg_words = d3.select("#scatter-plot")
             .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -240,10 +268,10 @@ function buildScatterPlot() {
                 "translate(" + margin.left + "," + margin.top + ")");
     // Brushing code referenced from https://www.d3-graph-gallery.com/graph/interactivity_brush.html#changecss
     // Add brushing
-    svg.call( d3.brush()                 // Add the brush feature using the d3.brush function
+    wordsBrush = d3.brush()                 // Add the brush feature using the d3.brush function
             .extent( [ [0,0], [width,height] ] ) // initialise the brush area: start at 0,0 and finishes at width,height: it means I select the whole graph area
             .on("start brush", updateChartBrushing) // Each time the brush selection changes, trigger the 'updateChartBrushing' function
-        )
+    svg_words.call( wordsBrush );
 
     // Function that is triggered when brushing is performed
     function updateChartBrushing() {
@@ -254,6 +282,7 @@ function buildScatterPlot() {
     // A function that return TRUE or FALSE according if a dot is in the selection or not
     // Also handles highlighting text in the lyrics block
     function isBrushed(brush_coords, cx, cy, datum) {
+        if (brush_coords == null) { return false; }
         var x0 = brush_coords[0][0],
         x1 = brush_coords[1][0],
         y0 = brush_coords[0][1],
@@ -273,29 +302,6 @@ function buildScatterPlot() {
         return x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1;    // This return TRUE or FALSE depending on if the points is in the selected area
     }
 
-    // Function that is triggered when selecting lyrics
-    function updateChartLyricSelection() {
-        // Song 0
-        let selectedWords0 = [];
-        jQuery('#lyrics0 span.lyric.selected-lyric').each(function() { selectedWords0.push(jQuery(this).attr('lyricind'));});
-        myCircle.classed("selected-lyric-scatter-plot", function(d){ return isSelectedLyric(selectedWords0, d, 0 ) } );
-        // Song 1
-        let selectedWords1 = [];
-        jQuery('#lyrics1 span.lyric.selected-lyric').each(function() { selectedWords1.push(jQuery(this).attr('lyricind'));});
-        myCircle.classed("selected-lyric-scatter-plot", function(d){ return isSelectedLyric(selectedWords1, d, 1 ) } );
-    }
-
-    // A function that return TRUE or FALSE according to if the word is selected in the lyrics block
-    function isSelectedLyric(selectedWords, datum, song_index) {
-        return selectedWords.includes(String(datum.word_index_in_song)) && (datum.song_index == song_index);
-    }
-    // When clicking on a word in the lyrics, highlight it in the lyrics block as well as the plot
-    jQuery('span.lyric').off('click');
-    jQuery('span.lyric').click(function() {
-        jQuery(this).hasClass('selected-lyric') ? jQuery(this).removeClass('selected-lyric') : jQuery(this).addClass('selected-lyric');
-        updateChartLyricSelection();
-    });
-
     // Get the varuables to use in the scatter plot
     let x_var = jQuery('#x-var-select option:selected').val();
     let y_var = jQuery('#y-var-select option:selected').val();
@@ -305,16 +311,16 @@ function buildScatterPlot() {
     data.forEach(function(a) { a['x'] = a[x_var]; });
     data.forEach(function(a) { a['y'] = a[y_var]; });
 
-    // Remove stopwords
-    let dataNoStopwords = [];
-    data.forEach(function(a) { if (!stopwords.includes(a['word_can_search'].toLowerCase())) {dataNoStopwords.push(a);} });
-    data = dataNoStopwords;
+    // // Remove stopwords
+    // let dataNoStopwords = [];
+    // data.forEach(function(a) { if (!stopwords.includes(a['word_can_search'].toLowerCase())) {dataNoStopwords.push(a);} });
+    // data = dataNoStopwords;
 
     // Add X axis
     var x = d3.scaleLinear()
         .domain(d3.extent(data, function(d) { return +d.x; }))
         .range([ 0, width ]);
-    var xAxis = svg.append("g")
+    var xAxis = svg_words.append("g")
         .attr("transform", "translate(0," + height + ")")
         .call(d3.axisBottom(x));
 
@@ -322,7 +328,7 @@ function buildScatterPlot() {
     var y = d3.scaleLinear()
         .domain(d3.extent(data, function(d) { return +d.y; }))
         .range([ height, 0]);
-    var yAxis = svg.append("g")
+    var yAxis = svg_words.append("g")
         .call(d3.axisLeft(y));
 
     // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
@@ -355,7 +361,7 @@ function buildScatterPlot() {
     }
 
     // Add X axis label:
-    svg.append("text")
+    svg_words.append("text")
         .attr("text-anchor", "end")
         .attr("x", width/2 + margin.left)
         .attr("y", height + margin.top + 20)
@@ -363,7 +369,7 @@ function buildScatterPlot() {
         // .text('Line Positivity');
         .text(x_var);
     // Y axis label:
-    svg.append("text")
+    svg_words.append("text")
         .attr("text-anchor", "end")
         .attr("transform", "rotate(-90)")
         .attr("y", -margin.left + 20)
@@ -373,7 +379,7 @@ function buildScatterPlot() {
         .text(y_var);
 
     // Add dots
-    var myCircle = svg.append('g')
+    myCircle = svg_words.append('g')
         .selectAll("dot")
         .data(data)
         .enter()
@@ -399,9 +405,39 @@ function buildScatterPlot() {
                 d3.select(this).attr('class', 'selected-scatter-point');
             }
         });
+
+    // Initiallize clicking a word in the lyrics since it's a default
+    clickWordInLyricsInit();
 }
 
 
+// Function that is triggered when selecting lines of lyrics
+function updateChartLineSelection() {
+    // Song 0
+    let selectedLines0 = [];
+    jQuery('#lyrics0 div.lyric-line.selected-lyric').each(function() { selectedLines0.push(jQuery(this).attr('line_index'));});
+
+    // Song 1
+    let selectedLines1 = [];
+    jQuery('#lyrics1 div.lyric-line.selected-lyric').each(function() { selectedLines1.push(jQuery(this).attr('line_index'));});
+
+    myCircle_lines.classed("selected-lyric-scatter-plot", function(d) {
+        return isSelectedLine(selectedLines0, d, 0) || isSelectedLine(selectedLines1, d, 1);
+    });
+}
+
+// A function that return TRUE or FALSE according to if the line is selected in the lyrics block
+function isSelectedLine(selectedLines, datum, song_index) {
+    return selectedLines.includes(String(datum.line_index_in_song)) && (datum.song_index == song_index);
+}
+
+// Clicking a LINE in the lyrics highlights it in the scatter plot
+function clickLineInLyricsInit() {
+    jQuery('div.lyric-line').click(function() {
+        jQuery(this).hasClass('selected-lyric') ? jQuery(this).removeClass('selected-lyric') : jQuery(this).addClass('selected-lyric');
+        updateChartLineSelection();
+    });
+}
 /**
  * Build a scatter plot where each point is a line of lyrics
  */
@@ -424,10 +460,10 @@ function buildLinesScatterPlot() {
                 "translate(" + margin.left + "," + margin.top + ")");
     // Brushing code referenced from https://www.d3-graph-gallery.com/graph/interactivity_brush.html#changecss
     // Add brushing
-    svg_lines.call( d3.brush()                 // Add the brush feature using the d3.brush function
+    linesBrush = d3.brush()                 // Add the brush feature using the d3.brush function
             .extent( [ [0,0], [width,height] ] ) // initialise the brush area: start at 0,0 and finishes at width,height: it means I select the whole graph area
             .on("start brush", updateChartBrushing) // Each time the brush selection changes, trigger the 'updateChartBrushing' function
-        )
+    svg_lines.call( linesBrush )
 
     // Function that is triggered when brushing is performed
     function updateChartBrushing() {
@@ -438,6 +474,7 @@ function buildLinesScatterPlot() {
     // A function that return TRUE or FALSE according if a dot is in the selection or not
     // Also handles highlighting text in the lyrics block
     function isBrushed(brush_coords, cx, cy, datum) {
+        if (brush_coords == null) { return false; }
         var x0 = brush_coords[0][0],
         x1 = brush_coords[1][0],
         y0 = brush_coords[0][1],
@@ -456,32 +493,6 @@ function buildLinesScatterPlot() {
 
         return x0 <= cx && cx <= x1 && y0 <= cy && cy <= y1;    // This return TRUE or FALSE depending on if the points is in the selected area
     }
-
-    // Function that is triggered when selecting lyrics
-    function updateChartLyricSelection() {
-        // Song 0
-        let selectedLines0 = [];
-        jQuery('#lyrics0 div.lyric-line.selected-lyric').each(function() { selectedLines0.push(jQuery(this).attr('line_index'));});
-
-        // Song 1
-        let selectedLines1 = [];
-        jQuery('#lyrics1 div.lyric-line.selected-lyric').each(function() { selectedLines1.push(jQuery(this).attr('line_index'));});
-
-        myCircle_lines.classed("selected-lyric-scatter-plot", function(d) {
-            return isSelectedLyric(selectedLines0, d, 0) || isSelectedLyric(selectedLines1, d, 1);
-        });
-    }
-
-    // A function that return TRUE or FALSE according to if the word is selected in the lyrics block
-    function isSelectedLyric(selectedLines, datum, song_index) {
-        return selectedLines.includes(String(datum.line_index_in_song)) && (datum.song_index == song_index);
-    }
-    // When clicking on a word in the lyrics, highlight it in the lyrics block as well as the plot
-    jQuery('div.lyric-line').off('click');
-    jQuery('div.lyric-line').click(function() {
-        jQuery(this).hasClass('selected-lyric') ? jQuery(this).removeClass('selected-lyric') : jQuery(this).addClass('selected-lyric');
-        updateChartLyricSelection();
-    });
 
     // Get the varuables to use in the scatter plot
     let x_var = jQuery('#x-var-lines-select option:selected').val();
@@ -555,7 +566,7 @@ function buildLinesScatterPlot() {
         .text(y_var);
 
     // Add dots
-    var myCircle_lines = svg_lines.append('g')
+    myCircle_lines = svg_lines.append('g')
         .selectAll("dot")
         .data(data)
         .enter()
@@ -659,4 +670,22 @@ function buildPositivityBarchart() {
         .attr("width", xSubgroup.bandwidth())
         .attr("height", function(d) { return height - y(d.value); })
         .attr("fill", function(d) { return color(d.key); });
+}
+
+/**
+ * Remove all selected items from the scatter plots (lyrics and lines).
+ * This also means removing the selections from the lyric text itself
+ */
+function removeAllScatterPlotSelections() {
+    // Remove selections from the scatter plots
+    jQuery('#lines-scatter-plot circle, #scatter-plot circle').removeClass('selected-scatter-point');
+    jQuery('#lines-scatter-plot circle, #scatter-plot circle').removeClass('selected-lyric-scatter-plot');
+    // Remove selections/highlights from the text
+    jQuery('.lyric-line, .lyric').removeClass('selected-in-scatter-plot');
+    jQuery('.lyric-line, .lyric').removeClass('selected-lyric');
+
+    // Remove any brushing selections.
+    // Causes an exception. Can't seem to fix it. Wrapping in the try/catch works, though
+    svg_lines.call(linesBrush.move, null);
+    svg_words.call(wordsBrush.move, null);
 }
