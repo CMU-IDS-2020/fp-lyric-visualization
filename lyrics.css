@@ -93,7 +93,9 @@ button#get-new-song-button {
     display: block;
     font-size: 0.5em;
 }
-
+.nav-link {
+    cursor: pointer;
+}
 
 /******************************
  ******** D3JS STYLING ********

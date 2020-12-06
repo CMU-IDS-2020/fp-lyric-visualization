@@ -38,26 +38,43 @@
                 <div id="lyrics0"></div>
             </div>
             <div class="col-sm-4" id="plots">
-                <div style="position: fixed;">
+                <div>
                     <div id="lyric-line-isolation" style="display: none;">
                         Hover over a lyric to see the words' part of speech here.
                     </div>
-                    <div style="margin: 0.5em 0px;">
-                        Each point is a: <input id="scatter-plot-toggle" type="checkbox" checked data-toggle="toggle" data-on="Line" data-off="Word" data-onstyle="primary" data-offstyle="info">
+
+                    <div>
+                        <div>Which dimension would you like to compare the songs with?</div>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="word-nav" onclick="showComparison('wordSimilarities')">Word Similarities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="line-nav" onclick="showComparison('lineSimilarities')">Line Similarities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="positivity-nav" onclick="showComparison('positivity')">Positivity</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div id="lyrics-plot" style="display:none;">
-                        <div>
+
+
+                    <div id="lyrics-plot">
+                        <div style="display: none;">
                             X Variable: <select id="x-var-select" class="form-control"></select><br/>
                             y Variable: <select id="y-var-select" class="form-control"></select>
                         </div>
                         <div id="scatter-plot"></div>
                     </div>
-                    <div id="lines-plot">
-                        <div>
+                    <div id="lines-plot" style="display:none;">
+                        <div style="display: none;">
                             X Variable: <select id="x-var-lines-select" class="form-control"></select><br/>
                             y Variable: <select id="y-var-lines-select" class="form-control"></select>
                         </div>
                         <div id="lines-scatter-plot"></div>
+                    </div>
+                    <div id="positivity-plot" style="display:none;">
+                        <div id="positivity-bar-chart"></div>
                     </div>
                 </div>
             </div>
@@ -90,15 +107,29 @@
         jQuery('#y-var-select, #x-var-select').change(buildScatterPlot);
         jQuery('#y-var-lines-select, #x-var-lines-select').change(buildLinesScatterPlot);
 
-        // Toggle displays of lines or words plot functionality
-        jQuery('#scatter-plot-toggle').change(function() {
-            jQuery('#lyrics-plot, #lines-plot').toggle();
-        });
-
         // When changing the song, enable the button
         jQuery('input[name="artist0"], input[name="song0"], input[name="artist1"], input[name="song1"]').keyup(function() {
             jQuery('#get-new-song-button').show();
         });
     });
+
+    function showComparison(dimension) {
+        // When changing comparison dimension do a few things.
+        // (1) show the dimension plot and hide all others
+        // (2) make the nav-link active
+        jQuery('#lines-plot, #lyrics-plot, #positivity-plot').hide();
+        jQuery('.nav-link').removeClass('active');
+
+        if (dimension == 'wordSimilarities') {
+            jQuery('#lyrics-plot').show();
+            jQuery('#word-nav').addClass('active');
+        } else if (dimension == 'lineSimilarities') {
+            jQuery('#lines-plot').show();
+            jQuery('#line-nav').addClass('active');
+        } else if (dimension == 'positivity') {
+            jQuery('#positivity-plot').show();
+            jQuery('#positivity-nav').addClass('active');
+        }
+    }
 </script>
 </html>

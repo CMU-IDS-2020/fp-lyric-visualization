@@ -6,6 +6,8 @@ var lyrics1;
 var lines0;
 var lines1;
 
+var positivity_barchart_data;
+
 /** Stopwords from the NLTK library */
 var stopwords = ['i','me','my','myself','we','our','ours','ourselves','you','your','yours','yourself','yourselves','he','him','his','himself','she','her','hers','herself','it','its','itself','they','them','their','theirs','themselves','what','which','who','whom','this','that','these','those','am','is','are','was','were','be','been','being','have','has','had','having','do','does','did','doing','a','an','the','and','but','if','or','because','as','until','while','of','at','by','for','with','about','against','between','into','through','during','before','after','above','below','to','from','up','down','in','out','on','off','over','under','again','further','then','once','here','there','when','where','why','how','all','any','both','each','few','more','most','other','some','such','no','nor','not','only','own','same','so','than','too','very','s','t','can','will','just','don','should','now'];
 
@@ -43,6 +45,8 @@ function getNewSongCompleted(data) {
     lyrics1 = data.responseJSON.lyrics1;
     lines0 = data.responseJSON.lines0;
     lines1 = data.responseJSON.lines1;
+    positivity_barchart_data = data.responseJSON.pos_barplot_data;
+    console.log(positivity_barchart_data);
 
     // Sort by lyrics index
     lyrics0.sort((a, b) => (a['word_index_in_song'] > b['word_index_in_song']) ? 1 : -1);
@@ -63,6 +67,8 @@ function getNewSongCompleted(data) {
     buildLyricsBlock(lyrics0, jQuery('#lyrics0'));
     buildLyricsBlock(lyrics1, jQuery('#lyrics1'));
 
+    buildPositivityBarchart();
+
     // Populate the variable selects
     jQuery('#x-var-select, #y-var-select').html('');
     Object.keys(lyrics0[0]).forEach(function(varName) {
@@ -74,8 +80,8 @@ function getNewSongCompleted(data) {
     });
 
     // Pre-select some variables
-    jQuery('#x-var-select option[value="line_positivity_norm"]').prop('selected', true);
-    jQuery('#y-var-select option[value="word_positivity_norm"]').prop('selected', true);
+    jQuery('#x-var-select option[value="tsne_x_combined"]').prop('selected', true);
+    jQuery('#y-var-select option[value="tsne_y_combined"]').prop('selected', true);
 
 
     jQuery('#x-var-lines-select option[value="tsne_x_combined"]').prop('selected', true);
@@ -575,4 +581,82 @@ function buildLinesScatterPlot() {
                 d3.select(this).attr('class', 'selected-scatter-point');
             }
         });
+}
+
+/**
+ *
+ * Code adapted from https://www.d3-graph-gallery.com/graph/barplot_grouped_basicWide.html
+ */
+function buildPositivityBarchart() {
+    // Clear an existing plot
+    jQuery('#positivity-bar-chart').html('');
+
+    // set the dimensions and margins of the graph
+    var margin = {top: 10, right: 30, bottom: 30, left: 60},
+        width = jQuery('#plots').width() - margin.left - margin.right,
+        height = jQuery(window).height() - 500 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    var svg_pos = d3.select("#positivity-bar-chart")
+        .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+            .attr("transform",
+                  "translate(" + margin.left + "," + margin.top + ")");
+
+
+    // List of subgroups = header of the csv files = soil condition here
+    var subgroups = Object.keys(positivity_barchart_data[0]);//positivity_barchart_data.columns.slice(1)
+    subgroups.splice(subgroups.indexOf('group'), 1);
+
+    // List of groups = species here = value of the first column called group -> I show them on the X axis
+    var groups = positivity_barchart_data.columns;//d3.map(positivity_barchart_data, function(d){return(d.group)}).keys()
+
+    // Add X axis
+    var x = d3.scaleBand()
+        .domain(groups)
+            .range([0, width])
+            .padding([0.2])
+    svg_pos.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x).tickSize(0));
+
+    // Add Y axis
+    var y = d3.scaleLinear()
+        .domain([0, 105])
+        .range([ height, 0 ]);
+    svg_pos.append("g")
+        .call(d3.axisLeft(y));
+
+    // Another scale for subgroup position?
+    var xSubgroup = d3.scaleBand()
+        .domain(subgroups)
+        .range([0, x.bandwidth()])
+        .padding([0.05])
+
+    // color palette = one color per subgroup
+    var color = d3.scaleOrdinal()
+        .domain(subgroups)
+        .range(['#69b3a280', '#9869b380'])
+
+    // Hack to make the data object become iterable
+    let iter_data = [positivity_barchart_data[0], positivity_barchart_data[1], positivity_barchart_data[2], positivity_barchart_data[3]];
+
+    // Show the bars
+    svg_pos.append("g")
+        .selectAll("g")
+        // Enter in data = loop group per group
+        .data(iter_data)
+        .enter()
+        .append("g")
+        .attr("transform", function(d) {console.log(d); return "translate(" + x(d.group) + ",0)"; })
+            .selectAll("rect")
+            .data(function(d) {console.log(d); return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
+            .enter().append("rect")
+        .attr("x", function(d) { return xSubgroup(d.key); })
+        .attr("y", function(d) { return y(d.value); })
+        .attr("width", xSubgroup.bandwidth())
+        .attr("height", function(d) { return height - y(d.value); })
+        .attr("fill", function(d) { return color(d.key); });
 }

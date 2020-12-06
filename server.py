@@ -10,7 +10,7 @@ from urllib.parse import urlparse, parse_qs
 
 from preprocessing.lyrics_preprocess import preprocess_lyrics
 from preprocessing.dict_preprocess import preprocess_dict
-from preprocessing.merge_dataframes import merge_dataframes
+from preprocessing.merge_dataframes import merge_dataframes, positivity_barplot_data
 from preprocessing.tsne import tsne_list
 
 import lyricsgenius
@@ -53,9 +53,16 @@ def get_lyrics_df(artist_name, song_name):
         dict_df = preprocess_dict(lyrics_df)
         lyrics_df, lines_df = merge_dataframes(lyrics_df, lines_df, dict_df)
 
+        # Adding song name and artist name to the df
+        lyrics_df['song_name'] = song_name
+        lines_df['song_name'] = song_name
+        lyrics_df['artist_name'] = artist_name
+        lines_df['artist_name'] = artist_name
+
         # Cache the file
         lyrics_df.to_csv(lyrics_fn, encoding="utf-8")
         lines_df.to_csv(lines_fn, encoding="utf-8")
+
 
     return lyrics_df, lines_df
 
@@ -83,6 +90,9 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
             lyrics_df0, lines_df0 = get_lyrics_df(artist_name0, song_name0)
             lyrics_df1, lines_df1 = get_lyrics_df(artist_name1, song_name1)
 
+            # Positivity Barplot data
+            pos_barplot_data = positivity_barplot_data(lyrics_df0, lyrics_df1)
+
             # Do the tsne for the words combined
             all_words_unique = list(set(list(lyrics_df0['word_can_search'].unique()) + list(lyrics_df1['word_can_search'].unique())))
             tsne_dict = tsne_list(all_words_unique)
@@ -103,7 +113,12 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
             lyrics0, lyrics1, lines0, lines1 = lyrics_df0.to_dict('records'), lyrics_df1.to_dict('records'), \
                     lines_df0.to_dict('records'), lines_df1.to_dict('records')
 
-            output_json = json.dumps({'lyrics0' : lyrics0, 'lines0' : lines0, 'lyrics1': lyrics1, 'lines1': lines1})
+            output_json = json.dumps({
+                    'lyrics0' : lyrics0,
+                    'lines0' : lines0,
+                    'lyrics1': lyrics1,
+                    'lines1': lines1,
+                    'pos_barplot_data': pos_barplot_data})
 
             self._set_headers()
             self.wfile.write(output_json.encode())

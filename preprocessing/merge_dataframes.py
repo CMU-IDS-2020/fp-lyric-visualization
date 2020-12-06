@@ -24,4 +24,38 @@ def merge_dataframes(lyrics_df, lines_df, dict_df):
 
     lines_df['tsne_x'], lines_df['tsne_y'] = tsne_column(lines_df['line_classified'])
 
+    # Get the positive word in positive line .. etc. data
+    lyrics_df['positivity_bar_chart'] = ''
+    lyrics_df.loc[(lyrics_df['line_label'] == 'POSITIVE') & (lyrics_df['hugface_label'] == 'POSITIVE'), 'positivity_bar_chart'] = 'pos_word_pos_line'
+    lyrics_df.loc[(lyrics_df['line_label'] == 'NEGATIVE') & (lyrics_df['hugface_label'] == 'NEGATIVE'), 'positivity_bar_chart'] = 'neg_word_neg_line'
+    lyrics_df.loc[(lyrics_df['line_label'] == 'NEGATIVE') & (lyrics_df['hugface_label'] == 'POSITIVE'), 'positivity_bar_chart'] = 'pos_word_neg_line'
+    lyrics_df.loc[(lyrics_df['line_label'] == 'POSITIVE') & (lyrics_df['hugface_label'] == 'NEGATIVE'), 'positivity_bar_chart'] = 'neg_word_pos_line'
+
     return lyrics_df, lines_df
+
+
+def positivity_barplot_data(lyrics0_df, lyrics1_df):
+    """ Get counts of how many times a positive word was in a positive line
+        and the other combinations per song. Convert into a dictionary for d3"""
+    both_songs_df = pd.concat([lyrics0_df, lyrics1_df], ignore_index=True)
+
+    # Add a column that will be used to count
+    both_songs_df['count'] = 1
+
+    # Group by song and positivity alignment, then count
+    both_songs_df = both_songs_df.groupby(['song_name', 'positivity_bar_chart'], as_index=False).count()
+
+    data = {'columns':['pos_word_pos_line', 'neg_word_neg_line', 'pos_word_neg_line', 'neg_word_pos_line']}
+    i = 0
+    for positivity_val in ['pos_word_pos_line', 'neg_word_neg_line', 'pos_word_neg_line', 'neg_word_pos_line']:
+        t = {'group': positivity_val}
+        for song_name in both_songs_df['song_name'].unique():
+            t[song_name] = float(both_songs_df.loc[(both_songs_df['song_name'] == song_name) \
+                    & (both_songs_df['positivity_bar_chart'] == positivity_val) , 'count'].values[0])
+
+            # Normalize by how many lines are in the song. Put into a percentage
+            t[song_name] = 100. * t[song_name] / float(both_songs_df.loc[both_songs_df['song_name'] == song_name, 'count'].sum())
+        data[i] = t
+        i += 1
+
+    return data
