@@ -1,0 +1,43 @@
+,Unnamed: 0,Unnamed: 0.1,Unnamed: 0.1.1,Unnamed: 0.1.1.1,line_original,line_index_in_song,line_classified,line_label,line_score,song_name,artist_name,tsne_x_combined,tsne_y_combined
+0,0,0,0,0,I see the crystal raindrops fall,1, I see the crystal raindrops fall,NEGATIVE,0.7746,Just the Two of Us,Grover Washington Jr.,-60.7825813293457,-63.83891677856445
+1,1,1,1,1,And the beauty of it all,2, and the beauty of it all,POSITIVE,0.9999,Just the Two of Us,Grover Washington Jr.,-22.419044494628906,-74.4931640625
+2,2,2,2,2,Is when the sun comes shining through,3, is when the sun comes shining through,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,-45.25399398803711,-76.42459106445312
+3,3,3,3,3,To make those rainbows in my mind,4, to make those rainbows in my mind,POSITIVE,0.9994,Just the Two of Us,Grover Washington Jr.,-4.426461219787598,-69.9287109375
+4,4,4,4,4,When I think of you sometime,5, when I think of you sometime,POSITIVE,0.9973,Just the Two of Us,Grover Washington Jr.,-19.244762420654297,-20.77560043334961
+5,5,5,5,5,And I want to spend some time with you,6, and I want to spend some time with you,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,15.893062591552734,-61.27202606201172
+6,6,6,6,6,Just the two of us,7, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+7,7,7,7,7,We can make it if we try,8, we can make it if we try,POSITIVE,0.9996,Just the Two of Us,Grover Washington Jr.,-30.380281448364247,-105.4245834350586
+8,8,8,8,8,Just the two of us,9, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+9,9,9,9,9,(Just the two of us),10, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+10,10,10,10,10,Just the two of us,11, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+11,11,11,11,11,Building castles in the sky,12, building castles in the sky,POSITIVE,0.9989,Just the Two of Us,Grover Washington Jr.,15.260335922241213,-84.34684753417969
+12,12,12,12,12,Just the two of us,13, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+13,13,13,13,13,You and I,14, you and I,POSITIVE,0.9995,Just the Two of Us,Grover Washington Jr.,-5.339152812957764,-129.20454406738278
+14,14,14,14,14,"We look for love, no time for tears",15, we look for love no time for tears,POSITIVE,0.9979,Just the Two of Us,Grover Washington Jr.,-35.08568954467773,55.38870239257813
+15,15,15,15,15,Wasted water's all that is,16, wasted water's all that is,NEGATIVE,0.9998,Just the Two of Us,Grover Washington Jr.,-69.12886047363281,5.889672756195068
+16,16,16,16,16,And it don't make no flowers grow,17, and it don't make no flowers grow,NEGATIVE,0.9992,Just the Two of Us,Grover Washington Jr.,18.093061447143555,75.16607666015625
+17,17,17,17,17,Good things might come to those who wait,18, good things might come to those who wait,POSITIVE,0.9993,Just the Two of Us,Grover Washington Jr.,-50.70442581176758,-20.67308616638184
+18,18,18,18,18,Not for those who wait too late,19, not for those who wait too late,POSITIVE,0.9301,Just the Two of Us,Grover Washington Jr.,-60.27256393432617,-23.97942924499512
+19,19,19,19,19,We gotta go for all we know,20, we gotta go for all we know,NEGATIVE,0.8098,Just the Two of Us,Grover Washington Jr.,-53.30422973632813,11.134407043457033
+20,20,20,20,20,Just the two of us,21, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+21,21,21,21,21,We can make it if we try,22, we can make it if we try,POSITIVE,0.9996,Just the Two of Us,Grover Washington Jr.,-30.380281448364247,-105.4245834350586
+22,22,22,22,22,Just the two of us,23, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+23,23,23,23,23,(Just the two of us),24, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+24,24,24,24,24,Just the two of us,25, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+25,25,25,25,25,Building them castles in the sky,26, building them castles in the sky,POSITIVE,0.9993,Just the Two of Us,Grover Washington Jr.,7.621531963348389,-78.84292602539062
+26,26,26,26,26,Just the two of us,27, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+27,27,27,27,27,You and I,28, you and I,POSITIVE,0.9995,Just the Two of Us,Grover Washington Jr.,-5.339152812957764,-129.20454406738278
+28,28,28,28,28,I hear the crystal raindrops fall,29, I hear the crystal raindrops fall,POSITIVE,0.9847,Just the Two of Us,Grover Washington Jr.,-69.51190185546875,-67.16316986083984
+29,29,29,29,29,On the window down the hall,30, on the window down the hall,POSITIVE,0.974,Just the Two of Us,Grover Washington Jr.,50.38237762451172,-79.17879486083984
+30,30,30,30,30,And it becomes the morning dew,31, and it becomes the morning dew,NEGATIVE,0.8913,Just the Two of Us,Grover Washington Jr.,-34.18161773681641,-59.2452621459961
+31,31,31,31,31,"And, darling, when the morning comes",32, and darling when the morning comes,POSITIVE,0.9997,Just the Two of Us,Grover Washington Jr.,-40.97790908813477,-46.57701110839844
+32,32,32,32,32,And I see the morning sun,33, and I see the morning sun,POSITIVE,0.9976,Just the Two of Us,Grover Washington Jr.,-43.86407852172852,-63.338645935058594
+33,33,33,33,33,I want to be the one with you,34, I want to be the one with you,POSITIVE,0.9997,Just the Two of Us,Grover Washington Jr.,18.440244674682614,-48.96464157104492
+34,34,34,34,34,Just the two of us,35, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+35,35,35,35,35,We can make it if we try,36, we can make it if we try,POSITIVE,0.9996,Just the Two of Us,Grover Washington Jr.,-30.380281448364247,-105.4245834350586
+36,36,36,36,36,Just the two of us,37, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+37,37,37,37,37,(Just the two of us),38, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+38,38,38,38,38,Just the two of us,39, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+39,39,39,39,39,Building big castles way up high,40, building big castles way up high,POSITIVE,0.9997,Just the Two of Us,Grover Washington Jr.,26.78741455078125,-78.8990707397461
+40,40,40,40,40,Just the two of us,41, just the two of us,POSITIVE,0.9991,Just the Two of Us,Grover Washington Jr.,13.949930191040039,-114.09597778320312
+41,41,41,41,41,You and I,42, you and I,POSITIVE,0.9995,Just the Two of Us,Grover Washington Jr.,-5.339152812957764,-129.20454406738278

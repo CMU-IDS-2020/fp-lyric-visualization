@@ -17,6 +17,10 @@ import lyricsgenius
 genius = lyricsgenius.Genius("tub_dvzlNtK1D1lLS7o4YUqX2fGBnJdAVbW_OgjEjRKtfhyUopjvonY50UzhPlKe")
 
 CACHE_DIR = 'cache'
+HAND_PICKED_EXAMPLE_CACHE = 'hand_picked_example_cache'
+
+if not os.path.exists(CACHE_DIR): os.mkdir(CACHE_DIR)
+if not os.path.exists(HAND_PICKED_EXAMPLE_CACHE): os.mkdir(HAND_PICKED_EXAMPLE_CACHE)
 
 def format_filename(s):
     """Take a string and return a valid filename constructed from the string.
@@ -34,17 +38,20 @@ def format_filename(s):
     filename = filename.replace(' ','_') # I don't like spaces in filenames.
     return filename
 
-def get_lyrics_df(artist_name, song_name):
+def get_lyrics_df(artist_name, song_name, isHandPickedExample):
     # Get genius results in case the user did not type something correctly.
     # Helps with consistency in file names.
     song = genius.search_song(song_name, artist_name)
     song_name, artist_name = song.title, song.artist
 
-    lyrics_fn = os.path.join(CACHE_DIR, format_filename(artist_name + " " + song_name + " lyrics.csv"))
-    lines_fn = os.path.join(CACHE_DIR, format_filename(artist_name + " " + song_name + " lines.csv"))
+    lyrics_fn = os.path.join(HAND_PICKED_EXAMPLE_CACHE if isHandPickedExample else CACHE_DIR,
+                             format_filename(artist_name + " " + song_name + " lyrics.csv"))
+    lines_fn = os.path.join(HAND_PICKED_EXAMPLE_CACHE if isHandPickedExample else CACHE_DIR,
+                            format_filename(artist_name + " " + song_name + " lines.csv"))
 
     if os.path.exists(lyrics_fn):
         # Used cached file
+        print('Using a cached file for the song: ', song_name)
         lyrics_df = pd.read_csv(lyrics_fn, encoding="utf-8")
         lines_df = pd.read_csv(lines_fn, encoding="utf-8")
     else:
@@ -64,7 +71,7 @@ def get_lyrics_df(artist_name, song_name):
         lines_df.to_csv(lines_fn, encoding="utf-8")
 
 
-    return lyrics_df, lines_df
+    return lyrics_df, lines_df, lyrics_fn, lines_fn
 
 def compute_tsne(df0, df1, column):
     ''' Compute t-SNE using a specified column from two different data frames
@@ -97,17 +104,33 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
             artist_name0, song_name0 = query_components["artist0"][0].lower().strip(), query_components["songName0"][0].lower().strip()
             artist_name1, song_name1 = query_components["artist1"][0].lower().strip(), query_components["songName1"][0].lower().strip()
 
-            lyrics_df0, lines_df0 = get_lyrics_df(artist_name0, song_name0)
-            lyrics_df1, lines_df1 = get_lyrics_df(artist_name1, song_name1)
+            # Check if this is a pre-selected pairing of songs. If so, we might be able to avoid computing t-SNE
+            isHandPickedExample = query_components["isHandPickedExample"][0].lower().strip() == 'true'
+
+            lyrics_df0, lines_df0, lyrics_fn0, lines_fn0 = get_lyrics_df(artist_name0, song_name0, isHandPickedExample)
+            lyrics_df1, lines_df1, lyrics_fn1, lines_fn1 = get_lyrics_df(artist_name1, song_name1, isHandPickedExample)
 
             # Positivity Barplot data
             pos_barplot_data = positivity_barplot_data(lyrics_df0, lyrics_df1)
 
-            # Do the tsne for the words combined
-            compute_tsne(lyrics_df0, lyrics_df1, 'word_can_search')
+            if isHandPickedExample and ('tsne_x_combined' in lyrics_df0.columns) and ('tsne_x_combined' in lyrics_df1.columns):
+                # Don't need to do anything, cached file is good to go
+                print('Using cached version of a pre-selected example as is. No need to compute t-SNE.')
+            else:
+                # Compute t-SNE because it wasn't saved for this song comparison combination
+                # Do the tsne for the words combined
+                print('Computing t-SNE.')
+                compute_tsne(lyrics_df0, lyrics_df1, 'word_can_search')
 
-            # Do the tsne for the words combined
-            compute_tsne(lines_df0, lines_df1, 'line_classified')
+                # Do the tsne for the words combined
+                compute_tsne(lines_df0, lines_df1, 'line_classified')
+
+            if isHandPickedExample:
+                # Save this pre-selected pairing again to save the t-SNE values
+                lyrics_df0.to_csv(lyrics_fn0, encoding="utf-8")
+                lines_df0.to_csv(lines_fn0, encoding="utf-8")
+                lyrics_df1.to_csv(lyrics_fn1, encoding="utf-8")
+                lines_df1.to_csv(lines_fn1, encoding="utf-8")
 
             # Convert to dictionaries
             lyrics0, lyrics1, lines0, lines1 = lyrics_df0.to_dict('records'), lyrics_df1.to_dict('records'), \

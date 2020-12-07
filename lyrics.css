@@ -18,6 +18,16 @@ button#get-new-song-button {
     margin-bottom: 20px;
 }
 
+.row:first-child {
+    /** Styling for the header-like section */
+    background: #e8e8e8;
+    padding: .5em;
+    margin-bottom: 20px;
+}
+
+.btn-outline-primary {
+    background: #FFF;
+}
 /******************************
  ******** LYRICS STYLING ******
  ******************************/
@@ -28,6 +38,7 @@ button#get-new-song-button {
 #lyrics0, #lyrics1 {
     max-height: 80vh;
     overflow: auto;
+    margin-top: 10px;
 }
 .lyric {
     cursor: pointer;
@@ -95,6 +106,9 @@ button#get-new-song-button {
 }
 .nav-link {
     cursor: pointer;
+}
+.song-comparison-example {
+    display: inline-block;
 }
 
 /******************************

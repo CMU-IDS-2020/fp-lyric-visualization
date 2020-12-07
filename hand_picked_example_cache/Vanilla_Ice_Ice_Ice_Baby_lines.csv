@@ -1,0 +1,91 @@
+,Unnamed: 0,Unnamed: 0.1,Unnamed: 0.1.1,Unnamed: 0.1.1.1,Unnamed: 0.1.1.1.1,Unnamed: 0.1.1.1.1.1,Unnamed: 0.1.1.1.1.1.1,Unnamed: 0.1.1.1.1.1.1.1,Unnamed: 0.1.1.1.1.1.1.1.1,Unnamed: 0.1.1.1.1.1.1.1.1.1,line_original,line_index_in_song,line_classified,line_label,line_score,song_name,artist_name,tsne_x_combined,tsne_y_combined
+0,0,0,0,0,0,0,0,0,0,0,"Yo VIP, let's kick it",1, yo vip let's kick it,POSITIVE,0.9477,Ice Ice Baby,Vanilla Ice,-21.0452823638916,13.930685043334961
+1,1,1,1,1,1,1,1,1,1,1,Ice ice baby,2, ice ice baby,POSITIVE,0.9922,Ice Ice Baby,Vanilla Ice,-36.12673568725586,-48.18360900878906
+2,2,2,2,2,2,2,2,2,2,2,Ice ice baby,3, ice ice baby,POSITIVE,0.9922,Ice Ice Baby,Vanilla Ice,-36.12673568725586,-48.18360900878906
+3,3,3,3,3,3,3,3,3,3,3,"Alright stop, collaborate and listen",4, alright stop collaborate and listen,POSITIVE,0.9092,Ice Ice Baby,Vanilla Ice,-16.924654006958008,19.068979263305664
+4,4,4,4,4,4,4,4,4,4,4,Ice is back with a brand new invention,5, ice is back with a brand new invention,POSITIVE,0.9993,Ice Ice Baby,Vanilla Ice,26.560199737548828,-4.628077507019043
+5,5,5,5,5,5,5,5,5,5,5,Something grabs a hold of me tightly,6, something grabs a hold of me tightly,POSITIVE,0.9969,Ice Ice Baby,Vanilla Ice,33.27998733520508,-0.4812003374099731
+6,6,6,6,6,6,6,6,6,6,6,Flow like a harpoon daily and nightly,7, flow like a harpoon daily and nightly,POSITIVE,0.9984,Ice Ice Baby,Vanilla Ice,3.7188234329223633,32.980392456054695
+7,7,7,7,7,7,7,7,7,7,7,"""Will it ever stop?"" Yo I don't know",8, will it ever stop yo I don't know,NEGATIVE,0.9642,Ice Ice Baby,Vanilla Ice,-0.2736106812953949,-31.46767616271973
+8,8,8,8,8,8,8,8,8,8,8,Turn off the lights and I'll glow,9, turn off the lights and I'll glow,POSITIVE,0.9996,Ice Ice Baby,Vanilla Ice,6.57913875579834,24.3048152923584
+9,9,9,9,9,9,9,9,9,9,9,"To the extreme, I rock a mic like a vandal",10, to the extreme I rock a mic like a vandal,NEGATIVE,0.9947,Ice Ice Baby,Vanilla Ice,8.032180786132812,15.912458419799805
+10,10,10,10,10,10,10,10,10,10,10,Light up a stage and wax a chump like a candle,11, light up a stage and wax a chump like a candle,NEGATIVE,0.5317,Ice Ice Baby,Vanilla Ice,14.91202163696289,26.39631271362305
+11,11,11,11,11,11,11,11,11,11,11,"Dance, rush the speaker that booms",12, dance rush the speaker that booms,POSITIVE,0.9995,Ice Ice Baby,Vanilla Ice,19.413589477539066,11.291498184204102
+12,12,12,12,12,12,12,12,12,12,12,I'm killing your brain like a poisonous mushroom,13, I'm killing your brain like a poisonous mushroom,NEGATIVE,0.9995,Ice Ice Baby,Vanilla Ice,41.41279220581055,-1.8668354749679563
+13,13,13,13,13,13,13,13,13,13,13,Deadly when I play a dope melody,14, deadly when I play a dope melody,NEGATIVE,0.9987,Ice Ice Baby,Vanilla Ice,9.746307373046877,14.423979759216307
+14,14,14,14,14,14,14,14,14,14,14,Anything less than the best is a felony,15, anything less than the best is a felony,NEGATIVE,0.9914,Ice Ice Baby,Vanilla Ice,0.5075662732124329,16.222286224365234
+15,15,15,15,15,15,15,15,15,15,15,"Love it or leave it, you better gangway",16, love it or leave it you better gangway,POSITIVE,0.9997,Ice Ice Baby,Vanilla Ice,-14.660021781921387,7.349670886993407
+16,16,16,16,16,16,16,16,16,16,16,"You better hit the bullseye, the kid don't play",17, you better hit the bullseye the kid don't play,NEGATIVE,0.9942,Ice Ice Baby,Vanilla Ice,-9.276708602905273,7.445049285888673
+17,17,17,17,17,17,17,17,17,17,17,"And if there was a problem, yo, I'll solve it",18, and if there was a problem yo I'll solve it,NEGATIVE,0.9978,Ice Ice Baby,Vanilla Ice,-23.35287094116211,4.102737903594972
+18,18,18,18,18,18,18,18,18,18,18,Check out the hook while my DJ revolves it,19, check out the hook while my dj revolves it,POSITIVE,0.9857,Ice Ice Baby,Vanilla Ice,13.553832054138185,20.050630569458008
+19,19,19,19,19,19,19,19,19,19,19,Ice ice baby Vanilla,20, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+20,20,20,20,20,20,20,20,20,20,20,Ice ice baby Vanilla,21, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+21,21,21,21,21,21,21,21,21,21,21,Ice ice baby Vanilla,22, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+22,22,22,22,22,22,22,22,22,22,22,Ice ice baby Vanilla,23, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+23,23,23,23,23,23,23,23,23,23,23,Now that the party is jumping,24, now that the party is jumping,POSITIVE,0.9682,Ice Ice Baby,Vanilla Ice,22.44573211669922,0.1624464988708496
+24,24,24,24,24,24,24,24,24,24,24,With the bass kicked in and the Vegas are pumping,25, with the bass kicked in and the vegas are pumping,POSITIVE,0.9979,Ice Ice Baby,Vanilla Ice,18.40911865234375,3.739875078201294
+25,25,25,25,25,25,25,25,25,25,25,Quick to the point to the point no faking,26, quick to the point to the point no faking,NEGATIVE,0.999,Ice Ice Baby,Vanilla Ice,12.204730033874512,-43.2120361328125
+26,26,26,26,26,26,26,26,26,26,26,Cooking MCs like a pound of bacon,27, cooking mcs like a pound of bacon,NEGATIVE,0.897,Ice Ice Baby,Vanilla Ice,14.681872367858887,31.87824630737305
+27,27,27,27,27,27,27,27,27,27,27,Burnin' them if you're not quick and nimble,28, burning them if you're not quick and nimble,NEGATIVE,0.9912,Ice Ice Baby,Vanilla Ice,-1.0478582382202148,24.41092109680176
+28,28,28,28,28,28,28,28,28,28,28,I go crazy when I hear a cymbal,29, I go crazy when I hear a cymbal,NEGATIVE,0.7135,Ice Ice Baby,Vanilla Ice,33.412368774414055,11.455877304077148
+29,29,29,29,29,29,29,29,29,29,29,And a hi-hat with a souped up tempo,30, and a hi-hat with a souped up tempo,NEGATIVE,0.6457,Ice Ice Baby,Vanilla Ice,20.548553466796875,35.49705123901367
+30,30,30,30,30,30,30,30,30,30,30,"I'm on a roll, it's time to go solo",31, I'm on a roll it's time to go solo,POSITIVE,0.9979,Ice Ice Baby,Vanilla Ice,9.10452938079834,-13.322405815124512
+31,31,31,31,31,31,31,31,31,31,31,Rollin',32, rolling,NEGATIVE,0.9076,Ice Ice Baby,Vanilla Ice,-38.38277053833008,-29.50473213195801
+32,32,32,32,32,32,32,32,32,32,32,In my 5.0,33, in my 5.0,POSITIVE,0.9188,Ice Ice Baby,Vanilla Ice,43.01360321044922,16.302703857421875
+33,33,33,33,33,33,33,33,33,33,33,With the rag-top down so my hair can blow,34, with the rag-top down so my hair can blow,NEGATIVE,0.9945,Ice Ice Baby,Vanilla Ice,25.276382446289066,37.578392028808594
+34,34,34,34,34,34,34,34,34,34,34,The girlies on standby waving just to say hi,35, the girlies on standby waving just to say hi,POSITIVE,0.999,Ice Ice Baby,Vanilla Ice,32.209884643554695,21.92088508605957
+35,35,35,35,35,35,35,35,35,35,35,"“Did you stop?” No, I just drove by",36, did you stop no I just drove by,NEGATIVE,0.9912,Ice Ice Baby,Vanilla Ice,46.24435043334961,-17.686874389648438
+36,36,36,36,36,36,36,36,36,36,36,Kept on pursuing to the next stop,37, kept on pursuing to the next stop,NEGATIVE,0.8884,Ice Ice Baby,Vanilla Ice,-26.94931030273437,-7.46816349029541
+37,37,37,37,37,37,37,37,37,37,37,I busted a left and I'm heading to the next block,38, I busted a left and I'm heading to the next block,NEGATIVE,0.9976,Ice Ice Baby,Vanilla Ice,49.45421981811523,1.8978080749511719
+38,38,38,38,38,38,38,38,38,38,38,The block was dead,39, the block was dead,NEGATIVE,0.9996,Ice Ice Baby,Vanilla Ice,-20.28386688232422,-17.335920333862305
+39,39,39,39,39,39,39,39,39,39,39,Yo so I continued to A1A Beachfront Avenue,40, yo so I continued to a1a beachfront avenue,NEGATIVE,0.9508,Ice Ice Baby,Vanilla Ice,-19.786571502685547,-6.954344749450684
+40,40,40,40,40,40,40,40,40,40,40,Girls were hot wearing less than bikinis,41, girls were hot wearing less than bikinis,NEGATIVE,0.9565,Ice Ice Baby,Vanilla Ice,20.653717041015625,45.55244445800781
+41,41,41,41,41,41,41,41,41,41,41,Rockman lovers driving Lamborghinis,42, rockman lovers driving lamborghinis,POSITIVE,0.9966,Ice Ice Baby,Vanilla Ice,11.574411392211914,40.50329971313477
+42,42,42,42,42,42,42,42,42,42,42,Jealous 'cause I'm out getting mine,43, jealous because I'm out getting mine,NEGATIVE,0.9889,Ice Ice Baby,Vanilla Ice,18.452451705932614,-5.340105056762695
+43,43,43,43,43,43,43,43,43,43,43,Shay with a gauge and Vanilla with a nine,44, shay with a gauge and vanilla with a nine,POSITIVE,0.7314,Ice Ice Baby,Vanilla Ice,40.96210861206055,24.858266830444336
+44,44,44,44,44,44,44,44,44,44,44,Ready for the chumps on the wall,45, ready for the chumps on the wall,NEGATIVE,0.9957,Ice Ice Baby,Vanilla Ice,22.65970039367676,27.29153633117676
+45,45,45,45,45,45,45,45,45,45,45,The chumps acting ill because they're full of eight ball,46, the chumps acting ill because they're full of eight ball,NEGATIVE,0.9997,Ice Ice Baby,Vanilla Ice,25.74028587341309,22.73349189758301
+46,46,46,46,46,46,46,46,46,46,46,Gunshots raged out like a bell,47, gunshots raged out like a bell,NEGATIVE,0.9948,Ice Ice Baby,Vanilla Ice,43.407752990722656,38.43611145019531
+47,47,47,47,47,47,47,47,47,47,47,I grabbed my nine all I heard were shells,48, I grabbed my nine all I heard were shells,NEGATIVE,0.9964,Ice Ice Baby,Vanilla Ice,38.90877914428711,6.325292110443115
+48,48,48,48,48,48,48,48,48,48,48,Falling on the concrete real fast,49, falling on the concrete real fast,POSITIVE,0.8699,Ice Ice Baby,Vanilla Ice,34.46154022216797,-17.24547004699707
+49,49,49,49,49,49,49,49,49,49,49,Jumped in my car slammed on the gas,50, jumped in my car slammed on the gas,NEGATIVE,0.9844,Ice Ice Baby,Vanilla Ice,40.05302047729492,-11.127737045288086
+50,50,50,50,50,50,50,50,50,50,50,Bumper to bumper the avenue's packed,51, bumper to bumper the avenue's packed,POSITIVE,0.9997,Ice Ice Baby,Vanilla Ice,-18.392608642578125,-11.468571662902832
+51,51,51,51,51,51,51,51,51,51,51,I'm trying to get away before the jackers jack,52, I'm trying to get away before the jackers jack,NEGATIVE,0.997,Ice Ice Baby,Vanilla Ice,30.82804107666016,1.5533915758132937
+52,52,52,52,52,52,52,52,52,52,52,Police on the scene you know what I mean,53, police on the scene you know what I mean,NEGATIVE,0.8684,Ice Ice Baby,Vanilla Ice,51.22931289672852,-11.934268951416016
+53,53,53,53,53,53,53,53,53,53,53,They passed me up confronted all the dope fiends,54, they passed me up confronted all the dope fiends,POSITIVE,0.9322,Ice Ice Baby,Vanilla Ice,21.662235260009766,20.11383056640625
+54,54,54,54,54,54,54,54,54,54,54,If there was a problem yo I'll solve it,55, if there was a problem yo I'll solve it,NEGATIVE,0.9975,Ice Ice Baby,Vanilla Ice,-26.6664981842041,5.713256359100343
+55,55,55,55,55,55,55,55,55,55,55,Check out the hook while my DJ revolves it,56, check out the hook while my dj revolves it,POSITIVE,0.9857,Ice Ice Baby,Vanilla Ice,13.553832054138185,20.050630569458008
+56,56,56,56,56,56,56,56,56,56,56,Ice ice baby Vanilla,57, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+57,57,57,57,57,57,57,57,57,57,57,Ice ice baby Vanilla,58, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+58,58,58,58,58,58,58,58,58,58,58,Ice ice baby Vanilla,59, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+59,59,59,59,59,59,59,59,59,59,59,Ice ice baby Vanilla,60, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+60,60,60,60,60,60,60,60,60,60,60,Take heed 'cause I'm a lyrical poet,61, take heed because I'm a lyrical poet,POSITIVE,0.9186,Ice Ice Baby,Vanilla Ice,-8.94344425201416,16.278680801391598
+61,61,61,61,61,61,61,61,61,61,61,Miami's on the scene just in case you didn't know it,62, miami's on the scene just in case you didn't know it,NEGATIVE,0.5361,Ice Ice Baby,Vanilla Ice,54.52252960205078,-9.489384651184082
+62,62,62,62,62,62,62,62,62,62,62,My town that created all the bass sound,63, my town that created all the bass sound,POSITIVE,0.9975,Ice Ice Baby,Vanilla Ice,7.979990482330322,4.863564968109131
+63,63,63,63,63,63,63,63,63,63,63,Enough to shake and kick holes in the ground,64, enough to shake and kick holes in the ground,POSITIVE,0.9265,Ice Ice Baby,Vanilla Ice,34.754119873046875,34.648895263671875
+64,64,64,64,64,64,64,64,64,64,64,'Cause my style's like a chemical spill,65, because my style's like a chemical spill,NEGATIVE,0.9993,Ice Ice Baby,Vanilla Ice,4.326849937438965,9.947161674499512
+65,65,65,65,65,65,65,65,65,65,65,Feasible rhymes that you can vision and feel,66, feasible rhymes that you can vision and feel,POSITIVE,0.9994,Ice Ice Baby,Vanilla Ice,3.3417129516601562,0.508647084236145
+66,66,66,66,66,66,66,66,66,66,66,"Conducted and formed, this is a hell of a concept",67, conducted and formed this is a hell of a concept,NEGATIVE,0.9954,Ice Ice Baby,Vanilla Ice,7.462009906768799,-6.285017013549805
+67,67,67,67,67,67,67,67,67,67,67,We make it hype and you want to step,68, we make it hype and you want to step,POSITIVE,0.9988,Ice Ice Baby,Vanilla Ice,-1.0904476642608645,4.042111396789552
+68,68,68,68,68,68,68,68,68,68,68,With this.  Shay plays on the fade,69, with this shay plays on the fade,NEGATIVE,0.9982,Ice Ice Baby,Vanilla Ice,12.832403182983398,0.6736521124839783
+69,69,69,69,69,69,69,69,69,69,69,"Slice like a ninja, cut like a razor blade",70, slice like a ninja cut like a razor blade,NEGATIVE,0.9517,Ice Ice Baby,Vanilla Ice,51.64113235473633,25.43438148498535
+70,70,70,70,70,70,70,70,70,70,70,"So fast, other DJs say “Damn!”",71, so fast other djs say damn,NEGATIVE,0.6458,Ice Ice Baby,Vanilla Ice,12.962020874023438,8.533817291259767
+71,71,71,71,71,71,71,71,71,71,71,If rhyme was a drug I'd sell it by the gram,72, if rhyme was a drug I'd sell it by the gram,NEGATIVE,0.9986,Ice Ice Baby,Vanilla Ice,-3.3819706439971924,11.076199531555176
+72,72,72,72,72,72,72,72,72,72,72,Keep my composure when it's time to get loose,73, keep my composure when it's time to get loose,POSITIVE,0.9933,Ice Ice Baby,Vanilla Ice,-6.844369411468506,26.01667022705078
+73,73,73,73,73,73,73,73,73,73,73,Magnetized by the mic while I kick my juice,74, magnetized by the mic while I kick my juice,NEGATIVE,0.5045,Ice Ice Baby,Vanilla Ice,15.348165512084961,15.3601713180542
+74,74,74,74,74,74,74,74,74,74,74,If there was a problem yo I'll solve it,75, if there was a problem yo I'll solve it,NEGATIVE,0.9975,Ice Ice Baby,Vanilla Ice,-26.6664981842041,5.713256359100343
+75,75,75,75,75,75,75,75,75,75,75,Check out the hook while my DJ revolves it,76, check out the hook while my dj revolves it,POSITIVE,0.9857,Ice Ice Baby,Vanilla Ice,13.553832054138185,20.050630569458008
+76,76,76,76,76,76,76,76,76,76,76,Ice ice baby Vanilla,77, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+77,77,77,77,77,77,77,77,77,77,77,Ice ice baby Vanilla,78, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+78,78,78,78,78,78,78,78,78,78,78,Ice ice baby Vanilla,79, ice ice baby vanilla,POSITIVE,0.9796,Ice Ice Baby,Vanilla Ice,-35.61491394042969,-43.81915664672852
+79,79,79,79,79,79,79,79,79,79,79,Ice ice baby,80, ice ice baby,POSITIVE,0.9922,Ice Ice Baby,Vanilla Ice,-36.12673568725586,-48.18360900878906
+80,80,80,80,80,80,80,80,80,80,80,Vanilla Iceeeee,81, vanilla iceeeee,POSITIVE,0.8547,Ice Ice Baby,Vanilla Ice,-41.51891326904297,-44.78036880493164
+81,81,81,81,81,81,81,81,81,81,81,"Yo man, let's get out of here",82, yo man let's get out of here,NEGATIVE,0.9946,Ice Ice Baby,Vanilla Ice,-25.36908531188965,15.793862342834473
+82,82,82,82,82,82,82,82,82,82,82,Word to your mother,83, word to your mother,POSITIVE,0.9978,Ice Ice Baby,Vanilla Ice,59.12958526611328,-16.711944580078125
+83,83,83,83,83,83,83,83,83,83,83,"Ice ice baby, too cold",84, ice ice baby too cold,NEGATIVE,0.9982,Ice Ice Baby,Vanilla Ice,-29.83315086364746,-49.11350631713867
+84,84,84,84,84,84,84,84,84,84,84,"Ice ice baby, too cold",85, ice ice baby too cold,NEGATIVE,0.9982,Ice Ice Baby,Vanilla Ice,-29.83315086364746,-49.11350631713867
+85,85,85,85,85,85,85,85,85,85,85,"Ice ice baby, too cold",86, ice ice baby too cold,NEGATIVE,0.9982,Ice Ice Baby,Vanilla Ice,-29.83315086364746,-49.11350631713867
+86,86,86,86,86,86,86,86,86,86,86,"Ice ice baby, too cold too cold",87, ice ice baby too cold too cold,NEGATIVE,0.9976,Ice Ice Baby,Vanilla Ice,-26.19827651977539,-51.0181999206543
+87,87,87,87,87,87,87,87,87,87,87,"Ice ice baby, too cold too cold",88, ice ice baby too cold too cold,NEGATIVE,0.9976,Ice Ice Baby,Vanilla Ice,-26.19827651977539,-51.0181999206543
+88,88,88,88,88,88,88,88,88,88,88,"Ice ice baby, too cold too cold",89, ice ice baby too cold too cold,NEGATIVE,0.9976,Ice Ice Baby,Vanilla Ice,-26.19827651977539,-51.0181999206543
+89,89,89,89,89,89,89,89,89,89,89,Ice,90, ice,POSITIVE,0.9661,Ice Ice Baby,Vanilla Ice,-35.92447280883789,-22.65601921081543

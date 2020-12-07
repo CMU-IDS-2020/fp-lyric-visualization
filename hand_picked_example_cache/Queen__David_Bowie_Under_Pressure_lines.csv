@@ -1,0 +1,55 @@
+,Unnamed: 0,Unnamed: 0.1,Unnamed: 0.1.1,Unnamed: 0.1.1.1,Unnamed: 0.1.1.1.1,Unnamed: 0.1.1.1.1.1,Unnamed: 0.1.1.1.1.1.1,Unnamed: 0.1.1.1.1.1.1.1,Unnamed: 0.1.1.1.1.1.1.1.1,Unnamed: 0.1.1.1.1.1.1.1.1.1,line_original,line_index_in_song,line_classified,line_label,line_score,song_name,artist_name,tsne_x_combined,tsne_y_combined
+0,0,0,0,0,0,0,0,0,0,0,Mmm num ba de,1, mmm num ba de,NEGATIVE,0.7904,Under Pressure,Queen & David Bowie,-61.80445098876953,-14.951236724853516
+1,1,1,1,1,1,1,1,1,1,1,Dum bum ba be,2, dum bum ba be,NEGATIVE,0.9971,Under Pressure,Queen & David Bowie,-63.27835083007813,-9.631823539733887
+2,2,2,2,2,2,2,2,2,2,2,Doo buh dum ba beh beh,3, doo buh dum ba beh beh,NEGATIVE,0.9718,Under Pressure,Queen & David Bowie,-65.89727783203125,-4.777143955230713
+3,3,3,3,3,3,3,3,3,3,3,Pressure pushing down on me,4, pressure pushing down on me,NEGATIVE,0.9814,Under Pressure,Queen & David Bowie,28.925182342529297,-21.018667221069336
+4,4,4,4,4,4,4,4,4,4,4,"Pressing down on you, no man ask for",5, pressing down on you no man ask for,POSITIVE,0.8463,Under Pressure,Queen & David Bowie,-11.123418807983398,-1.8785679340362549
+5,5,5,5,5,5,5,5,5,5,5,Under pressure that burns a building down,6, under pressure that burns a building down,NEGATIVE,0.9992,Under Pressure,Queen & David Bowie,17.54754638671875,-18.91482734680176
+6,6,6,6,6,6,6,6,6,6,6,Splits a family in two,7, splits a family in two,NEGATIVE,0.7692,Under Pressure,Queen & David Bowie,16.68586540222168,-24.55498123168945
+7,7,7,7,7,7,7,7,7,7,7,Puts people on streets,8, puts people on streets,POSITIVE,0.9914,Under Pressure,Queen & David Bowie,26.53451728820801,-31.41373062133789
+8,8,8,8,8,8,8,8,8,8,8,Um ba ba be,9, um ba ba be,NEGATIVE,0.9406,Under Pressure,Queen & David Bowie,-57.043495178222656,-10.667384147644043
+9,9,9,9,9,9,9,9,9,9,9,Um ba ba be,10, um ba ba be,NEGATIVE,0.9406,Under Pressure,Queen & David Bowie,-57.043495178222656,-10.667384147644043
+10,10,10,10,10,10,10,10,10,10,10,De day da,11, de day da,POSITIVE,0.9345,Under Pressure,Queen & David Bowie,-45.55871200561523,-10.218450546264648
+11,11,11,11,11,11,11,11,11,11,11,Ee day da- that's okay,12, ee day da that's okay,POSITIVE,0.9998,Under Pressure,Queen & David Bowie,-35.02810287475586,2.988945960998535
+12,12,12,12,12,12,12,12,12,12,12,It's the terror of knowing what this world is about,13, it's the terror of knowing what this world is about,NEGATIVE,0.8637,Under Pressure,Queen & David Bowie,21.2125186920166,-12.185502052307127
+13,13,13,13,13,13,13,13,13,13,13,"Watching some good friends screaming, ""Let me out!""",14, watching some good friends screaming let me out,NEGATIVE,0.9954,Under Pressure,Queen & David Bowie,26.087541580200195,7.175619125366211
+14,14,14,14,14,14,14,14,14,14,14,Pray tomorrow gets me higher,15, pray tomorrow gets me higher,POSITIVE,0.9828,Under Pressure,Queen & David Bowie,0.020278148353099826,-22.797874450683594
+15,15,15,15,15,15,15,15,15,15,15,"Pressure on people, people on streets",16, pressure on people people on streets,NEGATIVE,0.9958,Under Pressure,Queen & David Bowie,26.94730567932129,-37.34541320800781
+16,16,16,16,16,16,16,16,16,16,16,Day day de mm hm,17, day day de mm hm,POSITIVE,0.6465,Under Pressure,Queen & David Bowie,-40.26244354248047,-8.593948364257812
+17,17,17,17,17,17,17,17,17,17,17,Da da da ba ba,18, da da da ba ba,NEGATIVE,0.9854,Under Pressure,Queen & David Bowie,-55.84042358398438,0.07115915417671204
+18,18,18,18,18,18,18,18,18,18,18,Okay,19, okay,POSITIVE,0.9998,Under Pressure,Queen & David Bowie,-41.94037628173828,-25.359575271606445
+19,19,19,19,19,19,19,19,19,19,19,"Chipping around, kick my brains around the floor",20, chipping around kick my brains around the floor,NEGATIVE,0.9932,Under Pressure,Queen & David Bowie,30.852066040039066,30.41167068481445
+20,20,20,20,20,20,20,20,20,20,20,These are the days it never rains but it pours,21, these are the days it never rains but it pours,POSITIVE,0.9955,Under Pressure,Queen & David Bowie,-2.5804688930511475,38.395240783691406
+21,21,21,21,21,21,21,21,21,21,21,Ee do ba be,22, ee do ba be,NEGATIVE,0.9311,Under Pressure,Queen & David Bowie,-52.48001480102539,-8.097886085510254
+22,22,22,22,22,22,22,22,22,22,22,Ee da ba ba ba,23, ee da ba ba ba,NEGATIVE,0.9851,Under Pressure,Queen & David Bowie,-58.42045211791992,-4.085109233856201
+23,23,23,23,23,23,23,23,23,23,23,Um bo bo,24, um bo bo,POSITIVE,0.6602,Under Pressure,Queen & David Bowie,-54.25906753540039,-16.539793014526367
+24,24,24,24,24,24,24,24,24,24,24,Be lap,25, be lap,POSITIVE,0.9604,Under Pressure,Queen & David Bowie,-46.30323791503906,-16.851221084594727
+25,25,25,25,25,25,25,25,25,25,25,People on streets,26, people on streets,POSITIVE,0.9418,Under Pressure,Queen & David Bowie,30.79801750183105,-34.681434631347656
+26,26,26,26,26,26,26,26,26,26,26,Ee da de da de,27, ee da de da de,NEGATIVE,0.9732,Under Pressure,Queen & David Bowie,-61.33388137817383,5.8217549324035645
+27,27,27,27,27,27,27,27,27,27,27,People on streets,28, people on streets,POSITIVE,0.9418,Under Pressure,Queen & David Bowie,30.79801750183105,-34.681434631347656
+28,28,28,28,28,28,28,28,28,28,28,Ee da de da de da de da,29, ee da de da de da de da,NEGATIVE,0.9911,Under Pressure,Queen & David Bowie,-58.1772689819336,8.506950378417969
+29,29,29,29,29,29,29,29,29,29,29,It's the terror of knowing what this world is about,30, it's the terror of knowing what this world is about,NEGATIVE,0.8637,Under Pressure,Queen & David Bowie,21.2125186920166,-12.185502052307127
+30,30,30,30,30,30,30,30,30,30,30,"Watching some good friends screaming, 'Let me out'",31, watching some good friends screaming let me out,NEGATIVE,0.9954,Under Pressure,Queen & David Bowie,26.087541580200195,7.175619125366211
+31,31,31,31,31,31,31,31,31,31,31,"Pray tomorrow gets me higher, high",32, pray tomorrow gets me higher high,POSITIVE,0.9925,Under Pressure,Queen & David Bowie,3.61330509185791,-22.42728042602539
+32,32,32,32,32,32,32,32,32,32,32,"Pressure on people, people on streets",33, pressure on people people on streets,NEGATIVE,0.9958,Under Pressure,Queen & David Bowie,26.94730567932129,-37.34541320800781
+33,33,33,33,33,33,33,33,33,33,33,Turned away from it all like a blind man,34, turned away from it all like a blind man,NEGATIVE,0.9957,Under Pressure,Queen & David Bowie,26.06719207763672,15.33293342590332
+34,34,34,34,34,34,34,34,34,34,34,Sat on a fence but it don't work,35, sat on a fence but it don't work,NEGATIVE,0.9996,Under Pressure,Queen & David Bowie,-24.843616485595703,28.18018341064453
+35,35,35,35,35,35,35,35,35,35,35,Keep coming up with love but it's so slashed and torn,36, keep coming up with love but it's so slashed and torn,NEGATIVE,0.9984,Under Pressure,Queen & David Bowie,-14.012866973876953,33.44739151000977
+36,36,36,36,36,36,36,36,36,36,36,"Why, why, why?",37, why why why,NEGATIVE,0.9974,Under Pressure,Queen & David Bowie,-47.9704704284668,-31.976430892944336
+37,37,37,37,37,37,37,37,37,37,37,"Love, love, love, love, love",38, love love love love love,POSITIVE,0.9997,Under Pressure,Queen & David Bowie,-7.9989423751831055,-52.71010208129883
+38,38,38,38,38,38,38,38,38,38,38,Insanity laughs under pressure we're breaking,39, insanity laughs under pressure we're breaking,POSITIVE,0.9942,Under Pressure,Queen & David Bowie,1.4123624563217163,-8.168670654296875
+39,39,39,39,39,39,39,39,39,39,39,Can't we give ourselves one more chance?,40, can't we give ourselves one more chance,NEGATIVE,0.9971,Under Pressure,Queen & David Bowie,-12.048337936401367,-31.643814086914066
+40,40,40,40,40,40,40,40,40,40,40,Why can't we give love that one more chance?,41, why can't we give love that one more chance,NEGATIVE,0.9823,Under Pressure,Queen & David Bowie,-8.288333892822267,-32.415294647216804
+41,41,41,41,41,41,41,41,41,41,41,"Why can't we give love, give love, give love, give love",42, why can't we give love give love give love give love,POSITIVE,0.7225,Under Pressure,Queen & David Bowie,-7.0087571144104,-43.6546745300293
+42,42,42,42,42,42,42,42,42,42,42,"Give love, give love, give love, give love, give love?",43, give love give love give love give love give love,POSITIVE,0.9997,Under Pressure,Queen & David Bowie,-6.956991672515869,-48.21203231811523
+43,43,43,43,43,43,43,43,43,43,43,Because love's such an old-fashioned word,44, because love's such an old-fashioned word,POSITIVE,0.9989,Under Pressure,Queen & David Bowie,9.594030380249023,-30.567949295043945
+44,44,44,44,44,44,44,44,44,44,44,And love dares you to care for,45, and love dares you to care for,POSITIVE,0.9998,Under Pressure,Queen & David Bowie,-7.519630432128906,-5.588766574859619
+45,45,45,45,45,45,45,45,45,45,45,The people on the (People on streets) edge of the night,46, the people on the people on streets edge of the night,POSITIVE,0.9474,Under Pressure,Queen & David Bowie,33.61952590942383,-39.755653381347656
+46,46,46,46,46,46,46,46,46,46,46,And love (People on streets) dares you to change our way of,47, and love people on streets dares you to change our way of,POSITIVE,0.9996,Under Pressure,Queen & David Bowie,-4.619725227355957,-0.4030413627624512
+47,47,47,47,47,47,47,47,47,47,47,Caring about ourselves,48, caring about ourselves,POSITIVE,0.9994,Under Pressure,Queen & David Bowie,-6.975987434387207,-13.124850273132324
+48,48,48,48,48,48,48,48,48,48,48,This is our last dance,49, this is our last dance,POSITIVE,0.5028,Under Pressure,Queen & David Bowie,-9.336748123168944,-22.903982162475586
+49,49,49,49,49,49,49,49,49,49,49,This is our last dance,50, this is our last dance,POSITIVE,0.5028,Under Pressure,Queen & David Bowie,-9.336748123168944,-22.903982162475586
+50,50,50,50,50,50,50,50,50,50,50,This is ourselves under pressure,51, this is ourselves under pressure,NEGATIVE,0.9913,Under Pressure,Queen & David Bowie,0.3649622201919556,-12.345720291137695
+51,51,51,51,51,51,51,51,51,51,51,Under pressure,52, under pressure,NEGATIVE,0.9852,Under Pressure,Queen & David Bowie,-27.71359825134277,-27.79144859313965
+52,52,52,52,52,52,52,52,52,52,52,Under pressure,53, under pressure,NEGATIVE,0.9852,Under Pressure,Queen & David Bowie,-27.71359825134277,-27.79144859313965
+53,53,53,53,53,53,53,53,53,53,53,Pressure,54, pressure,NEGATIVE,0.9933,Under Pressure,Queen & David Bowie,-34.350475311279304,-27.21767807006836

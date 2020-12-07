@@ -1,0 +1,30 @@
+,line_original,line_index_in_song,line_classified,line_label,line_score,song_name,artist_name,tsne_x_combined,tsne_y_combined
+0,The snow's coming down,1, the snow's coming down,NEGATIVE,0.9991,Christmas (Baby Please Come Home),Darlene Love,-177.3734893798828,-156.17324829101562
+1,I'm watching it fall,2, I'm watching it fall,NEGATIVE,0.9956,Christmas (Baby Please Come Home),Darlene Love,-29.275381088256836,-128.7080535888672
+2,Lots of people around,3, lots of people around,POSITIVE,0.9984,Christmas (Baby Please Come Home),Darlene Love,-156.78675842285156,17.9975528717041
+3,Baby please come home,4, baby please come home,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,284.61016845703125,133.52276611328125
+4,The church bells in town,5, the church bells in town,POSITIVE,0.9901,Christmas (Baby Please Come Home),Darlene Love,-350.9454345703125,-124.25730895996094
+5,All ringing in song,6, all ringing in song,POSITIVE,0.9995,Christmas (Baby Please Come Home),Darlene Love,-228.23867797851562,-86.33880615234375
+6,Full of happy sounds,7, full of happy sounds,POSITIVE,0.9999,Christmas (Baby Please Come Home),Darlene Love,-270.4222717285156,-74.62767791748047
+7,Baby please come home,8, baby please come home,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,284.61016845703125,133.52276611328125
+8,"They're singing ""Deck The Halls""",9, they're singing deck the halls,POSITIVE,0.9987,Christmas (Baby Please Come Home),Darlene Love,-228.90359497070312,63.65899658203125
+9,But it's not like Christmas at all,10, but it's not like christmas at all,POSITIVE,0.9307,Christmas (Baby Please Come Home),Darlene Love,67.28224182128906,273.7485656738281
+10,'Cause I remember when you were here,11, because I remember when you were here,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,37.932395935058594,-85.1668930053711
+11,And all the fun we had last year,12, and all the fun we had last year,POSITIVE,0.9998,Christmas (Baby Please Come Home),Darlene Love,-288.4270324707031,164.66468811035156
+12,Pretty lights on the tree,13, pretty lights on the tree,POSITIVE,0.9996,Christmas (Baby Please Come Home),Darlene Love,-290.2362060546875,38.512577056884766
+13,I'm watching them shine,14, I'm watching them shine,POSITIVE,0.9998,Christmas (Baby Please Come Home),Darlene Love,-40.474945068359375,-93.60179901123047
+14,You should be here with me,15, you should be here with me,POSITIVE,0.9983,Christmas (Baby Please Come Home),Darlene Love,81.06513214111328,-74.48753356933594
+15,Baby please come home,16, baby please come home,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,284.61016845703125,133.52276611328125
+16,"They're singing ""Deck The Halls""",17, they're singing deck the halls,POSITIVE,0.9987,Christmas (Baby Please Come Home),Darlene Love,-228.90359497070312,63.65899658203125
+17,But it's not like Christmas at all,18, but it's not like christmas at all,POSITIVE,0.9307,Christmas (Baby Please Come Home),Darlene Love,67.28224182128906,273.7485656738281
+18,'Cause I remember when you were here,19, because I remember when you were here,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,37.932395935058594,-85.1668930053711
+19,And all the fun we had last year,20, and all the fun we had last year,POSITIVE,0.9998,Christmas (Baby Please Come Home),Darlene Love,-288.4270324707031,164.66468811035156
+20,If there was a way,21, if there was a way,NEGATIVE,0.9954,Christmas (Baby Please Come Home),Darlene Love,-234.22860717773438,235.8739776611328
+21,I'd hold back this tear,22, I'd hold back this tear,NEGATIVE,0.7535,Christmas (Baby Please Come Home),Darlene Love,44.662906646728516,59.97456741333008
+22,But it's Christmas day,23, but it's christmas day,POSITIVE,0.998,Christmas (Baby Please Come Home),Darlene Love,105.06208801269531,261.0115661621094
+23,Please please please please,24, please please please please,POSITIVE,0.9983,Christmas (Baby Please Come Home),Darlene Love,355.4469299316406,104.25794982910156
+24,Baby please come home,25, baby please come home,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,284.61016845703125,133.52276611328125
+25,Baby please come home,26, baby please come home,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,284.61016845703125,133.52276611328125
+26,Baby please come home,27, baby please come home,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,284.61016845703125,133.52276611328125
+27,Baby please come home,28, baby please come home,POSITIVE,0.9978,Christmas (Baby Please Come Home),Darlene Love,284.61016845703125,133.52276611328125
+28,Please come home,29, please come home,POSITIVE,0.9993,Christmas (Baby Please Come Home),Darlene Love,257.0824890136719,161.98419189453125

@@ -22,18 +22,42 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <center class="col">
+            <div class="col-4">
                 <h1>
-                    Song comparator
+                    Song Comparator
                 </h1>
-                <button type="button" id="get-new-song-button" class="btn btn-primary" onclick="getNewSong()" style="display:none;">Re-Run With New Songs</button>
-            </center>
+                <button type="button" id="get-new-song-button" class="btn btn-outline-info" onclick="getNewSong(false)" style="display:none;">Re-Run With New Songs</button>
+            </div>
+            <div class="col-8">
+                <span>Some example comparisons</span>
+                <div class="song-comparison-example"
+                        song0="Ice Ice Baby" artist0="Vanilla Ice"
+                        song1="Under Pressure" artist1="Queen and David Bowie">
+                    <button type="button" class="btn btn-outline-primary">
+                        Vanilla Ice v. Queen&Bowie
+                    </button>
+                </div>
+                <div class="song-comparison-example"
+                        song0="Just the two of us" artist0="Will Smith"
+                        song1="Just the two of us" artist1="Grover Washington Jr">
+                    <button type="button" class="btn btn-outline-primary">
+                        Just the two "Just the two of us"'s
+                    </button>
+                </div>
+                <div class="song-comparison-example"
+                        song0="All I want for Christmas is you" artist0="Mariah Carey"
+                        song1="Christmas (Baby Please Come Home)" artist1="Darlene Love">
+                    <button type="button" class="btn btn-outline-primary">
+                        Christmas Lyrics
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
                 <div class="col mx-auto song-info">
-                    <h4>Artist:</h4><input type="text" name="artist0" value="Vanilla Ice" class="form-control"/><br/>
-                    <h4>Song:</h4><input type="text" name="song0" value="Ice Ice Baby" class="form-control"/></h2>
+                    <h4>Artist:</h4><input type="text" name="artist0" class="form-control"/><br/>
+                    <h4>Song:</h4><input type="text" name="song0" class="form-control"/></h2>
                 </div>
                 <div id="lyrics0"></div>
             </div>
@@ -80,8 +104,8 @@
             </div>
             <div class="col-sm-4">
                 <div class="col mx-auto song-info">
-                    <h4>Artist:</h4><input type="text" name="artist1" value="Queen" class="form-control"/><br/>
-                    <h4>Song:</h4><input type="text" name="song1" value="Under Pressure" class="form-control"/></h2>
+                    <h4>Artist:</h4><input type="text" name="artist1" class="form-control"/><br/>
+                    <h4>Song:</h4><input type="text" name="song1" class="form-control"/></h2>
                 </div>
                 <div id="lyrics1"></div>
             </div>
@@ -101,8 +125,6 @@
 </body>
 <script>
     jQuery(document).ready(function() {
-        getNewSong();
-
         // Rebuild the scatter plot if you change which variables to show
         jQuery('#y-var-select, #x-var-select').change(buildScatterPlot);
         jQuery('#y-var-lines-select, #x-var-lines-select').change(buildLinesScatterPlot);
@@ -111,6 +133,12 @@
         jQuery('input[name="artist0"], input[name="song0"], input[name="artist1"], input[name="song1"]').keyup(function() {
             jQuery('#get-new-song-button').show();
         });
+
+        // When clicking one of our hand picked example comparisons
+        jQuery('.song-comparison-example').click(useHandPickedExample);
+
+        // Get the first example pairing of songs
+        jQuery(jQuery('.song-comparison-example')[0]).click();
     });
 
     function showComparison(dimension) {
@@ -149,6 +177,27 @@
             // Show heat map
             jQuery('.lyric-line').addClass('show-positivity-heatmap');
         }
+    }
+
+    /**
+     * Function is called when clicking one of our hand picked examples.
+     * Gets the examples from the server.
+     */
+    function useHandPickedExample() {
+        // Set the inputs for song names and artists with the selected example
+        jQuery('input[name="artist0"]').val(jQuery(this).attr('artist0'));
+        jQuery('input[name="song0"]').val(jQuery(this).attr('song0'));
+        jQuery('input[name="artist1"]').val(jQuery(this).attr('artist1'));
+        jQuery('input[name="song1"]').val(jQuery(this).attr('song1'));
+
+        // Reset the buttons to their default look
+        jQuery('.song-comparison-example button').removeClass('btn-primary').addClass('btn-outline-primary');
+
+        // Make the button look selected
+        jQuery(this).children('button').removeClass('btn-outline-primary').addClass('btn-primary');
+
+        // Run the code to go to the server to get the new song
+        getNewSong(true);
     }
 </script>
 </html>

@@ -1,0 +1,57 @@
+,line_original,line_index_in_song,line_classified,line_label,line_score,song_name,artist_name,tsne_x_combined,tsne_y_combined
+0,I don't want a lot for Christmas,1, I don't want a lot for christmas,NEGATIVE,0.9975,All I Want for Christmas Is You,Mariah Carey,-10.843215942382812,121.96963500976562
+1,There is just one thing I need,2, there is just one thing I need,NEGATIVE,0.9585,All I Want for Christmas Is You,Mariah Carey,-27.077421188354492,247.18492126464844
+2,I don't care about the presents,3, I don't care about the presents,NEGATIVE,0.9997,All I Want for Christmas Is You,Mariah Carey,-0.991772472858429,-9.05720329284668
+3,Underneath the Christmas tree,4, underneath the christmas tree,POSITIVE,0.983,All I Want for Christmas Is You,Mariah Carey,-186.3306427001953,191.191650390625
+4,I just want you for my own,5, I just want you for my own,POSITIVE,0.9994,All I Want for Christmas Is You,Mariah Carey,131.89710998535156,-106.19498443603516
+5,More than you could ever know,6, more than you could ever know,POSITIVE,0.9993,All I Want for Christmas Is You,Mariah Carey,-87.27781677246094,-242.0738525390625
+6,Make my wish come true,7, make my wish come true,POSITIVE,0.9935,All I Want for Christmas Is You,Mariah Carey,64.97370910644531,-0.20438514649868011
+7,"All I want for Christmas is you, yeah",8, all I want for christmas is you yeah,POSITIVE,0.9992,All I Want for Christmas Is You,Mariah Carey,163.1234893798828,45.96066665649414
+8,I don't want a lot for Christmas,9, I don't want a lot for christmas,NEGATIVE,0.9975,All I Want for Christmas Is You,Mariah Carey,-10.843215942382812,121.96963500976562
+9,There is just one thing I need (And I),10, there is just one thing I need and I,POSITIVE,0.5869,All I Want for Christmas Is You,Mariah Carey,114.55718231201172,-184.25135803222656
+10,Don't care about the presents,11, don't care about the presents,NEGATIVE,0.9997,All I Want for Christmas Is You,Mariah Carey,-36.218807220458984,-23.086383819580078
+11,Underneath the Christmas tree,12, underneath the christmas tree,POSITIVE,0.983,All I Want for Christmas Is You,Mariah Carey,-186.3306427001953,191.191650390625
+12,I don't need to hang my stocking,13, I don't need to hang my stocking,NEGATIVE,0.7839,All I Want for Christmas Is You,Mariah Carey,-97.85968780517578,68.5254898071289
+13,There upon the fireplace (Ah),14, there upon the fireplace ah,POSITIVE,0.9652,All I Want for Christmas Is You,Mariah Carey,-161.4744110107422,144.0084228515625
+14,Santa Claus won't make me happy,15, santa claus won't make me happy,NEGATIVE,0.9998,All I Want for Christmas Is You,Mariah Carey,-25.87603759765625,99.0417709350586
+15,With a toy on Christmas Day,16, with a toy on christmas day,POSITIVE,0.9913,All I Want for Christmas Is You,Mariah Carey,-313.8228759765625,120.82991027832031
+16,I just want you for my own (Ooh),17, I just want you for my own ooh,POSITIVE,0.9993,All I Want for Christmas Is You,Mariah Carey,180.2631378173828,-101.75926208496094
+17,More than you could ever know (Ooh),18, more than you could ever know ooh,POSITIVE,0.9979,All I Want for Christmas Is You,Mariah Carey,-82.76121520996094,-205.20443725585938
+18,Make my wish come true,19, make my wish come true,POSITIVE,0.9935,All I Want for Christmas Is You,Mariah Carey,64.97370910644531,-0.20438514649868011
+19,All I want for Christmas is you,20, all I want for christmas is you,POSITIVE,0.9979,All I Want for Christmas Is You,Mariah Carey,190.93150329589844,82.74857330322266
+20,"You, baby",21, you baby,POSITIVE,0.9993,All I Want for Christmas Is You,Mariah Carey,-108.98492431640625,-133.48153686523438
+21,"Oh, I won't ask for much this Christmas",22, oh I won't ask for much this christmas,NEGATIVE,0.9737,All I Want for Christmas Is You,Mariah Carey,47.52606964111328,121.64418029785156
+22,I won't even wish for snow (And I),23, I won't even wish for snow and I,NEGATIVE,0.9745,All I Want for Christmas Is You,Mariah Carey,-5.83832311630249,51.74323654174805
+23,I'm just gonna keep on waiting,24, I'm just gonna keep on waiting,POSITIVE,0.9954,All I Want for Christmas Is You,Mariah Carey,33.32206726074219,-154.4422149658203
+24,Underneath the mistletoe,25, underneath the mistletoe,NEGATIVE,0.9699,All I Want for Christmas Is You,Mariah Carey,-174.67015075683594,103.23615264892578
+25,I won't make a list and send it,26, I won't make a list and send it,NEGATIVE,0.9997,All I Want for Christmas Is You,Mariah Carey,-77.13836669921875,119.91828155517578
+26,To the North Pole for Saint Nick (Ah),27, to the north pole for saint nick ah,POSITIVE,0.9933,All I Want for Christmas Is You,Mariah Carey,-274.23236083984375,-172.64662170410156
+27,I won't even stay awake to,28, I won't even stay awake to,NEGATIVE,0.9996,All I Want for Christmas Is You,Mariah Carey,-53.6240119934082,32.8963508605957
+28,Hear those magic reindeer click,29, hear those magic reindeer click,POSITIVE,0.9902,All I Want for Christmas Is You,Mariah Carey,-252.2178497314453,-16.676618576049805
+29,'Cause I just want you here tonight (Ooh),30, because I just want you here tonight ooh,POSITIVE,0.9992,All I Want for Christmas Is You,Mariah Carey,228.71473693847656,-72.47440338134766
+30,Holding on to me so tight (Ooh),31, holding on to me so tight ooh,POSITIVE,0.9992,All I Want for Christmas Is You,Mariah Carey,288.48663330078125,-87.41182708740234
+31,What more can I do?,32, what more can I do,POSITIVE,0.6039,All I Want for Christmas Is You,Mariah Carey,81.71017456054688,173.84375
+32,"Oh baby, all I want for Christmas is you",33, oh baby all I want for christmas is you,POSITIVE,0.9942,All I Want for Christmas Is You,Mariah Carey,237.50503540039062,-3.0123202800750732
+33,"You, baby",34, you baby,POSITIVE,0.9993,All I Want for Christmas Is You,Mariah Carey,-108.98492431640625,-133.48153686523438
+34,"Oh, all the lights are shining",35, oh all the lights are shining,POSITIVE,0.9997,All I Want for Christmas Is You,Mariah Carey,-193.47933959960938,-31.494028091430664
+35,"So brightly everywhere (So brightly, baby)",36, so brightly everywhere so brightly baby,POSITIVE,0.9998,All I Want for Christmas Is You,Mariah Carey,-105.65129089355469,-47.477725982666016
+36,And the sound of children's,37, and the sound of children's,POSITIVE,0.9978,All I Want for Christmas Is You,Mariah Carey,-307.0570373535156,-36.981388092041016
+37,"Laughter fills the air (Oh, oh yeah)",38, laughter fills the air oh oh yeah,POSITIVE,0.9998,All I Want for Christmas Is You,Mariah Carey,204.91795349121094,-195.40322875976562
+38,And everyone is singing (Oh yeah),39, and everyone is singing oh yeah,POSITIVE,0.9996,All I Want for Christmas Is You,Mariah Carey,-161.87741088867188,-63.11099624633789
+39,I hear those sleigh bells ringing (Oh),40, I hear those sleigh bells ringing oh,POSITIVE,0.9721,All I Want for Christmas Is You,Mariah Carey,-219.14598083496094,13.76866340637207
+40,"Santa, won't you bring me the one I really need? (Yeah, oh, oh)",41, santa won't you bring me the one I really need yeah oh oh,NEGATIVE,0.9966,All I Want for Christmas Is You,Mariah Carey,141.6504669189453,128.22604370117188
+41,Won't you please bring my baby to me?,42, won't you please bring my baby to me,POSITIVE,0.9972,All I Want for Christmas Is You,Mariah Carey,117.30985260009766,18.593923568725586
+42,"Oh, I don't want a lot for Christmas",43, oh I don't want a lot for christmas,NEGATIVE,0.9987,All I Want for Christmas Is You,Mariah Carey,10.796558380126953,157.29434204101562
+43,This is all I'm asking for (Ah),44, this is all I'm asking for ah,NEGATIVE,0.8491,All I Want for Christmas Is You,Mariah Carey,109.1777572631836,77.27622985839844
+44,I just wanna see my baby,45, I just wanna see my baby,POSITIVE,0.9994,All I Want for Christmas Is You,Mariah Carey,133.17076110839844,-30.633907318115234
+45,Standing right outside my door,46, standing right outside my door,NEGATIVE,0.6114,All I Want for Christmas Is You,Mariah Carey,16.490549087524414,-235.20948791503906
+46,"Oh, I just want you for my own (Ooh)",47, oh I just want you for my own ooh,POSITIVE,0.9991,All I Want for Christmas Is You,Mariah Carey,178.55517578125,-62.18008041381836
+47,More than you could ever know (Ooh),48, more than you could ever know ooh,POSITIVE,0.9979,All I Want for Christmas Is You,Mariah Carey,-82.76121520996094,-205.20443725585938
+48,Make my wish come true,49, make my wish come true,POSITIVE,0.9935,All I Want for Christmas Is You,Mariah Carey,64.97370910644531,-0.20438514649868011
+49,"Oh baby, all I want for Christmas is you",50, oh baby all I want for christmas is you,POSITIVE,0.9942,All I Want for Christmas Is You,Mariah Carey,237.50503540039062,-3.0123202800750732
+50,"You, baby",51, you baby,POSITIVE,0.9993,All I Want for Christmas Is You,Mariah Carey,-108.98492431640625,-133.48153686523438
+51,"All I want for Christmas is you, baby (You)",52, all I want for christmas is you baby you,POSITIVE,0.9991,All I Want for Christmas Is You,Mariah Carey,213.70384216308594,40.133304595947266
+52,"All I want for Christmas is you, baby (Ah, oh, ah, oh)",53, all I want for christmas is you baby ah oh ah oh,POSITIVE,0.9905,All I Want for Christmas Is You,Mariah Carey,189.10382080078125,-3.9291861057281494
+53,"All I want for Christmas is you, baby (You)",54, all I want for christmas is you baby you,POSITIVE,0.9991,All I Want for Christmas Is You,Mariah Carey,213.70384216308594,40.133304595947266
+54,"All I want for Christmas is you, baby (All I really want, baby, ooh)",55, all I want for christmas is you baby all I really want baby ooh,NEGATIVE,0.6273,All I Want for Christmas Is You,Mariah Carey,259.9374084472656,48.52790832519531
+55,"All I want for Christmas is you, baby (All I want, all I really want is you)",56, all I want for christmas is you baby all I want all I really want is you,NEGATIVE,0.9054,All I Want for Christmas Is You,Mariah Carey,290.2030944824219,8.216208457946777

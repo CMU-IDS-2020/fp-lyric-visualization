@@ -14,8 +14,9 @@ var stopwords = ['i','me','my','myself','we','our','ours','ourselves','you','you
 
 /**
  * Get the JSON for a new song from the server
+ * @param isHandPickedExample - true if the queried song is one of our predefined examples.
  */
-function getNewSong() {
+function getNewSong(isHandPickedExample) {
     jQuery('#loadingModal').modal('show');
     jQuery('#get-new-song-button').hide();
 
@@ -26,7 +27,8 @@ function getNewSong() {
                 artist0: jQuery('input[name="artist0"]').val(),
                 songName0:jQuery('input[name="song0"]').val(),
                 artist1: jQuery('input[name="artist1"]').val(),
-                songName1:jQuery('input[name="song1"]').val()
+                songName1:jQuery('input[name="song1"]').val(),
+                'isHandPickedExample': isHandPickedExample
         },
         complete: getNewSongCompleted
     });

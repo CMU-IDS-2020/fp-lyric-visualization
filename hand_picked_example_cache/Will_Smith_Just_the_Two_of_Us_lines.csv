@@ -1,0 +1,74 @@
+,Unnamed: 0,Unnamed: 0.1,Unnamed: 0.1.1,Unnamed: 0.1.1.1,line_original,line_index_in_song,line_classified,line_label,line_score,song_name,artist_name,tsne_x_combined,tsne_y_combined
+0,0,0,0,0,Now Dad this is a very sensitive subject,1, now dad this is a very sensitive subject,POSITIVE,0.9996,Just the Two of Us,Will Smith,-41.83625030517578,30.59026908874512
+1,1,1,1,1,Just the two of us,2, just the two of us,POSITIVE,0.9991,Just the Two of Us,Will Smith,13.949930191040039,-114.09597778320312
+2,2,2,2,2,Just the two of us (just the two of us),3, just the two of us just the two of us,POSITIVE,0.9479,Just the Two of Us,Will Smith,17.79669761657715,-126.26829528808594
+3,3,3,3,3,Just the two of us (just the two of us),4, just the two of us just the two of us,POSITIVE,0.9479,Just the Two of Us,Will Smith,17.79669761657715,-126.26829528808594
+4,4,4,4,4,From the first time the doctor placed you in my arms,5, from the first time the doctor placed you in my arms,POSITIVE,0.9974,Just the Two of Us,Will Smith,60.86593627929688,-50.49032974243164
+5,5,5,5,5,I knew I'd meet death before I'd let you meet harm,6, I knew I'd meet death before I'd let you meet harm,NEGATIVE,0.9821,Just the Two of Us,Will Smith,39.67305374145508,0.5968062877655029
+6,6,6,6,6,"Although questions arose in my mind, would I be man enough",7, although questions arose in my mind would I be man enough,NEGATIVE,0.8954,Just the Two of Us,Will Smith,-1.296464443206787,-9.51091766357422
+7,7,7,7,7,"Against wrong, choose right and be standing up?",8, against wrong choose right and be standing up,POSITIVE,0.9954,Just the Two of Us,Will Smith,-3.5149383544921875,89.36856842041016
+8,8,8,8,8,From the hospital that first night,9, from the hospital that first night,NEGATIVE,0.923,Just the Two of Us,Will Smith,59.60115432739258,-65.65137481689453
+9,9,9,9,9,Took a hour just ta get the car seat in right,10, took a hour just to get the car seat in right,NEGATIVE,0.9973,Just the Two of Us,Will Smith,-29.982688903808594,7.9863929748535165
+10,10,10,10,10,"People driving all fast, got me kinda upset",11, people driving all fast got me kinda upset,NEGATIVE,0.9961,Just the Two of Us,Will Smith,36.75359344482422,36.41880798339844
+11,11,11,11,11,"Got you home safe, placed you in your bassinet",12, got you home safe placed you in your bassinet,POSITIVE,0.9856,Just the Two of Us,Will Smith,-16.734895706176758,78.61000061035156
+12,12,12,12,12,That night I don't think one wink I slept,13, that night I don't think one wink I slept,NEGATIVE,0.9901,Just the Two of Us,Will Smith,-0.8643321990966797,46.27270889282226
+13,13,13,13,13,"As I slipped out my bed, to your crib I crept",14, as I slipped out my bed to your crib I crept,NEGATIVE,0.9943,Just the Two of Us,Will Smith,-8.417690277099611,-38.954795837402344
+14,14,14,14,14,"Touched your head gently, felt my heart melt",15, touched your head gently felt my heart melt,POSITIVE,0.9981,Just the Two of Us,Will Smith,-5.753886222839356,-25.84297180175781
+15,15,15,15,15,Cause I know I loved you more than life itself,16, because I know I loved you more than life itself,POSITIVE,0.9994,Just the Two of Us,Will Smith,26.502857208251953,-22.393388748168945
+16,16,16,16,16,"Then to my knees, and I begged the Lord please",17, then to my knees and I begged the lord please,NEGATIVE,0.9783,Just the Two of Us,Will Smith,-18.3057861328125,-46.48085403442383
+17,17,17,17,17,"Let me be a good daddy, all he needs",18, let me be a good daddy all he needs,POSITIVE,0.9993,Just the Two of Us,Will Smith,13.48748779296875,20.07415580749512
+18,18,18,18,18,"Love, knowledge, discipline too",19, love knowledge discipline too,POSITIVE,0.9996,Just the Two of Us,Will Smith,-35.9918212890625,88.95841979980469
+19,19,19,19,19,I pledge my life to you,20, I pledge my life to you,POSITIVE,0.9929,Just the Two of Us,Will Smith,31.8584098815918,-35.21119689941406
+20,20,20,20,20,"Just the two of us, we can make it if we try",21, just the two of us we can make it if we try,POSITIVE,0.9997,Just the Two of Us,Will Smith,-21.37131690979004,-108.76849365234376
+21,21,21,21,21,"Just the two of us, (Just the two of us)",22, just the two of us just the two of us,POSITIVE,0.9479,Just the Two of Us,Will Smith,17.79669761657715,-126.26829528808594
+22,22,22,22,22,"Just the two of us, building castles in the sky",23, just the two of us building castles in the sky,POSITIVE,0.9989,Just the Two of Us,Will Smith,5.628657817840576,-98.36890411376952
+23,23,23,23,23,"Just the two of us, you and I",24, just the two of us you and I,POSITIVE,0.9997,Just the Two of Us,Will Smith,5.293983459472656,-122.88995361328124
+24,24,24,24,24,"Five years old, bringin comedy",25, five years old bringin comedy,POSITIVE,0.9847,Just the Two of Us,Will Smith,-0.4718077480792999,69.72417449951172
+25,25,25,25,25,"Everytime I look at you I think man, a little me",26, everytime I look at you I think man a little me,POSITIVE,0.9991,Just the Two of Us,Will Smith,-0.02057821303606033,29.36371421813965
+26,26,26,26,26,"Just like me, wait an' see, gonna be tall",27, just like me wait and see gonna be tall,POSITIVE,0.999,Just the Two of Us,Will Smith,21.79110717773437,61.968910217285156
+27,27,27,27,27,Makes me laugh cause you got your dads ears an all,28, makes me laugh because you got your dads ears an all,POSITIVE,0.9996,Just the Two of Us,Will Smith,26.64876365661621,46.78915405273438
+28,28,28,28,28,"Sometimes I wonder, what you gonna be",29, sometimes I wonder what you gonna be,POSITIVE,0.9986,Just the Two of Us,Will Smith,54.645484924316406,42.879093170166016
+29,29,29,29,29,"A general, a doctor, maybe a MC",30, a general a doctor maybe a mc,POSITIVE,0.8319,Just the Two of Us,Will Smith,-22.509979248046875,101.61244201660156
+30,30,30,30,30,"Haha, I wanna kiss you all the time",31, haha I wanna kiss you all the time,POSITIVE,0.9984,Just the Two of Us,Will Smith,-12.83181095123291,32.18583297729492
+31,31,31,31,31,"But I will test that butt when you cut outta line, true that",32, but I will test that butt when you cut outta line true that,POSITIVE,0.69,Just the Two of Us,Will Smith,13.15343952178955,51.07353973388672
+32,32,32,32,32,Uh-uh-uh why you do that?,33, uh-uh-uh why you do that,NEGATIVE,0.9911,Just the Two of Us,Will Smith,69.73238372802734,71.31888580322266
+33,33,33,33,33,"I try to be a tough dad, but you be makin me laugh",34, I try to be a tough dad but you be making me laugh,POSITIVE,0.9988,Just the Two of Us,Will Smith,23.979290008544922,24.92511940002441
+34,34,34,34,34,"Crazy joy, when I see the eyes of my baby boy",35, crazy joy when I see the eyes of my baby boy,POSITIVE,0.9999,Just the Two of Us,Will Smith,55.381309509277344,-26.53461837768555
+35,35,35,35,35,"I pledge to you, I will always do",36, I pledge to you I will always do,POSITIVE,0.9992,Just the Two of Us,Will Smith,37.42738342285156,-43.08512878417969
+36,36,36,36,36,"Everything I can, show you how to be a man",37, everything I can show you how to be a man,POSITIVE,0.9997,Just the Two of Us,Will Smith,3.2689809799194336,9.472189903259276
+37,37,37,37,37,"Dignity, integrity, honor an'",38, dignity integrity honor and,POSITIVE,0.9998,Just the Two of Us,Will Smith,-46.792030334472656,94.19387817382812
+38,38,38,38,38,"I don't mind if you lose, long as you came with it",39, I don't mind if you lose long as you came with it,POSITIVE,0.6585,Just the Two of Us,Will Smith,47.96879959106445,8.702165603637695
+39,39,39,39,39,"An you can cry, ain't no shame in it",40, an you can cry ain't no shame in it,POSITIVE,0.9516,Just the Two of Us,Will Smith,46.69289779663086,67.85517883300781
+40,40,40,40,40,It didn't work out with me an your mom,41, it didn't work out with me an your mom,NEGATIVE,0.9997,Just the Two of Us,Will Smith,41.07682800292969,21.54076194763184
+41,41,41,41,41,"But yo, push come to shove, you was conceived in love",42, but yo push come to shove you was conceived in love,POSITIVE,0.8816,Just the Two of Us,Will Smith,-13.593780517578125,62.25644302368164
+42,42,42,42,42,"So if the world attacks, and you slide off track",43, so if the world attacks and you slide off track,NEGATIVE,0.9971,Just the Two of Us,Will Smith,29.09425544738769,8.38034725189209
+43,43,43,43,43,"Remember one fact, I got your back",44, remember one fact I got your back,NEGATIVE,0.9741,Just the Two of Us,Will Smith,14.133746147155762,37.77453994750977
+44,44,44,44,44,"Just the two of us, we can make it if we try",45, just the two of us we can make it if we try,POSITIVE,0.9997,Just the Two of Us,Will Smith,-21.37131690979004,-108.76849365234376
+45,45,45,45,45,"Just the two of us, (Just the two of us)",46, just the two of us just the two of us,POSITIVE,0.9479,Just the Two of Us,Will Smith,17.79669761657715,-126.26829528808594
+46,46,46,46,46,"Just the two of us, building castles in the sky",47, just the two of us building castles in the sky,POSITIVE,0.9989,Just the Two of Us,Will Smith,5.628657817840576,-98.36890411376952
+47,47,47,47,47,"Just the two of us, you and I",48, just the two of us you and I,POSITIVE,0.9997,Just the Two of Us,Will Smith,5.293983459472656,-122.88995361328124
+48,48,48,48,48,It's a full-time job to be a good dad,49, it's a full-time job to be a good dad,POSITIVE,0.9989,Just the Two of Us,Will Smith,73.59064483642578,36.100318908691406
+49,49,49,49,49,You got so much more stuff than I had,50, you got so much more stuff than I had,POSITIVE,0.9973,Just the Two of Us,Will Smith,56.75640869140625,21.26283073425293
+50,50,50,50,50,I gotta study just to keep with the changin times,51, I gotta study just to keep with the changing times,POSITIVE,0.9152,Just the Two of Us,Will Smith,-15.815367698669435,-1.4251363277435305
+51,51,51,51,51,101 Dalmations on your CD-ROM,52, 101 dalmations on your cd-rom,NEGATIVE,0.9601,Just the Two of Us,Will Smith,-69.1756591796875,46.21691131591797
+52,52,52,52,52,See me-I'm tyin to pretend I know,53, see me I'm trying to pretend I know,NEGATIVE,0.9945,Just the Two of Us,Will Smith,-10.79694652557373,15.398880004882812
+53,53,53,53,53,On my PC where that CD go,54, on my pc where that cd go,NEGATIVE,0.9854,Just the Two of Us,Will Smith,-62.20995330810547,37.8992805480957
+54,54,54,54,54,"But yo, ain't nothin promised, one day I'll be gone",55, but yo ain't nothing promised one day I'll be gone,NEGATIVE,0.9844,Just the Two of Us,Will Smith,47.63569259643555,54.512489318847656
+55,55,55,55,55,"Feel the strife, but trust life does go on",56, feel the strife but trust life does go on,POSITIVE,0.9953,Just the Two of Us,Will Smith,-23.725399017333984,51.19248962402344
+56,56,56,56,56,"But just in case, it's my place to impart",57, but just in case it's my place to impart,POSITIVE,0.9657,Just the Two of Us,Will Smith,61.59989929199219,-1.29855477809906
+57,57,57,57,57,One day some girl's gonna break your heart,58, one day some girl's gonna break your heart,POSITIVE,0.9951,Just the Two of Us,Will Smith,82.00959777832031,16.39763069152832
+58,58,58,58,58,And ooh ain't no pain like from the opposite sex,59, and ooh ain't no pain like from the opposite sex,POSITIVE,0.9909,Just the Two of Us,Will Smith,35.84174728393555,61.1854362487793
+59,59,59,59,59,"Gonna hurt bad, but don't take it out on the next, son",60, gonna hurt bad but don't take it out on the next son,NEGATIVE,0.9954,Just the Two of Us,Will Smith,33.552139282226555,75.6714096069336
+60,60,60,60,60,Throughout life people will make you mad,61, throughout life people will make you mad,NEGATIVE,0.9937,Just the Two of Us,Will Smith,12.85398006439209,3.0345368385314937
+61,61,61,61,61,Disrespect you and treat you bad,62, disrespect you and treat you bad,NEGATIVE,0.997,Just the Two of Us,Will Smith,23.325544357299805,98.0262222290039
+62,62,62,62,62,Let God deal with the things they do,63, let god deal with the things they do,NEGATIVE,0.9065,Just the Two of Us,Will Smith,-39.578369140625,-12.338685035705565
+63,63,63,63,63,Cause hate in your heart will consume you too,64, because hate in your heart will consume you too,NEGATIVE,0.9677,Just the Two of Us,Will Smith,22.860456466674805,-2.6110715866088867
+64,64,64,64,64,"Always tell the truth, say your prayers",65, always tell the truth say your prayers,POSITIVE,0.9981,Just the Two of Us,Will Smith,-46.61748123168945,69.43453216552734
+65,65,65,65,65,"Hold doors, pull out chairs, easy on the swears",66, hold doors pull out chairs easy on the swears,NEGATIVE,0.9656,Just the Two of Us,Will Smith,-25.5059757232666,69.28248596191406
+66,66,66,66,66,You're living proof that dreams do come true,67, you're living proof that dreams do come true,POSITIVE,0.9996,Just the Two of Us,Will Smith,40.5452880859375,-14.097431182861328
+67,67,67,67,67,I love you and I'm here for you,68, I love you and I'm here for you,POSITIVE,0.9999,Just the Two of Us,Will Smith,18.130197525024414,-18.142751693725586
+68,68,68,68,68,"Just the two of us, we can make it if we try",69, just the two of us we can make it if we try,POSITIVE,0.9997,Just the Two of Us,Will Smith,-21.37131690979004,-108.76849365234376
+69,69,69,69,69,"Just the two of us, (Just the two of us)",70, just the two of us just the two of us,POSITIVE,0.9479,Just the Two of Us,Will Smith,17.79669761657715,-126.26829528808594
+70,70,70,70,70,"Just the two of us, building castles in the sky",71, just the two of us building castles in the sky,POSITIVE,0.9989,Just the Two of Us,Will Smith,5.628657817840576,-98.36890411376952
+71,71,71,71,71,"Just the two of us, you and I",72, just the two of us you and I,POSITIVE,0.9997,Just the Two of Us,Will Smith,5.293983459472656,-122.88995361328124
+72,72,72,72,72,"(This is a good song Dad, how much am I gettin paid for this?)",73, this is a good song dad how much am I getting paid for this,POSITIVE,0.9994,Just the Two of Us,Will Smith,-28.74246025085449,27.60055923461914
