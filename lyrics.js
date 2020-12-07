@@ -107,7 +107,9 @@ function buildLyricsBlock(lyrics, parent) {
             parent.append(lineHtml);
 
             // Start a new line
-            lineHtml = jQuery('<div class="lyric-line" />').attr('song_index', lyric['song_index']);
+            lineHtml = jQuery('<div class="lyric-line" />')
+                    .attr('song_index', lyric['song_index'])
+                    .attr('line_classified', lyric['line_classified']);
             prevLineIndex = lineIndex;
 
             // If new line starts a new stanza, put a lil stanza description on it
@@ -148,6 +150,7 @@ function lyricJsonToHtml(lyric) {
             .attr('line', lyric['line_index_in_song'])
             .attr('hugface_label', lyric['hugface_label'])
             .attr('word_original', lyric['word_original'])
+            .attr('word_can_search', lyric['word_can_search'])
             .attr('class', 'lyric')
             .text(lyric['word_original'] + ' ');
 }
@@ -394,9 +397,7 @@ function buildScatterPlot() {
         .on("mousemove.tooltip", mousemove )
         .on("mouseleave.tooltip", mouseleave )
         .on('click', function(d, i) {
-            let word_ind = String(d.word_index_in_song);
-            let song_ind = String(d.song_index);
-            let selector = 'span.lyric[lyricind="' + word_ind + '"][song_index="' + song_ind + '"]';
+            let selector = 'span.lyric[word_can_search="' + d.word_can_search + '"]';
             if (d3.select(this).attr('class') == 'selected-scatter-point') {
                 // Un select
                 jQuery(selector).removeClass('selected-in-scatter-plot');
@@ -581,9 +582,7 @@ function buildLinesScatterPlot() {
         .on("mousemove.tooltip", mousemovelines )
         .on("mouseleave.tooltip", mouseleavelines )
         .on('click', function(d, i) {
-            let line_ind = String(d.line_index_in_song);
-            let song_ind = String(d.song_index);
-            let selector = 'div.lyric-line[line_index="' + line_ind + '"][song_index="' + song_ind + '"]';
+            let selector = 'div.lyric-line[line_classified="' + d.line_classified + '"]'
             if (d3.select(this).attr('class') == 'selected-scatter-point') {
                 // Un select
                 jQuery(selector).removeClass('selected-in-scatter-plot');
@@ -663,9 +662,9 @@ function buildPositivityBarchart() {
         .data(iter_data)
         .enter()
         .append("g")
-        .attr("transform", function(d) {console.log(d); return "translate(" + x(d.group) + ",0)"; })
+        .attr("transform", function(d) { return "translate(" + x(d.group) + ",0)"; })
             .selectAll("rect")
-            .data(function(d) {console.log(d); return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
+            .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
             .enter().append("rect")
         .attr("x", function(d) { return xSubgroup(d.key); })
         .attr("y", function(d) { return y(d.value); })
