@@ -13,6 +13,8 @@ from preprocessing.dict_preprocess import preprocess_dict
 from preprocessing.merge_dataframes import merge_dataframes, positivity_barplot_data
 from preprocessing.tsne import tsne_list
 
+from spotify_embedding import get_spotify_embedding
+
 import lyricsgenius
 genius = lyricsgenius.Genius("tub_dvzlNtK1D1lLS7o4YUqX2fGBnJdAVbW_OgjEjRKtfhyUopjvonY50UzhPlKe")
 
@@ -39,11 +41,6 @@ def format_filename(s):
     return filename
 
 def get_lyrics_df(artist_name, song_name, isHandPickedExample):
-    # Get genius results in case the user did not type something correctly.
-    # Helps with consistency in file names.
-    song = genius.search_song(song_name, artist_name)
-    song_name, artist_name = song.title, song.artist
-
     lyrics_fn = os.path.join(HAND_PICKED_EXAMPLE_CACHE if isHandPickedExample else CACHE_DIR,
                              format_filename(artist_name + " " + song_name + " lyrics.csv"))
     lines_fn = os.path.join(HAND_PICKED_EXAMPLE_CACHE if isHandPickedExample else CACHE_DIR,
@@ -104,6 +101,13 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
             artist_name0, song_name0 = query_components["artist0"][0].lower().strip(), query_components["songName0"][0].lower().strip()
             artist_name1, song_name1 = query_components["artist1"][0].lower().strip(), query_components["songName1"][0].lower().strip()
 
+            # Get genius results in case the user did not type something correctly.
+            # Helps with consistency in file names.
+            song = genius.search_song(song_name0, artist_name0)
+            song_name0, artist_name0 = song.title, song.artist
+            song = genius.search_song(song_name1, artist_name1)
+            song_name1, artist_name1 = song.title, song.artist
+
             # Check if this is a pre-selected pairing of songs. If so, we might be able to avoid computing t-SNE
             isHandPickedExample = query_components["isHandPickedExample"][0].lower().strip() == 'true'
 
@@ -141,7 +145,9 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
                     'lines0' : lines0,
                     'lyrics1': lyrics1,
                     'lines1': lines1,
-                    'pos_barplot_data': pos_barplot_data})
+                    'pos_barplot_data': pos_barplot_data,
+                    'song0_html_embedding': get_spotify_embedding(song_name0, artist_name0),
+                    'song1_html_embedding': get_spotify_embedding(song_name1, artist_name1)})
 
             self._set_headers()
             self.wfile.write(output_json.encode())

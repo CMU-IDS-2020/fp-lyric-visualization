@@ -91,6 +91,10 @@ function getNewSongCompleted(data) {
 
     buildScatterPlot();
     buildLinesScatterPlot();
+
+    // Insert the spotify embeddings
+    jQuery('#song-embedding-0').html(data.responseJSON.song0_html_embedding);
+    jQuery('#song-embedding-1').html(data.responseJSON.song1_html_embedding);
 }
 
 function buildLyricsBlock(lyrics, parent) {

@@ -8,12 +8,15 @@ body {
 }
 
 .song-info {
-    padding-left: 10px;
+    display:inline-block;
 }
-.song-info h4, .song-info h2 {
+.song-info h4 {
+    display: inline-block;
+    width: 4em;
+}
+#song-embedding-0, #song-embedding-1 {
     display: inline-block;
 }
-
 button#get-new-song-button {
     margin-bottom: 20px;
 }
