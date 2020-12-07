@@ -124,6 +124,9 @@
         // Turn off the clicking of the words/lines in the lyrics. Will turn back on below
         jQuery('div.lyric-line, span.lyric').off('click');
 
+        // Hide positivity heat map
+        jQuery('.lyric-line').removeClass('show-positivity-heatmap');
+
         // remove the selections made in the scatter plots and their correspondence with the text
         removeAllScatterPlotSelections();
 
@@ -142,6 +145,9 @@
         } else if (dimension == 'positivity') {
             jQuery('#positivity-plot').show();
             jQuery('#positivity-nav').addClass('active');
+
+            // Show heat map
+            jQuery('.lyric-line').addClass('show-positivity-heatmap');
         }
     }
 </script>

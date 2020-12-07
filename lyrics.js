@@ -119,8 +119,10 @@ function buildLyricsBlock(lyrics, parent) {
             }
 
             // Add the Heat Map section. It's a right border
-            let colorPercent = parseFloat(lyric['line_positivity_norm']) * 100.;
-            lineHtml.css('border-left', 'solid 30px ' + perc2color(colorPercent));
+            // let colorPercent = parseFloat(lyric['line_positivity_norm']) * 100.;
+            // lineHtml.css('border-left', 'solid 30px ' + perc2color(colorPercent));
+            let color = lyric['line_label'] == 'POSITIVE' ? '#0fff01' : 'red';
+            lineHtml.css('border-left', 'solid 30px ' + color);
         }
         let lyricSpan = lyricJsonToHtml(lyric);
         lineHtml.append(lyricSpan);

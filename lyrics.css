@@ -36,7 +36,7 @@ button#get-new-song-button {
     padding-bottom: 3px;
     padding-left: 5px;
 }
-.lyric-line {
+.lyric-line:not(.show-positivity-heatmap) {
     border-left: 0px !important;
 }
 #lyrics0 {
