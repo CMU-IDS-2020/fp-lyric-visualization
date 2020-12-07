@@ -19,10 +19,11 @@ def merge_dataframes(lyrics_df, lines_df, dict_df):
     # Normalize the positivity value from hugging face
     lyrics_df = normalize_positivity(lyrics_df)
 
-    # Compute T-SNE dimensions
-    lyrics_df['tsne_x'], lyrics_df['tsne_y'] = tsne_column(lyrics_df['word_can_search'])
-
-    lines_df['tsne_x'], lines_df['tsne_y'] = tsne_column(lines_df['line_classified'])
+    # The following code computes t-sne on the words of each song indivitually, but we want tsne with the words
+    # from both songs so we now compute it somewhere else
+    # # Compute T-SNE dimensions
+    # lyrics_df['tsne_x'], lyrics_df['tsne_y'] = tsne_column(lyrics_df['word_can_search'])
+    # lines_df['tsne_x'], lines_df['tsne_y'] = tsne_column(lines_df['line_classified'])
 
     # Get the positive word in positive line .. etc. data
     lyrics_df['positivity_bar_chart'] = ''

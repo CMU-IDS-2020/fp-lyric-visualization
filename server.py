@@ -66,6 +66,16 @@ def get_lyrics_df(artist_name, song_name):
 
     return lyrics_df, lines_df
 
+def compute_tsne(df0, df1, column):
+    ''' Compute t-SNE using a specified column from two different data frames
+        Alters the dataframes directly, no need to return them'''
+    all_values_unique = list(set(list(df0[column].unique()) + list(df1[column].unique())))
+    tsne_dict = tsne_list(all_values_unique)
+    df0['tsne_x_combined'] = df0[column].apply(lambda x: tsne_dict[x][0])
+    df0['tsne_y_combined'] = df0[column].apply(lambda x: tsne_dict[x][1])
+    df1['tsne_x_combined'] = df1[column].apply(lambda x: tsne_dict[x][0])
+    df1['tsne_y_combined'] = df1[column].apply(lambda x: tsne_dict[x][1])
+
 
 class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
     def _set_headers(self):
@@ -94,20 +104,10 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
             pos_barplot_data = positivity_barplot_data(lyrics_df0, lyrics_df1)
 
             # Do the tsne for the words combined
-            all_words_unique = list(set(list(lyrics_df0['word_can_search'].unique()) + list(lyrics_df1['word_can_search'].unique())))
-            tsne_dict = tsne_list(all_words_unique)
-            lyrics_df0['tsne_x_combined'] = lyrics_df0['word_can_search'].apply(lambda x: tsne_dict[x][0])
-            lyrics_df0['tsne_y_combined'] = lyrics_df0['word_can_search'].apply(lambda x: tsne_dict[x][1])
-            lyrics_df1['tsne_x_combined'] = lyrics_df1['word_can_search'].apply(lambda x: tsne_dict[x][0])
-            lyrics_df1['tsne_y_combined'] = lyrics_df1['word_can_search'].apply(lambda x: tsne_dict[x][1])
+            compute_tsne(lyrics_df0, lyrics_df1, 'word_can_search')
 
             # Do the tsne for the words combined
-            all_lines_unique = list(set(list(lines_df0['line_classified'].unique()) + list(lines_df1['line_classified'].unique())))
-            tsne_dict = tsne_list(all_lines_unique)
-            lines_df0['tsne_x_combined'] = lines_df0['line_classified'].apply(lambda x: tsne_dict[x][0])
-            lines_df0['tsne_y_combined'] = lines_df0['line_classified'].apply(lambda x: tsne_dict[x][1])
-            lines_df1['tsne_x_combined'] = lines_df1['line_classified'].apply(lambda x: tsne_dict[x][0])
-            lines_df1['tsne_y_combined'] = lines_df1['line_classified'].apply(lambda x: tsne_dict[x][1])
+            compute_tsne(lines_df0, lines_df1, 'line_classified')
 
             # Convert to dictionaries
             lyrics0, lyrics1, lines0, lines1 = lyrics_df0.to_dict('records'), lyrics_df1.to_dict('records'), \
