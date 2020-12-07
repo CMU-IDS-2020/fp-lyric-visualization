@@ -4,6 +4,8 @@
 import numpy as np
 import pandas as pd
 
+from preprocessing.tsne import normalize_positivity
+
 def merge_dataframes(lyrics_df, lines_df, dict_df):
     merged_df = lyrics_df.merge(dict_df, how="left", on = "word_can_search")
 
@@ -13,8 +15,6 @@ def merge_dataframes(lyrics_df, lines_df, dict_df):
     # merged_df = merged_df.merge(syns_df, how="left", on = "word_can_search")
 
     lyrics_df = merged_df.merge(lines_df, how="left", on = "line_index_in_song")
-
-    from preprocessing.tsne import tsne_column, normalize_positivity
 
     # Normalize the positivity value from hugging face
     lyrics_df = normalize_positivity(lyrics_df)

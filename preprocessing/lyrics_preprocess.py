@@ -10,6 +10,15 @@ import pandas as pd
 import os
 from transformers import pipeline
 
+import lyricsgenius
+genius = lyricsgenius.Genius("tub_dvzlNtK1D1lLS7o4YUqX2fGBnJdAVbW_OgjEjRKtfhyUopjvonY50UzhPlKe")
+
+# Used for the HuggingFace Library (see https://huggingface.co/transformers/quicktour.html)
+# This sentiment-analysis classifier "uses the DistilBERT architecture and has been
+# fine-tuned on a dataset called SST-2 for the sentiment analysis task."
+# model_name = "distilbert-base-uncased-finetuned-sst-2-english"
+hugface_classifier = pipeline('sentiment-analysis')
+
 def preprocess_lyrics(artist_name, song_name):
 	# Used to get the lyrics for all songs from an artist
 	# (automatically saved to a JSON file)
@@ -20,8 +29,6 @@ def preprocess_lyrics(artist_name, song_name):
 
 	lyrics = ''
 	# Use the Genius API to get the lyrics
-	import lyricsgenius
-	genius = lyricsgenius.Genius("tub_dvzlNtK1D1lLS7o4YUqX2fGBnJdAVbW_OgjEjRKtfhyUopjvonY50UzhPlKe")
 	song = genius.search_song(song_name, artist_name)
 	lyrics = song.lyrics
 
@@ -54,11 +61,6 @@ def preprocess_lyrics(artist_name, song_name):
 	lines_columns = ["line_original", "line_index_in_song", "line_classified", "line_label", "line_score"]
 	lines_df = pd.DataFrame(columns = lines_columns)
 
-	# Used for the HuggingFace Library (see https://huggingface.co/transformers/quicktour.html)
-	# This sentiment-analysis classifier "uses the DistilBERT architecture and has been
-	# fine-tuned on a dataset called SST-2 for the sentiment analysis task."
-	# model_name = "distilbert-base-uncased-finetuned-sst-2-english"
-	hugface_classifier = pipeline('sentiment-analysis')
 
 	# Add the words to a lyrics Panda dataframe with their indexes
 	# only needed for when reading from the genius lyrics
@@ -140,17 +142,22 @@ def preprocess_lyrics(artist_name, song_name):
 								  		word_no_punctuation = word_no_punctuation[0:-1]
 								  else:
 								  		keep_going = False
+								  if len(word_no_punctuation) == 0:
+								  		break
 							# punctuation before the word
 							keep_going = True
-							while (((word_no_punctuation[0] == "(") or
-								  (word_no_punctuation[0] == '''"''') or
-								  (word_no_punctuation[0] == """'""") or
-								  (word_no_punctuation[0] == '\u201C')) and keep_going):
-								  # exclude the 'cause -> because case
-								  if (word_no_punctuation != "'cause"):
-								  		word_no_punctuation = word_no_punctuation[1:]
-								  else:
-								  		keep_going = False
+							if len(word_no_punctuation) > 0:
+								while (((word_no_punctuation[0] == "(") or
+									  (word_no_punctuation[0] == '''"''') or
+									  (word_no_punctuation[0] == """'""") or
+									  (word_no_punctuation[0] == '\u201C')) and keep_going):
+									  # exclude the 'cause -> because case
+									  if (word_no_punctuation != "'cause"):
+									  		word_no_punctuation = word_no_punctuation[1:]
+									  else:
+									  		keep_going = False
+									  if len(word_no_punctuation) == 0:
+									  		break
 						# Make most of the words lower-case except for words like "I" which are upper-case in English
 						word_can_search = word_no_punctuation
 						if (word_can_search != "I") and (word_can_search != "I'm") and (word_can_search != "I'd") and (word_can_search != "I'll"):
@@ -172,13 +179,13 @@ def preprocess_lyrics(artist_name, song_name):
 							word_can_search = "trying"
 						elif (word_can_search == "nothin"):
 							word_can_search = "nothing"
-						
+
 						if (word_can_search[-2:] == "n'"):
 							if (word_can_search == "an'"):
 								word_can_search = "and"
 							else:
 								word_can_search = word_can_search[0:-1] + "g"
-						
+
 						if (word_can_search == "'cause"):
 							word_can_search = "because"
 
