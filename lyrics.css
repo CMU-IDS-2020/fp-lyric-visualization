@@ -135,3 +135,6 @@ button#get-new-song-button {
     stroke: blue !important;
     stroke-width: 3px !important;
 }
+.tooltip {
+    pointer-events: none !important;
+}
