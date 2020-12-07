@@ -67,6 +67,9 @@ def get_lyrics_df(artist_name, song_name, isHandPickedExample):
         lyrics_df.to_csv(lyrics_fn, encoding="utf-8")
         lines_df.to_csv(lines_fn, encoding="utf-8")
 
+    # NaN's will mess up the encoding.  Convert them to empty strings.
+    lyrics_df.replace(np.nan, '', regex=True, inplace=True)
+    lines_df.replace(np.nan, '', regex=True, inplace=True)
 
     return lyrics_df, lines_df, lyrics_fn, lines_fn
 
