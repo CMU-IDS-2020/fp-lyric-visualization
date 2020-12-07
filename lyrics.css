@@ -39,7 +39,7 @@ button#get-new-song-button {
     /*width: fit-content !important;*/
 }
 #lyrics0, #lyrics1 {
-    max-height: 80vh;
+    max-height: 70vh;
     overflow: auto;
     margin-top: 10px;
 }

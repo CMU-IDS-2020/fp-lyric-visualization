@@ -20,6 +20,11 @@ function getNewSong(isHandPickedExample) {
     jQuery('#loadingModal').modal('show');
     jQuery('#get-new-song-button').hide();
 
+    if (!isHandPickedExample) {
+        // Reset the buttons to their default look
+        jQuery('.song-comparison-example button').removeClass('btn-primary').addClass('btn-outline-primary');
+    }
+
     jQuery.getJSON({
         url: '/getSong',
         type: 'GET',
