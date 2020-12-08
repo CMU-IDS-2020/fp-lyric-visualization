@@ -1,6 +1,6 @@
 # CMU Interactive Data Science Final Project
 
-* **Title**: Lyric Visualization]
+* **Title**: Lyric Visualization
 * **Track**: Interactive Visualization/Application
 * **Team members**:
   * Contact person: Peter Schaldenbrand - pschalde@andrew.cmu.edu
