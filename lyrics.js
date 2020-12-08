@@ -270,7 +270,7 @@ function buildScatterPlot() {
     jQuery('#scatter-plot').html('');
 
     // set the dimensions and margins of the graph
-    var margin = {top: 10, right: 30, bottom: 30, left: 60},
+    var margin = {top: 10, right: 10, bottom: 10, left: 10},
             width = jQuery('#plots').width() - margin.left - margin.right,
             height = jQuery(window).height() - 500 - margin.top - margin.bottom;
 
@@ -336,16 +336,16 @@ function buildScatterPlot() {
     var x = d3.scaleLinear()
         .domain(d3.extent(data, function(d) { return +d.x; }))
         .range([ 0, width ]);
-    var xAxis = svg_words.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x));
+    // var xAxis = svg_words.append("g")
+    //     .attr("transform", "translate(0," + height + ")")
+    //     .call(d3.axisBottom(x));
 
     // Add Y axis
     var y = d3.scaleLinear()
         .domain(d3.extent(data, function(d) { return +d.y; }))
         .range([ height, 0]);
-    var yAxis = svg_words.append("g")
-        .call(d3.axisLeft(y));
+    // var yAxis = svg_words.append("g")
+    //     .call(d3.axisLeft(y));
 
     // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
     // Its opacity is set to 0: we don't see it by default.
@@ -368,31 +368,31 @@ function buildScatterPlot() {
     }
     var mousemove = function(d) {
         tooltip.html(d.word_can_search)
-            .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-            .style("top", (d3.mouse(this)[1]) + "px")
+            .style("left", (d3.mouse(this)[0]-40) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+            .style("top", (d3.mouse(this)[1]+40) + "px")
     }
     // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
     var mouseleave = function(d) {
         tooltip.style("opacity", 0)
     }
 
-    // Add X axis label:
-    svg_words.append("text")
-        .attr("text-anchor", "end")
-        .attr("x", width/2 + margin.left)
-        .attr("y", height + margin.top + 20)
-        .attr('fill', '#000')
-        // .text('Line Positivity');
-        .text(x_var);
-    // Y axis label:
-    svg_words.append("text")
-        .attr("text-anchor", "end")
-        .attr("transform", "rotate(-90)")
-        .attr("y", -margin.left + 20)
-        .attr("x", -margin.top - height/2 + 20)
-        .attr('fill', '#000')
-        // .text('Word Positivity');
-        .text(y_var);
+    // // Add X axis label:
+    // svg_words.append("text")
+    //     .attr("text-anchor", "end")
+    //     .attr("x", width/2 + margin.left)
+    //     .attr("y", height + margin.top + 20)
+    //     .attr('fill', '#000')
+    //     // .text('Line Positivity');
+    //     .text(x_var);
+    // // Y axis label:
+    // svg_words.append("text")
+    //     .attr("text-anchor", "end")
+    //     .attr("transform", "rotate(-90)")
+    //     .attr("y", -margin.left + 20)
+    //     .attr("x", -margin.top - height/2 + 20)
+    //     .attr('fill', '#000')
+    //     // .text('Word Positivity');
+    //     .text(y_var);
 
     // Add dots
     myCircle = svg_words.append('g')
@@ -460,7 +460,7 @@ function buildLinesScatterPlot() {
     jQuery('#lines-scatter-plot').html('');
 
     // set the dimensions and margins of the graph
-    var margin = {top: 10, right: 30, bottom: 30, left: 60},
+    var margin = {top: 10, right: 10, bottom: 10, left: 10},
             width = jQuery('#plots').width() - margin.left - margin.right,
             height = jQuery(window).height() - 500 - margin.top - margin.bottom;
 
@@ -517,20 +517,20 @@ function buildLinesScatterPlot() {
     data.forEach(function(a) { a['x'] = a[x_var]; });
     data.forEach(function(a) { a['y'] = a[y_var]; });
 
-    // Add X axis
+    // // Add X axis
     var x = d3.scaleLinear()
         .domain(d3.extent(data, function(d) { return +d.x; }))
         .range([ 0, width ]);
-    var xAxis = svg_lines.append("g")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(x));
+    // var xAxis = svg_lines.append("g")
+    //     .attr("transform", "translate(0," + height + ")")
+    //     .call(d3.axisBottom(x));
 
-    // Add Y axis
+    // // Add Y axis
     var y = d3.scaleLinear()
         .domain(d3.extent(data, function(d) { return +d.y; }))
         .range([ height, 0]);
-    var yAxis = svg_lines.append("g")
-        .call(d3.axisLeft(y));
+    // var yAxis = svg_lines.append("g")
+    //     .call(d3.axisLeft(y));
 
     // Add a tooltip div. Here I define the general feature of the tooltip: stuff that do not depend on the data point.
     // Its opacity is set to 0: we don't see it by default.
@@ -553,31 +553,31 @@ function buildLinesScatterPlot() {
     }
     var mousemovelines = function(d) {
         tooltip.html(d.line_original)
-            .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-            .style("top", (d3.mouse(this)[1]) + "px")
+            .style("left", (d3.mouse(this)[0]-40) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+            .style("top", (d3.mouse(this)[1]+40) + "px")
     }
     // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
     var mouseleavelines = function(d) {
         tooltip.style("opacity", 0)
     }
 
-    // Add X axis label:
-    svg_lines.append("text")
-        .attr("text-anchor", "end")
-        .attr("x", width/2 + margin.left)
-        .attr("y", height + margin.top + 20)
-        .attr('fill', '#000')
-        // .text('Line Positivity');
-        .text(x_var);
-    // Y axis label:
-    svg_lines.append("text")
-        .attr("text-anchor", "end")
-        .attr("transform", "rotate(-90)")
-        .attr("y", -margin.left + 20)
-        .attr("x", -margin.top - height/2 + 20)
-        .attr('fill', '#000')
-        // .text('Word Positivity');
-        .text(y_var);
+    // // Add X axis label:
+    // svg_lines.append("text")
+    //     .attr("text-anchor", "end")
+    //     .attr("x", width/2 + margin.left)
+    //     .attr("y", height + margin.top + 20)
+    //     .attr('fill', '#000')
+    //     // .text('Line Positivity');
+    //     .text(x_var);
+    // // Y axis label:
+    // svg_lines.append("text")
+    //     .attr("text-anchor", "end")
+    //     .attr("transform", "rotate(-90)")
+    //     .attr("y", -margin.left + 20)
+    //     .attr("x", -margin.top - height/2 + 20)
+    //     .attr('fill', '#000')
+    //     // .text('Word Positivity');
+    //     .text(y_var);
 
     // Add dots
     myCircle_lines = svg_lines.append('g')
