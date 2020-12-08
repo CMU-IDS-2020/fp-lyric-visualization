@@ -12,7 +12,7 @@
 TODO
 
 ## Running Locally
-Clone the repository and run 'python3 server.py' in the repository folder. There may be libraries that need to be downloaded in order for the application to run.
+Clone the repository and run python3 server.py in the repository folder. There may be libraries that need to be downloaded in order for the application to run.
 
 ## Viewing Online
 At this time we are not hosting our application online.
