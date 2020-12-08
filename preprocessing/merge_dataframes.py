@@ -35,7 +35,15 @@ def merge_dataframes(lyrics_df, lines_df, dict_df):
     return lyrics_df, lines_df
 
 
-def positivity_barplot_data(lyrics0_df, lyrics1_df):
+def positivity_barplot_data(lyrics0_df_in, lyrics1_df_in):
+    # Check whether the two songs have the same song name. 
+    # If they do, make sure their song names are different
+    lyrics0_df = lyrics0_df_in.copy(deep=True)
+    lyrics1_df = lyrics1_df_in.copy(deep=True)
+    if (lyrics0_df_in.at[0, 'song_name'] == lyrics1_df_in.at[0, 'song_name']):
+        lyrics0_df.loc[:, 'song_name'] = lyrics0_df_in.at[0, 'song_name'] + " v0"
+        lyrics1_df.loc[:, 'song_name'] = lyrics1_df_in.at[0, 'song_name'] + " v1"
+
     """ Get counts of how many times a positive word was in a positive line
         and the other combinations per song. Convert into a dictionary for d3"""
     both_songs_df = pd.concat([lyrics0_df, lyrics1_df], ignore_index=True)
