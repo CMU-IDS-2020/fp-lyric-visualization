@@ -29,6 +29,9 @@ def format_filename(s):
 def get_spotify_embedding(song_name, artist_name):
     html = ''
 
+    # Hand fix for the Step example. Spotify song name is different from Genius.
+    if song_name.lower() == 'step (remix)': song_name, artist_name = 'step', 'vampire weekend danny brown'
+
     cache_fn = os.path.join(SPOTIFY_EMBEDDING_CACHE_DIR, format_filename(artist_name + " " + song_name + ".txt"))
 
     if os.path.exists(cache_fn):
