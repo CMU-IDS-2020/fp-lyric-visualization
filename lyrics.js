@@ -48,6 +48,9 @@ function getNewSongCompleted(data) {
     console.log(data.responseJSON);
     jQuery('#loadingModal').modal('hide');
 
+    if (data == undefined) { jQuery('#error-modal').modal('show'); return; }
+    if (data.responseJSON == undefined) { jQuery('#error-modal').modal('show'); return; }
+
     lyrics0 = data.responseJSON.lyrics0;
     lyrics1 = data.responseJSON.lyrics1;
     lines0 = data.responseJSON.lines0;
