@@ -71,8 +71,8 @@ function getNewSongCompleted(data) {
     // Clear the lyrics div
     jQuery('#lyrics0, #lyrics1, #scatter-plot, #lines-scatter-plot').html('');
 
-    buildLyricsBlock(lyrics0, jQuery('#lyrics0'));
-    buildLyricsBlock(lyrics1, jQuery('#lyrics1'));
+    buildLyricsBlock(lyrics0, jQuery('#lyrics0'), 0);
+    buildLyricsBlock(lyrics1, jQuery('#lyrics1'), 1);
 
     buildPositivityBarchart();
 
@@ -102,7 +102,7 @@ function getNewSongCompleted(data) {
     jQuery('#song-embedding-1').html(data.responseJSON.song1_html_embedding);
 }
 
-function buildLyricsBlock(lyrics, parent) {
+function buildLyricsBlock(lyrics, parent, song_number) {
     let prevLineIndex = 0;
     let prevStanzaDescription = false;
     let lineHtml = jQuery('<div class="lyric-line" />');
@@ -137,7 +137,7 @@ function buildLyricsBlock(lyrics, parent) {
             let color = lyric['line_label'] == 'POSITIVE' ? '#0fff01' : 'red';
             lineHtml.css('border-left', 'solid 30px ' + color);
         }
-        let lyricSpan = lyricJsonToHtml(lyric);
+        let lyricSpan = lyricJsonToHtml(lyric, song_number);
         lineHtml.append(lyricSpan);
     });
 
@@ -153,7 +153,7 @@ function buildLyricsBlock(lyrics, parent) {
 /**
  * Turn a lyric JSON object into a <span>
  */
-function lyricJsonToHtml(lyric) {
+function lyricJsonToHtml(lyric, song_number) {
     return jQuery('<span />')
             .attr('id', 'lyric_' + lyric['word_index_in_song'])
             .attr('lyricInd', lyric['word_index_in_song'])
@@ -163,6 +163,8 @@ function lyricJsonToHtml(lyric) {
             .attr('word_original', lyric['word_original'])
             .attr('word_can_search', lyric['word_can_search'])
             .attr('class', 'lyric')
+            .attr('song_number', song_number)
+            .attr('positivity_bar_chart', lyric['positivity_bar_chart'])
             .text(lyric['word_original'] + ' ');
 }
 
@@ -674,14 +676,26 @@ function buildPositivityBarchart() {
         .enter()
         .append("g")
         .attr("transform", function(d) { return "translate(" + x(d.group) + ",0)"; })
-            .selectAll("rect")
-            .data(function(d) { return subgroups.map(function(key) { return {key: key, value: d[key]}; }); })
-            .enter().append("rect")
+        .selectAll("rect")
+        .data(function(d) {return subgroups.map(function(key) { return {key: key, value: d[key], group: d['group']}; }); })
+        .enter().append("rect")
         .attr("x", function(d) { return xSubgroup(d.key); })
         .attr("y", function(d) { return y(d.value); })
         .attr("width", xSubgroup.bandwidth())
         .attr("height", function(d) { return height - y(d.value); })
-        .attr("fill", function(d) { return color(d.key); });
+        .attr("fill", function(d) { return color(d.key); })
+        .on('click', function(d) {
+            let selector = 'span.lyric[positivity_bar_chart="' + d['group'] + '"][song_number="' + subgroups.indexOf(d.key) + '"]';
+            if (d3.select(this).attr('class') == 'selected-scatter-point') {
+                // Un select
+                jQuery(selector).removeClass('selected-in-scatter-plot');
+                d3.select(this).attr('class', '');
+            } else {
+                // select
+                jQuery(selector).addClass('selected-in-scatter-plot');
+                d3.select(this).attr('class', 'selected-scatter-point');
+            }
+        });
 }
 
 /**
