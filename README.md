@@ -15,7 +15,7 @@ TODO
 Clone the repository and run python3 server.py in the repository folder. There may be libraries that need to be downloaded in order for the application to run.
 
 ## Viewing Online
-At this time we are not hosting our application online.
+Between December 8th, 2020 and December 18th, 2020 the application is available via http://341eb64e2e8b.ngrok.io
 
 ## Paper and Video
 The paper is in Report.MD in this repository.
