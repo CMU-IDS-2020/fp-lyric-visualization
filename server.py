@@ -64,8 +64,8 @@ def get_lyrics_df(artist_name, song_name, isHandPickedExample):
         lines_df['artist_name'] = artist_name
 
         # Cache the file
-        lyrics_df.to_csv(lyrics_fn, encoding="utf-8")
-        lines_df.to_csv(lines_fn, encoding="utf-8")
+        lyrics_df.to_csv(lyrics_fn, encoding="utf-8", index=False)
+        lines_df.to_csv(lines_fn, encoding="utf-8", index=False)
 
     # NaN's will mess up the encoding.  Convert them to empty strings.
     lyrics_df.replace(np.nan, '', regex=True, inplace=True)
@@ -134,10 +134,10 @@ class MyRequestHandler(http.server.SimpleHTTPRequestHandler):
 
             if isHandPickedExample:
                 # Save this pre-selected pairing again to save the t-SNE values
-                lyrics_df0.to_csv(lyrics_fn0, encoding="utf-8")
-                lines_df0.to_csv(lines_fn0, encoding="utf-8")
-                lyrics_df1.to_csv(lyrics_fn1, encoding="utf-8")
-                lines_df1.to_csv(lines_fn1, encoding="utf-8")
+                lyrics_df0.to_csv(lyrics_fn0, encoding="utf-8", index=False)
+                lines_df0.to_csv(lines_fn0, encoding="utf-8", index=False)
+                lyrics_df1.to_csv(lyrics_fn1, encoding="utf-8", index=False)
+                lines_df1.to_csv(lines_fn1, encoding="utf-8", index=False)
 
             # Convert to dictionaries
             lyrics0, lyrics1, lines0, lines1 = lyrics_df0.to_dict('records'), lyrics_df1.to_dict('records'), \
