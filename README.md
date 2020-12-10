@@ -24,7 +24,7 @@ Comparing text is a difficult task since it requires high level thinking and a s
 Between December 8th, 2020 and December 18th, 2020 the application is available via http://341eb64e2e8b.ngrok.io
 
 ## Paper and Video
-The paper is in Report.MD in this repository.
+The paper is in [Report.MD](https://github.com/CMU-IDS-2020/fp-lyric-visualization/blob/main/Report.md) in this repository.
 The video is available to the instructors on Canvas.
 
 ## Work distribution and Project Process
