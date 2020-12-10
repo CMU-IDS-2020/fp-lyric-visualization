@@ -1,0 +1,5 @@
+transformers==4.0.0
+lyricsgenius==2.0.2
+torch==1.7.0
+textblob==0.15.3
+spotipy==2.16.1
