@@ -103,6 +103,9 @@ function getNewSongCompleted(data) {
     // Insert the spotify embeddings
     jQuery('#song-embedding-0').html(data.responseJSON.song0_html_embedding);
     jQuery('#song-embedding-1').html(data.responseJSON.song1_html_embedding);
+
+    // The default starting dimension
+    showComparison('wordSimilarities');
 }
 
 function buildLyricsBlock(lyrics, parent, song_number) {
