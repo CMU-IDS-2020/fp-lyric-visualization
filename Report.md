@@ -1,6 +1,6 @@
 # Final Project Report
 
-**Project URL**: http://32a5b21dc47e.ngrok.io/
+**Project URL**: http://b52e04a3fab4.ngrok.io
 
 <!-- Short (~250 words) abstract of the concrete data science problem and how the solutions addresses the problem. -->
 

@@ -21,7 +21,7 @@ Comparing text is a difficult task since it requires high level thinking and a s
 - The application should now be live at http://localhost:8081
 
 ## Viewing Online
-Between December 8th, 2020 and December 18th, 2020 the application is available via http://32a5b21dc47e.ngrok.io/
+Between December 8th, 2020 and December 18th, 2020 the application is available via http://b52e04a3fab4.ngrok.io
 
 ## Paper and Video
 The paper is in [Report.MD](https://github.com/CMU-IDS-2020/fp-lyric-visualization/blob/main/Report.md) in this repository.
